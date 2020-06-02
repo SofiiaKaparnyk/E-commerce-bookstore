@@ -9,7 +9,7 @@ def index(request):
     return render(request, 'listings/listings.html', {'books': books})
 
 
-def listing(request):
+def listing(request, book_id):
     return render(request, 'listings/listing.html')
 
 
