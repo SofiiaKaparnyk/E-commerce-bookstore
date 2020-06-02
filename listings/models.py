@@ -12,6 +12,7 @@ class Category(models.Model):
 
     class Meta:
         ordering = ['title']
+        verbose_name_plural = "Categories"
 
     def __str__(self):
         return self.title
@@ -28,11 +29,11 @@ COVER_CHOICES = [
 
 
 class Book(models.Model):
-    created = models.DateTimeField(auto_now_add=True)
+    created = models.DateTimeField(auto_now_add=True, db_index=True)
     updated = models.DateTimeField(auto_now=True)
+    title = models.CharField(max_length=250)
     slug = models.SlugField(unique=True)
     is_new = models.BooleanField(default=True)
-    title = models.CharField(max_length=250)
     author = models.CharField(max_length=250)
     category = models.ForeignKey('Category', on_delete=models.SET_NULL, related_name='books',
                                  null=True)

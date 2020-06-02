@@ -35,157 +35,69 @@
         <div class="container">
             <h3 class="text-center mb-3">Latest Listings</h3>
             <div class="row">
-                <!-- Listing 1 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card listing-preview">
-                        <img class="card-img-top" src="{% static 'img/books/passager.jpg' %}"
-                             alt="">
-                        <div class="card-img-overlay">
-                            <h2>
-                                <span class="badge badge-secondary text-white">$4.99</span>
-                            </h2>
-                        </div>
-                        <div class="card-body">
-                            <div class="listing-heading text-center">
-                                <h4 class="text-primary">Le Passanger</h4>
-                                <p>
-                                    <i class="fas fa-user-edit text-secondary"></i> Grange</p>
+                {% for book in books %}
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card listing-preview">
+                            <img class="card-img-top" src="{{ book.image_main.url }}"
+                                 alt="Book image">
+                            <div class="card-img-overlay">
+                                <h2>
+                                    <span class="badge badge-secondary text-white">${{ book.price }}</span>
+                                </h2>
                             </div>
-                            <hr>
-                            <div class="row py-2 text-secondary">
-                                <div class="col-6">
-                                    <i class="#"></i> New: yes/no
+                            <div class="card-body">
+                                <div class="listing-heading text-center">
+                                    <h4 class="text-primary">{{ book.title }}</h4>
+                                    <p>
+                                        <i class="fas fa-user-edit text-secondary"></i> {{ book.author }}
+                                    </p>
                                 </div>
-                                <div class="col-6">
-                                    <i class="#"></i> ...
+                                <hr>
+                                <div class="row py-1 text-secondary">
+                                    <div class="col-12">
+                                        <i class="#"></i> Is book new: {% if book.is_new %}
+                                        yes {% else %}
+                                        no {% endif %}
+                                    </div>
                                 </div>
+                                <div class="row py-1 text-secondary">
+                                    <div class="col-12">
+                                        <i class="#"></i> Number of
+                                        pages: {{ book.number_of_pages }}
+                                    </div>
+                                </div>
+                                <div class="row py-1 text-secondary">
+                                    <div class="col-12">
+                                        <i class="#"></i> Cover: {{ book.book_cover }}
+                                    </div>
+                                </div>
+                                {% if book.rate %}
+                                    <div class="row py-1 text-secondary">
+                                        <div class="col-12">
+                                            <i class="fas fa-clock"></i> Book rate: {{ book.rate }}
+                                        </div>
+                                    </div>
+                                {% endif %}
+                                <hr>
+                                <div class="row py-1 text-secondary">
+                                    <div class="col-12">
+                                        <i class="fas fa-user"></i> Owner: {{ book.owner }}
+                                    </div>
+                                </div>
+                                <div class="row py-1 text-secondary">
+                                    <div class="col-12">
+                                        <i class="fas fa-clock"></i> Book
+                                        added: {{ book.created | timesince }}
+                                    </div>
+                                </div>
+
+                                <hr>
+                                <a href="listing.html" class="btn btn-primary btn-block">More
+                                    Info</a>
                             </div>
-                            <div class="row py-2 text-secondary">
-                                <div class="col-6">
-                                    <i class="#"></i> ...
-                                </div>
-                                <div class="col-6">
-                                    <i class="#"></i> ...
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row py-2 text-secondary">
-                                <div class="col-6">
-                                    <i class="fas fa-user"></i> Kyle Brown
-                                </div>
-                            </div>
-                            <div class="row text-secondary pb-2">
-                                <div class="col-6">
-                                    <i class="fas fa-clock"></i> 5 days ago
-                                </div>
-                            </div>
-                            <hr>
-                            <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
                         </div>
                     </div>
-                </div>
-
-                <!-- Listing 2 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card listing-preview">
-                        <img class="card-img-top" src="{% static 'img/books/grim.jpg' %}" alt="">
-                        <div class="card-img-overlay">
-                            <h2>
-                                <span class="badge badge-secondary text-white">$5.49</span>
-                            </h2>
-                        </div>
-                        <div class="card-body">
-                            <div class="listing-heading text-center">
-                                <h4 class="text-primary">Grim Reaper <br>
-                                    End of days</h4>
-                                <p>
-                                    <i class="fas fa-user-edit text-secondary"></i> Steve Alten</p>
-                            </div>
-                            <hr>
-                            <div class="row py-2 text-secondary">
-                                <div class="col-6">
-                                    <i class="#"></i> New: yes/no
-                                </div>
-                                <div class="col-6">
-                                    <i class="#"></i> ...
-                                </div>
-                            </div>
-                            <div class="row py-2 text-secondary">
-                                <div class="col-6">
-                                    <i class="#"></i> ...
-                                </div>
-                                <div class="col-6">
-                                    <i class="#"></i> ...
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row py-2 text-secondary">
-                                <div class="col-6">
-                                    <i class="fas fa-user"></i> Mark Hudson
-                                </div>
-                            </div>
-                            <div class="row text-secondary pb-2">
-                                <div class="col-6">
-                                    <i class="fas fa-clock"></i> 5 days ago
-                                </div>
-                            </div>
-                            <hr>
-                            <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Listing 3 -->
-                <div class="col-md-6 col-lg-4 mb-4">
-                    <div class="card listing-preview">
-                        <img class="card-img-top" src="{% static 'img/books/dont_look_back.jpg' %}"
-                             alt="">
-                        <div class="card-img-overlay">
-                            <h2>
-                                <span class="badge badge-secondary text-white">$3.39</span>
-                            </h2>
-                        </div>
-                        <div class="card-body">
-                            <div class="listing-heading text-center">
-                                <h4 class="text-primary">Don't look back</h4>
-                                <p>
-                                    <i class="fas fa-user-edit text-secondary"></i> Maks Kidruk
-                                </p>
-                            </div>
-                            <hr>
-                            <div class="row py-2 text-secondary">
-                                <div class="col-6">
-                                    <i class="#"></i> New: yes/no
-                                </div>
-                                <div class="col-6">
-                                    <i class="#"></i> ...
-                                </div>
-                            </div>
-                            <div class="row py-2 text-secondary">
-                                <div class="col-6">
-                                    <i class="#"></i> ...
-                                </div>
-                                <div class="col-6">
-                                    <i class="#"></i> ...
-                                </div>
-                            </div>
-                            <hr>
-                            <div class="row py-2 text-secondary">
-                                <div class="col-6">
-                                    <i class="fas fa-user"></i> Mark Hudson
-                                </div>
-                            </div>
-                            <div class="row text-secondary pb-2">
-                                <div class="col-6">
-                                    <i class="fas fa-clock"></i> 5 days ago
-                                </div>
-                            </div>
-                            <hr>
-                            <a href="listing.html" class="btn btn-primary btn-block">More Info</a>
-                        </div>
-                    </div>
-                </div>
-
+                {% endfor %}
             </div>
         </div>
     </section>
