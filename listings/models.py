@@ -23,8 +23,8 @@ CURRENT_YEAR = datetime.date.today().year
 
 RATE_CHOICE = [(r, r) for r in range(1, 6)]
 COVER_CHOICES = [
-    ('soft', 'Softcover'),
-    ('hard', 'Hardcover'),
+    ('Softcover', 'Softcover'),
+    ('Hardcover', 'Hardcover'),
 ]
 
 
@@ -45,7 +45,7 @@ class Book(models.Model):
     year_of_publishing = models.IntegerField(choices=YEAR_CHOICES, default=CURRENT_YEAR)
     number_of_pages = models.IntegerField()
     translator = models.CharField(max_length=50)
-    book_cover = models.CharField(max_length=4, choices=COVER_CHOICES)
+    book_cover = models.CharField(max_length=9, choices=COVER_CHOICES)
     annotation = models.TextField(blank=True)
     rate = models.IntegerField(choices=RATE_CHOICE, null=True, blank=True)
 

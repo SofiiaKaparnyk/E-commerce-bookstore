@@ -6,7 +6,7 @@ from listings.models import Book
 
 
 def index(request):
-    books = Book.objects.order_by('-created')[:3][::-1]
+    books = Book.objects.order_by('-created')[:3]
     return render(request, 'pages/index.html', {'books': books})
 
 

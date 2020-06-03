@@ -1,4 +1,228 @@
 {% extends 'base.html' %}>
 {% block content %}
-<h1>Listing</h1>
+
+    <section id="showcase-inner" class="py-5 text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 class="display-4">{{ book.title }}</h1>
+                    <p class="lead">
+                        <i class="fas fa-user-edit"></i> {{ book.author }}</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Breadcrumb -->
+    <section id="bc" class="mt-3">
+        <div class="container">
+            <nav>
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'index' %}">Home</a>
+                    </li>
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'listings' %}">Listings</a>
+                    </li>
+                    <li class="breadcrumb-item active">{{ book.title }}</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Listing -->
+    <section id="listing" class="py-4">
+        <div class="container">
+            <a href="{% url 'listings' %}" class="btn btn-light mb-4">Back To Listings</a>
+            <div class="row">
+                <div class="col-md-9">
+                    <!-- Home Main Image -->
+                    <img src="{{ book.image_main.url }}" alt="Book image"
+                         class="img-main img-fluid mb-3">
+                    <!-- Thumbnails -->
+                    <div class="row mb-5 thumbs">
+                        {% if book.image_1 %}
+                            <div class="col-md-2">
+                                <a href="{{ book.image_1.url }}"
+                                   data-lightbox="home-images">
+                                    <img src="{{ book.image_1.url }}" alt=""
+                                         class="img-fluid">
+                                </a>
+                            </div>
+                            {% if book.image_2 %}
+                                <div class="col-md-2">
+                                    <a href="{{ book.image_2.url }}"
+                                       data-lightbox="home-images">
+                                        <img src="{{ book.image_2.url }}" alt=""
+                                             class="img-fluid">
+                                    </a>
+                                </div>
+                                {% if book.image_3 %}
+                                    <div class="col-md-2">
+                                        <a href="{{ book.image_3.url }}"
+                                           data-lightbox="home-images">
+                                            <img src="{{ book.image_3.url }}" alt=""
+                                                 class="img-fluid">
+                                        </a>
+                                    </div>
+                                    {% if book.image_4 %}
+                                        <div class="col-md-2">
+                                            <a href="{{ book.image_4.url }}"
+                                               data-lightbox="home-images">
+                                                <img src="{{ book.image_4.url }}" alt=""
+                                                     class="img-fluid">
+                                            </a>
+                                        </div>
+                                    {% endif %}
+                                {% endif %}
+                            {% endif %}
+                        {% endif %}
+                    </div>
+                    <!-- Fields -->
+                    <div class="row mb-5 fields">
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-secondary">
+                                    <i class="fas fa-money-bill-alt"></i> Price:
+                                    <span class="float-right">${{ book.price }}</span>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <i class="#"></i>
+                                    Is book new:
+                                    <span class="float-right">{% if book.is_new %}
+                                        <i class="fas fa-check"></i> {% else %}
+                                        <i class="fas fa-times"
+                                           style="color: #a41515"></i>  {% endif %}</span>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <i class="#"></i> Number of
+                                    pages:
+                                    <span class="float-right">{{ book.number_of_pages }}</span>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <i class="#"></i> Cover:
+                                    <span class="float-right">{{ book.book_cover }}
+                  </span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-6">
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item text-secondary">
+                                    <i class="fas fa-th-large"></i> Language:
+                                    <span class="float-right">{{ book.language }}</span>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <i class="fas fa-square"></i> Publisher:
+                                    <span class="float-right">{{ book.publisher }} </span>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <i class="fas fa-calendar"></i> Year of publishing:
+                                    <span class="float-right">{{ book.year_of_publishing }} </span>
+                                </li>
+                                <li class="list-group-item text-secondary">
+                                    <i class="fas fa-bed"></i> Translator:
+                                    <span class="float-right"> {{ book.translator }} </span>
+                                </li>
+                            </ul>
+                        </div>
+                        {% if book.description %}
+                            <div class="col-md-12">
+                                <ul class="list-group list-group-flush">
+                                    <hr>
+                                    <li class="list-group-item text-secondary">
+                                        Description: <br>
+                                        {{ book.description }}
+                                    </li>
+                                </ul>
+                            </div>
+                        {% endif %}
+                        {% if book.annotation %}
+                            <div class="col-md-12">
+                                <ul class="list-group list-group-flush">
+                                    <hr>
+                                    <li class="list-group-item text-secondary">
+                                        Annotation: <br>
+                                        {{ book.annotation }}
+                                    </li>
+                                </ul>
+                            </div>
+                        {% endif %}
+                        <div class="col-md-12">
+                            <ul class="list-group list-group-flush">
+                                <hr>
+                                <li class="list-group-item text-secondary">
+                                    <i class="fas fa-user"></i> Owner: {{ book.owner }}<br>
+                                    <i class="fas fa-user"></i> Phone: {{ book.owner.phone }}<br>
+                                    <i class="fas fa-user"></i>
+                                    Email: {{ book.owner.user.email }}<br>
+                                    <i class="fas fa-user"></i>
+                                    Address: {{ book.owner.city }} city, {{ book.owner.region }} region, {{ book.owner.street }} street
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="col-md-3">
+                    <div class="card mb-3">
+                        <img class="card-img-top" src="assets/img/realtors/kyle.jpg"
+                             alt="Seller of the month">
+                        <div class="card-body">
+                            <h5 class="card-title">Property Realtor</h5>
+                            <h6 class="text-secondary">Kyle Brown</h6>
+                        </div>
+                    </div>
+                    <button class="btn-primary btn-block btn-lg" data-toggle="modal"
+                            data-target="#inquiryModal">Make An Inquiry
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Inquiry Modal -->
+    <div class="modal fade" id="inquiryModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="inquiryModalLabel">Make An Inquiry</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="property_name" class="col-form-label">Property:</label>
+                            <input type="text" name="listing" class="form-control"
+                                   value="45 Drivewood Cirlce" disabled>
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="col-form-label">Name:</label>
+                            <input type="text" name="name" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-form-label">Email:</label>
+                            <input type="email" name="email" class="form-control" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="col-form-label">Phone:</label>
+                            <input type="text" name="phone" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="col-form-label">Message:</label>
+                            <textarea name="message" class="form-control"></textarea>
+                        </div>
+                        <hr>
+                        <input type="submit" value="Send" class="btn btn-block btn-secondary">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
 {% endblock %}
