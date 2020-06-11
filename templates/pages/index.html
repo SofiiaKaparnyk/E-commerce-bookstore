@@ -11,14 +11,23 @@
                     </h1>
                     <p class="lead"> Text which encourages to search! </p>
                     <div class="search">
-                        <form action="search.html">
+                        <form action="{% url 'search' %}">
                             <!-- Form Row 1 -->
                             <div class="form-row">
-                                <div class="col-md-12 mb-3">
+                                <div class="col-md-6 mb-3">
                                     <label class="sr-only">Keywords</label>
                                     <input type="text" name="keywords" class="form-control"
                                            placeholder="Keyword (Bulgakov, Karenina, etc)">
                                 </div>
+                                <div class="col-md-6 mb-3">
+                                <label class="sr-only">Category</label>
+                                <select name="category" class="form-control">
+                                        <option selected>Category (All)</option>
+                                    {% for category in categories %}
+                                        <option>{{ category }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
                             </div>
                             <button class="btn btn-secondary btn-block mt-4" type="submit">Submit
                                 form
@@ -36,61 +45,22 @@
             <h3 class="text-center mb-3">Latest Listings</h3>
             <div class="row">
                 {% for book in books %}
-                    <div class="col-md-6 col-lg-4 mb-4">
+                    <div class="col-md-6 col-lg-2 mb-4">
                         <div class="card listing-preview">
                             <img class="card-img-top" src="{{ book.image_main.url }}"
                                  alt="Book image">
                             <div class="card-img-overlay">
-                                <h2>
+                                <h3>
                                     <span class="badge badge-secondary text-white">${{ book.price }}</span>
-                                </h2>
+                                </h3>
                             </div>
                             <div class="card-body">
-                                <div class="listing-heading text-center">
-                                    <h4 class="text-primary">{{ book.title }}</h4>
+                                <div class="listing-heading text-center" style="height: 60px">
+                                    <b class="text-primary">{{ book.title|title }}</b>
                                     <p>
-                                        <i class="fas fa-user-edit text-secondary"></i> {{ book.author }}
+                                        <i class="fas fa-user-edit text-secondary"></i> {{ book.author|title }}
                                     </p>
                                 </div>
-                                <hr>
-                                <div class="row py-1 text-secondary">
-                                    <div class="col-12">
-                                        <i class="#"></i> Is book new: {% if book.is_new %}
-                                        yes {% else %}
-                                        no {% endif %}
-                                    </div>
-                                </div>
-                                <div class="row py-1 text-secondary">
-                                    <div class="col-12">
-                                        <i class="#"></i> Number of
-                                        pages: {{ book.number_of_pages }}
-                                    </div>
-                                </div>
-                                <div class="row py-1 text-secondary">
-                                    <div class="col-12">
-                                        <i class="#"></i> Cover: {{ book.book_cover }}
-                                    </div>
-                                </div>
-                                {% if book.rate %}
-                                    <div class="row py-1 text-secondary">
-                                        <div class="col-12">
-                                            <i class="fas fa-clock"></i> Book rate: {{ book.rate }}
-                                        </div>
-                                    </div>
-                                {% endif %}
-                                <hr>
-                                <div class="row py-1 text-secondary">
-                                    <div class="col-12">
-                                        <i class="fas fa-user"></i> Owner: {{ book.owner }}
-                                    </div>
-                                </div>
-                                <div class="row py-1 text-secondary">
-                                    <div class="col-12">
-                                        <i class="fas fa-clock"></i> Book
-                                        added: {{ book.created | timesince }}
-                                    </div>
-                                </div>
-
                                 <hr>
                                 <a href="{% url 'listing' book.id %}"
                                    class="btn btn-primary btn-block">More Info</a>

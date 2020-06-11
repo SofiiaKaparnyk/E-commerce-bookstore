@@ -17,6 +17,10 @@ class Category(models.Model):
     def __str__(self):
         return self.title
 
+    def save(self, *args, **kwargs):
+        self.title = self.title.title()
+        return super().save(*args, **kwargs)
+
 
 YEAR_CHOICES = [(r, r) for r in range(1984, datetime.date.today().year + 1)]
 CURRENT_YEAR = datetime.date.today().year

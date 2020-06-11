@@ -1,13 +1,12 @@
-from django.http import HttpResponse
 from django.shortcuts import render
 
-# Create your views here.
-from listings.models import Book
+from listings.models import Book, Category
 
 
 def index(request):
-    books = Book.objects.order_by('-created')[:3]
-    return render(request, 'pages/index.html', {'books': books})
+    books = Book.objects.order_by('-created')[:6]
+    categories = Category.objects.all()
+    return render(request, 'pages/index.html', {'books': books, 'categories': categories})
 
 
 def about(request):

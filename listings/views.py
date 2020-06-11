@@ -1,7 +1,8 @@
 from django.core.paginator import Paginator
-from django.shortcuts import render
+from django.db.models import Q
+from django.shortcuts import render, get_object_or_404
 
-from listings.models import Book
+from listings.models import Book, Category
 
 
 def index(request):
@@ -9,13 +10,32 @@ def index(request):
     paginator = Paginator(books, 6)
     page_number = request.GET.get('page')
     page_books = paginator.get_page(page_number)
-    return render(request, 'listings/listings.html', {'books': page_books})
+    return render(request, 'listings/search.html', {'books': page_books})
 
 
 def listing(request, book_id):
-    book = Book.objects.get(id=book_id)
+    book = get_object_or_404(Book, id=book_id)
     return render(request, 'listings/listing.html', {'book': book})
 
 
 def search(request):
-    return render(request, 'listings/search.html')
+    context = {}
+    keywords = request.GET.get('keywords')
+    category = request.GET.get('category')
+    categories = Category.objects.all()
+    books = Book.objects.order_by('-created')
+    if keywords:
+        books = Book.objects.filter(
+            Q(author__icontains=keywords) | Q(title__icontains=keywords))
+        context['keyword_selected'] = keywords
+    if category != 'Category (All)' and category is not None:
+        context['category_selected'] = category
+        categories = categories.exclude(title=category)
+        category_id = Category.objects.get(title=category).id
+        books = books.filter(category=category_id)
+    paginator = Paginator(books, 6)
+    page_number = request.GET.get('page')
+    page_books = paginator.get_page(page_number)
+    context['books'] = page_books
+    context['categories'] = categories
+    return render(request, 'listings/search.html', context)
