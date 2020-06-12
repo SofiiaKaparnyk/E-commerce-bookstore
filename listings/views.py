@@ -30,7 +30,6 @@ def search(request):
         context['keyword_selected'] = keywords
     if category != 'Category (All)' and category is not None:
         context['category_selected'] = category
-        # categories = categories.exclude(title=category)
         category_id = Category.objects.get(title=category).id
         books = books.filter(category=category_id)
     paginator = Paginator(books, 6)
