@@ -23,14 +23,12 @@
                             <div class="col-md-6 mb-3">
                                 <label class="sr-only">Category</label>
                                 <select name="category" class="form-control">
-                                    {% if category_selected %}
-                                        <option>{{ category_selected }}</option>
-                                        <option>Category (All)</option>
-                                    {% else %}
-                                        <option selected>Category (All)</option>
-                                    {% endif %}
+                                <option selected style="font-weight: bold;">Category (All)</option>
                                     {% for category in categories %}
-                                        <option>{{ category }}</option>
+                                        <option
+                                        {% if category_selected == category.title %}
+                                        selected
+                                        {% endif %}>{{ category }}</option>
                                     {% endfor %}
                                 </select>
                             </div>
