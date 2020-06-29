@@ -7,9 +7,9 @@
             <div class="home-search p-5">
                 <div class="overlay p-5">
                     <h1 class="display-4 mb-4">
-                        Book Searching Just Got So Easy
+                        Пошук Книг Став Зовсім Простим
                     </h1>
-                    <p class="lead"> Text which encourages to search! </p>
+                    <p class="lead"> Знайди те, що припаде до душі <i class="fas fa-heart"></i></p>
                     <div class="search">
                         <form action="{% url 'search' %}">
                             <!-- Form Row 1 -->
@@ -17,20 +17,19 @@
                                 <div class="col-md-6 mb-3">
                                     <label class="sr-only">Keywords</label>
                                     <input type="text" name="keywords" class="form-control"
-                                           placeholder="Keyword (Bulgakov, Karenina, etc)">
+                                           placeholder="Ключове слово (Булгаков, Кареніна, ...)">
                                 </div>
                                 <div class="col-md-6 mb-3">
-                                <label class="sr-only">Category</label>
-                                <select name="category" class="form-control">
-                                        <option selected>Category (All)</option>
-                                    {% for category in categories %}
-                                        <option>{{ category }}</option>
-                                    {% endfor %}
-                                </select>
+                                    <label class="sr-only">Category</label>
+                                    <select name="category" class="form-control">
+                                        <option selected>Категорія (Усі)</option>
+                                        {% for category in categories %}
+                                            <option>{{ category }}</option>
+                                        {% endfor %}
+                                    </select>
+                                </div>
                             </div>
-                            </div>
-                            <button class="btn btn-secondary btn-block mt-4" type="submit">Submit
-                                form
+                            <button class="btn btn-secondary btn-block mt-4" type="submit"> Пошук
                             </button>
                         </form>
                     </div>
@@ -42,7 +41,7 @@
     <!-- Listings -->
     <section id="listings" class="py-5">
         <div class="container">
-            <h3 class="text-center mb-3">Latest Listings</h3>
+            <h3 class="text-center mb-3">Останні додані книги</h3>
             <div class="row">
                 {% for book in books %}
                     <div class="col-md-6 col-lg-2 mb-4">
@@ -50,9 +49,6 @@
                             <img class="card-img-top" src="{{ book.image_main.url }}"
                                  alt="Book image">
                             <div class="card-img-overlay">
-                                <h3>
-                                    <span class="badge badge-secondary text-white">${{ book.price }}</span>
-                                </h3>
                             </div>
                             <div class="card-body">
                                 <div class="listing-heading text-center" style="height: 60px">
@@ -63,7 +59,7 @@
                                 </div>
                                 <hr>
                                 <a href="{% url 'listing' book.id %}"
-                                   class="btn btn-primary btn-block">More Info</a>
+                                   class="btn btn-primary btn-block">Детальніше</a>
                             </div>
                         </div>
                     </div>
@@ -78,20 +74,30 @@
                 <div class="col-md-4">
                     <i class="fas fa-comment fa-4x mr-4"></i>
                     <hr>
-                    <h3>Consulting Services</h3>
-                    <p> Something about our great consulting service! </p>
+                    <h3>Контакти </h3>
+                    <p><i class="fas fa-phone"></i> (099)-600-72-68 <br>
+                        <i class="fas fa-envelope-open"></i> sofiia.kaparnyk@gmail.com <br>
+                        <a href="https://www.facebook.com/sonya.omelianets">
+                            <i class="fab fa-facebook" style="color: white"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sofiia-kaparnyk-08a3bb140/">
+                            <i class="fab fa-linkedin" style="color: white"></i>
+                        </a>
+                        <a href="https://www.instagram.com/omelianets.sofiya28/">
+                            <i class="fab fa-instagram" style="color: white"></i>
+                        </a></p>
                 </div>
                 <div class="col-md-4">
                     <i class="fas fa-book-reader fa-4x mr-4"></i>
                     <hr>
-                    <h3> Something else</h3>
-                    <p> ... </p>
+                    <h3> Люди</h3>
+                    <p> Наповни сві день добром <i class="fas fa-hand-holding-heart"></i></p>
                 </div>
                 <div class="col-md-4">
-                    <i class="fas fa-book-open fa-4x mr-4"></i>
+                    <i class="fas fa-book-reader fa-4x mr-4"></i>
                     <hr>
-                    <h3> Something else</h3>
-                    <p> ...</p>
+                    <h3> Книги</h3>
+                    <p> Ти заслужив гарну книгу <i class="fas fa-smile-wink"></i></p>
                 </div>
             </div>
         </div>

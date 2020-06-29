@@ -18,7 +18,7 @@ class Category(models.Model):
         return self.title
 
     def save(self, *args, **kwargs):
-        self.title = self.title.title()
+        self.title = self.title.capitalize()
         return super().save(*args, **kwargs)
 
 

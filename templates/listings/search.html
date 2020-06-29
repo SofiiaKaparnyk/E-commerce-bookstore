@@ -5,8 +5,8 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col-md-12 mb-3">
-                    <h1 class="display-4">Browse Our Books</h1>
-                    <p class="lead"> Books blah blah!</p>
+                    <h1 class="display-4">Подивись Що Я Маю </h1>
+                    <p class="lead"> Дякую, що ти тут!</p>
                     <form action="{% url 'search' %}">
                         <!-- Form Row 1 -->
                         <div class="form-row">
@@ -17,13 +17,13 @@
                                            value="{{ keyword_selected }}">
                                 {% else %}
                                     <input type="text" name="keywords" class="form-control"
-                                           placeholder="Keyword (Bulgakov, Karenina, etc)">
+                                           placeholder="Ключове слово (Булгаков, Кареніна, ...)">
                                 {% endif %}
                             </div>
                             <div class="col-md-6 mb-3">
                                 <label class="sr-only">Category</label>
                                 <select name="category" class="form-control">
-                                <option selected style="font-weight: bold;">Category (All)</option>
+                                <option selected style="font-weight: bold;">Категорія (Усі)</option>
                                     {% for category in categories %}
                                         <option
                                         {% if category_selected == category.title %}
@@ -34,8 +34,7 @@
                             </div>
                             <div class="col-md-12 mb-3">
                                 <button class="btn btn-secondary btn-block mt-4" type="submit">
-                                    Submit
-                                    form
+                                    Пошук
                                 </button>
                             </div>
                         </div>
@@ -52,12 +51,9 @@
                 <ol class="breadcrumb">
                     <li class="breadcrumb-item">
                         <a href="{% url 'index' %}">
-                            <i class="fas fa-home"></i> Home</a>
+                            <i class="fas fa-home"></i> Книги</a>
                     </li>
-                    <li class="breadcrumb-item">
-                        <a href="{% url 'listings' %}">Browse Listings</a>
-                    </li>
-                    <li class="breadcrumb-item active"> Search Results</li>
+                    <li class="breadcrumb-item active"> Каталог</li>
                 </ol>
             </nav>
         </div>
@@ -76,9 +72,6 @@
                                 <img class="card-img-top" src="{{ book.image_main.url }}"
                                      alt="Book image">
                                 <div class="card-img-overlay">
-                                    <h3>
-                                        <span class="badge badge-secondary text-white">${{ book.price }}</span>
-                                    </h3>
                                 </div>
                                 <div class="card-body">
                                     <div class="listing-heading text-center" style="height: 60px">
@@ -89,7 +82,7 @@
                                     </div>
                                     <hr>
                                     <a href="{% url 'listing' book.id %}"
-                                       class="btn btn-primary btn-block">More Info</a>
+                                       class="btn btn-primary btn-block">Детальніше</a>
                                 </div>
                             </div>
                         </div>

@@ -10,7 +10,8 @@ def index(request):
     paginator = Paginator(books, 6)
     page_number = request.GET.get('page')
     page_books = paginator.get_page(page_number)
-    return render(request, 'listings/search.html', {'books': page_books})
+    categories = Category.objects.all()
+    return render(request, 'listings/search.html', {'books': page_books, 'categories': categories})
 
 
 def listing(request, book_id):
@@ -28,7 +29,7 @@ def search(request):
         books = Book.objects.filter(
             Q(author__icontains=keywords) | Q(title__icontains=keywords))
         context['keyword_selected'] = keywords
-    if category != 'Category (All)' and category is not None:
+    if category != 'Категорія (Усі)' and category is not None:
         context['category_selected'] = category
         category_id = Category.objects.get(title=category).id
         books = books.filter(category=category_id)
@@ -37,4 +38,4 @@ def search(request):
     page_books = paginator.get_page(page_number)
     context['books'] = page_books
     context['categories'] = categories
-    return render(request, 'listings/search.html', context)
+    return render(request, 'listings/listings.html', context)
