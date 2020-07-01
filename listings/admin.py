@@ -12,9 +12,8 @@ class CategoryAdmin(admin.ModelAdmin):
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
     prepopulated_fields = {'slug': ('title',)}
-    exclude = ['rate']
-    list_display = ['id', 'title', 'author', 'price', 'owner', 'rate']
-    list_display_links = ['id', 'title', 'owner']
-    list_filter = ['price']
+    list_display = ['id', 'title', 'author', 'rate']
+    list_display_links = ['id', 'title']
     search_fields = ['title', 'author', 'rate']
     list_per_page = 25
+    filter_horizontal = ('category',)

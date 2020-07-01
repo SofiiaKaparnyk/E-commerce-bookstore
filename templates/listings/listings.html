@@ -1,4 +1,5 @@
-{% extends 'base.html' %}>
+{% extends 'base.html' %}
+{% load static %}
 {% block content %}
     {% block search %}
         <section id="showcase-inner" class="py-5 text-white">
@@ -71,19 +72,33 @@
             <div class="row">
 
                 <!-- Listing  -->
+                {% if books|length > 0 %}
+                    {% for book in books %}
+                        <div class="col-md-6 col-lg-2 mb-4">
+                            <a href="{% url 'listing' book.id %}"
+                               class=" btn-primary btn-block">
+                                <div class="card listing-preview">
+                                    <img class="card-img-top" src="{{ book.image_main.url }}"
+                                         alt="Book image">
+                                    <div class="card-img-overlay">
+                                    </div>
+                            </a>
 
-                {% for book in books %}
-                    <div class="col-md-6 col-lg-2 mb-4">
-                        <div class="card listing-preview">
-                            <img class="card-img-top" src="{{ book.image_main.url }}"
-                                 alt="Book image">
-                            <div class="card-img-overlay">
-                            </div>
                             <div class="card-body">
                                 <div class="listing-heading text-center" style="height: 60px">
-                                    <b class="text-primary">{{ book.title|title }}</b>
+                                    {% if book.title|length > 24 %}
+                                        <b class="text-primary">{{ book.title|title|truncatechars:24 }}</b>
+                                    {% else %}
+                                        <b class="text-primary">{{ book.title|title }}</b>
+                                    {% endif %}
                                     <p>
-                                        <i class="fas fa-user-edit text-secondary"></i> {{ book.author|title }}
+                                        {% if book.author|length > 13 %}
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                            {{ book.author|title|truncatechars:13 }}
+                                        {% else %}
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                            {{ book.author|title }}
+                                        {% endif %}
                                     </p>
                                 </div>
                                 <hr>
@@ -91,41 +106,55 @@
                                    class="btn btn-primary btn-block"> Детальніше </a>
                             </div>
                         </div>
+                        </div>
+                    {% endfor %}
+                {% else %}
+                    <div class="col-md-6 col-lg-12 mb-4">
+                        <div class="card-body">
+                            <div class="listing-heading text-center">
+                                <h1 class="display-4 mb-4">
+                                    There are no results matching the query :(
+                                </h1>
+                                <img src="{% static 'img/cat.jpg' %}"
+                                     style="height: 193px; width: auto">
+                            </div>
+                        </div>
                     </div>
-                {% endfor %}
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    {% if books.has_other_pages %}
-                        <ul class="pagination">
-                            {% if books.has_previous %}
-                                <li class="page-item">
-                                    <a class="page-link"
-                                       href="?page={{ books.previous_page_number }}">&laquo;</a>
+                {% endif %}
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                {% if books.has_other_pages %}
+                    <ul class="pagination">
+                        {% if books.has_previous %}
+                            <li class="page-item">
+                                <a class="page-link"
+                                   href="?page={{ books.previous_page_number }}&category={{ category_selected }}">&laquo;</a>
+                            </li>
+                        {% endif %}
+                        {% for i in books.paginator.page_range %}
+                            {% if books.number == i %}
+
+                                <li class="page-item active"><a class="page-link">{{ i }}</a>
                                 </li>
+                            {% else %}
+                                <li class="page-item"><a
+                                        href="?page={{ i }}&category={{ category_selected }}"
+                                        class="page-link">{{ i }}</a></li>
                             {% endif %}
-                            {% for i in books.paginator.page_range %}
-                                {% if books.number == i %}
-
-                                    <li class="page-item active"><a class="page-link">{{ i }}</a>
-                                    </li>
-                                {% else %}
-                                    <li class="page-item"><a href="?page={{ i }}"
-                                                             class="page-link">{{ i }}</a></li>
-                                {% endif %}
-                            {% endfor %}
-                            {% if books.has_next %}
-                                <li class="page-item">
-                                    <a class="page-link"
-                                       href="?page={{ books.next_page_number }}">&raquo;</a>
-                                </li>
-                            {% endif %}
+                        {% endfor %}
+                        {% if books.has_next %}
+                            <li class="page-item">
+                                <a class="page-link"
+                                   href="?page={{ books.next_page_number }}&category={{ category_selected }}">&raquo;</a>
+                            </li>
+                        {% endif %}
 
 
-                        </ul>
-                    {% endif %}
-                </div>
+                    </ul>
+                {% endif %}
             </div>
+        </div>
         </div>
     </section>
 {% endblock %}

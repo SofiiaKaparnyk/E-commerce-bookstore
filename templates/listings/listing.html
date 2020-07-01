@@ -94,27 +94,29 @@
                   </span>
                         </li>
                         <li class="list-group-item text-secondary">
-                             Мова:
+                            Мова:
                             <span class="float-right">{{ book.language }}</span>
                         </li>
                         <li class="list-group-item text-secondary">
-                             Видавництво:
+                            Видавництво:
                             <span class="float-right">{{ book.publisher }} </span>
                         </li>
                         <li class="list-group-item text-secondary">
-                             Рік видання:
+                            Рік видання:
                             <span class="float-right">{{ book.year_of_publishing }} </span>
                         </li>
+                        {% if book.translator %}
+                            <li class="list-group-item text-secondary">
+                                Перекладач:
+                                <span class="float-right"> {{ book.translator }} </span>
+                            </li>
+                        {% endif %}
                         <li class="list-group-item text-secondary">
-                           Перекладач:
-                            <span class="float-right"> {{ book.translator }} </span>
-                        </li>
-                        <li class="list-group-item text-secondary">
-                           Стан книги (від 1 до 5):
+                            Стан книги (від 1 до 5):
                             <span class="float-right"> {{ book.rate }} </span>
                         </li>
                         <li class="list-group-item text-secondary">
-                             Опис:
+                            Опис:
                             <span class="float-right"> {{ book.description }} </span>
                         </li>
                     </ul>

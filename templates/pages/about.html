@@ -32,8 +32,10 @@
             <div class="row">
                 <div class="col-md-6">
                     <!-- Home Main Image -->
-                    <img src="{% static 'img/mommy/with_dog.jpg' %}" alt="Book image"
-                         class="img-main img-fluid mb-3">
+                    <a href="{% static 'img/mommy/with_dog.jpg' %}"
+                       data-lightbox="home-images">
+                        <img src="{% static 'img/mommy/with_dog.jpg' %}" alt="Book image"
+                             class="img-main img-fluid mb-3"></a>
                     <!-- Thumbnails -->
                     <div class="row mb-5 thumbs">
                         <div class="col-md-2">
@@ -85,11 +87,11 @@
                     <div>
                         <div class="card-body">
                             <h2> Ти Можеш Допомогти</h2>
-                            <p class="lead">Я пропоную усім, хто має можливість, купити книгу, таким
-                                чином зробивши дві добрі справи - зробити вклад у лікування моєї
-                                мами і допомогти книгам виконувати їх призначення. Ціну за книгу
-                                вибираєте ви, я ж у свою чергу віддам чи перешлю її вам, а усі кошти
-                                підуть на лікування <i class="fas fa-praying-hands"></i></p>
+                            <p class="lead"> Я прошу усіх, долучитися до двох важливих цілей
+                                - допомогти моїм мамулі у лікуванні, і дозволити книгам виконувати
+                                їх призначення. В якості подяки за ваш вклад, я подарую вам
+                                книжечку, яка припаде вам до душі. <i
+                                        class="fas fa-praying-hands"></i></p>
 
                             <p class="lead"><i> Трішки детальніше про дві важливі цілі
                                 сайту.</i><br>
@@ -105,12 +107,11 @@
                                 в неї зараз немає, а я не можу забезпечити усі потреби для
                                 лікування за кордоном. Що й послужило першою причиною створення
                                 сайту.</p><br>
-                            <p class="lead"><i>Друга ж ціль</i> - моя особиста, це продати книги,
-                                які я збирала декілька років, для великої цілі. Книги мають читатися
-                                і приносити користь, а не стояти на полицях.</p><br>
-                            <p class="lead"> Усі хто хочуть допомогти і не бажають книги, можуть
-                                знайти номера карток знизу сторінки <i
-                                        class="fas fa-arrow-alt-circle-down"></i></p>
+                            <p class="lead"><i>Друга ж ціль</i> - моя особиста, це подарувати книги,
+                                які я збирала декілька років, для більшої цілі. Книги мають читатися
+                                і приносити радість <i class="fas fa-book-reader"></i></p><br>
+                            <p class="lead"> Усі реквізити знаходяться знизу сторінки <i
+                                    class="fas fa-arrow-alt-circle-down"></i></p>
 
 
                         </div>
@@ -133,13 +134,15 @@
         <div class="container">
             <h2 class="text-center">Дані карти </h2>
             <div class="row text-center">
-                <div class="col-md-12">
-                    <hr>
-                    <p><i class="fas fa-credit-card"></i> 4444 4444 4444 4444<br>
-                        <i class="fas fa-user"> </i> Капарник Софія</p>
-                    <p><i class="fas fa-credit-card"></i> 4444 4444 4444 4444<br>
-                        <i class="fas fa-user"> </i> Омельянець Валентина</p>
-                </div>
+
+                    <div class="col-md-6"><hr>
+                        <p><i class="fas fa-credit-card"></i> 5375 4141 0532 1474 <br>
+                            <i class="fas fa-user"> </i> Капарник Софія</p>
+                    </div>
+                    <div class="col-md-6"><hr>
+                        <p><i class="fas fa-credit-card"></i> 5375 4141 0769 2161<br>
+                            <i class="fas fa-user"> </i> Омельянець Валентина</p>
+                    </div>
             </div>
         </div>
     </section>

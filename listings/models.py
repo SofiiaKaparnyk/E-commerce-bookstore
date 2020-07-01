@@ -1,7 +1,6 @@
 import datetime
 
 from django.db import models
-from languages.fields import LanguageField
 
 from owners.models import Owner
 
@@ -27,8 +26,13 @@ CURRENT_YEAR = datetime.date.today().year
 
 RATE_CHOICE = [(r, r) for r in range(1, 6)]
 COVER_CHOICES = [
-    ('Softcover', 'Softcover'),
-    ('Hardcover', 'Hardcover'),
+    ('М\'ягка', 'Softcover'),
+    ('Тверда', 'Hardcover'),
+]
+LANGUAGE_CHOICES = [
+    ('Українська', 'UA'),
+    ('Російська', 'RU'),
+    ('Англійська', 'EN'),
 ]
 
 
@@ -37,21 +41,20 @@ class Book(models.Model):
     updated = models.DateTimeField(auto_now=True)
     title = models.CharField(max_length=250)
     slug = models.SlugField(unique=True)
-    is_new = models.BooleanField(default=True)
+    # is_new = models.BooleanField(default=True)
     author = models.CharField(max_length=250)
-    category = models.ForeignKey('Category', on_delete=models.SET_NULL, related_name='books',
-                                 null=True)
-    price = models.DecimalField(max_digits=4, decimal_places=2)
+    category = models.ManyToManyField('Category')
+    # price = models.DecimalField(max_digits=4, decimal_places=2)
     description = models.TextField(null=True, blank=True)
-    owner = models.ForeignKey(Owner, on_delete=models.CASCADE, related_name='owner_books')
+    # owner = models.ForeignKey(Owner, on_delete=models.CASCADE, related_name='owner_books')
     publisher = models.CharField(max_length=250)
-    language = LanguageField(max_length=8)
+    language = models.CharField(max_length=20, choices=LANGUAGE_CHOICES)
     year_of_publishing = models.IntegerField(choices=YEAR_CHOICES, default=CURRENT_YEAR)
     number_of_pages = models.IntegerField()
-    translator = models.CharField(max_length=50)
+    translator = models.CharField(max_length=50, null=True, blank=True)
     book_cover = models.CharField(max_length=9, choices=COVER_CHOICES)
-    annotation = models.TextField(blank=True)
-    rate = models.IntegerField(choices=RATE_CHOICE, null=True, blank=True)
+    # annotation = models.TextField(blank=True)
+    rate = models.IntegerField(choices=RATE_CHOICE)
 
     image_main = models.ImageField(upload_to='photos/%Y/%m/%d/')
     image_1 = models.ImageField(upload_to='photos/%Y/%m/%d/', blank=True)

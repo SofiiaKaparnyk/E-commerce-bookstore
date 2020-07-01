@@ -6,10 +6,12 @@
         <div class="container text-center">
             <div class="home-search p-5">
                 <div class="overlay p-5">
-                    <h1 class="display-4 mb-4">
-                        Пошук Книг Став Зовсім Простим
+                    <h1 class="display-4 mb-4"><a href="{% url 'about' %}" style="color: white">Познайомся
+                        з нашою
+                        ціллю <i class="fas fa-arrow-alt-circle-right"></i></a>
+
                     </h1>
-                    <p class="lead"> Знайди те, що припаде до душі <i class="fas fa-heart"></i></p>
+                    <p class="lead">Пошук Книг Став Зовсім Простим</p>
                     <div class="search">
                         <form action="{% url 'search' %}">
                             <!-- Form Row 1 -->
@@ -52,9 +54,19 @@
                             </div>
                             <div class="card-body">
                                 <div class="listing-heading text-center" style="height: 60px">
-                                    <b class="text-primary">{{ book.title|title }}</b>
+                                    {% if book.title|length > 24 %}
+                                        <b class="text-primary">{{ book.title|title|truncatechars:24 }}</b>
+                                    {% else %}
+                                        <b class="text-primary">{{ book.title|title }}</b>
+                                    {% endif %}
                                     <p>
-                                        <i class="fas fa-user-edit text-secondary"></i> {{ book.author|title }}
+                                        {% if book.author|length > 13 %}
+                                                <i class="fas fa-user-edit text-secondary"></i>
+                                                {{ book.author|title|truncatechars:13 }}
+                                            {% else %}
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                            {{ book.author|title }}
+                                        {% endif %}
                                     </p>
                                 </div>
                                 <hr>
@@ -71,7 +83,7 @@
     <section id="services" class="py-5 bg-secondary text-white">
         <div class="container">
             <div class="row text-center">
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <i class="fas fa-comment fa-4x mr-4"></i>
                     <hr>
                     <h3>Контакти </h3>
@@ -87,14 +99,20 @@
                             <i class="fab fa-instagram" style="color: white"></i>
                         </a></p>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-3">
+                    <i class="fas fa-credit-card fa-4x mr-4"></i>
+                    <hr>
+                    <h3> Реквізити</h3>
+                    <p> 5375 4141 0532 1474 <i class="fas fa-hand-holding-heart"></i></p>
+                </div>
+                <div class="col-md-3">
                     <i class="fas fa-book-reader fa-4x mr-4"></i>
                     <hr>
                     <h3> Люди</h3>
-                    <p> Наповни сві день добром <i class="fas fa-hand-holding-heart"></i></p>
+                    <p> Наповни свій день добром <i class="fas fa-hand-holding-heart"></i></p>
                 </div>
-                <div class="col-md-4">
-                    <i class="fas fa-book-reader fa-4x mr-4"></i>
+                <div class="col-md-3">
+                    <i class="fas fa-book fa-4x mr-4"></i>
                     <hr>
                     <h3> Книги</h3>
                     <p> Ти заслужив гарну книгу <i class="fas fa-smile-wink"></i></p>
