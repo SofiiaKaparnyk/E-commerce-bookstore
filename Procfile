@@ -1,2 +1,2 @@
 release: python manage.py migrate
-web: gunicorn ecommerce.wsgi --log-file -
+web: gunicorn ecommerce.wsgipip install django-heroku
