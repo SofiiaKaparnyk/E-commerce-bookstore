@@ -38,7 +38,6 @@ INSTALLED_APPS = [
     # apps
     'pages.apps.PagesConfig',
     'listings.apps.ListingsConfig',
-    'owners.apps.OwnersConfig',
     'accounts.apps.AccountsConfig',
     # third part apps
     'languages',
