@@ -68,7 +68,7 @@
                 <!-- Listing 1 -->
                 {% if books|length > 0 %}
                     {% for book in books %}
-                        <div class="col-md-6 col-lg-2 mb-4 col-sm-4">
+                        <div class="col-md-4 col-lg-2 mb-4 col-sm-4">
                             <a href="{% url 'listing' book.id %}"
                                class=" btn-primary btn-block">
                                 <div class="card listing-preview">
