@@ -1,1 +1,3342 @@
-[{"model": "contenttypes.contenttype", "pk": 1, "fields": {"app_label": "admin", "model": "logentry"}}, {"model": "contenttypes.contenttype", "pk": 2, "fields": {"app_label": "auth", "model": "permission"}}, {"model": "contenttypes.contenttype", "pk": 3, "fields": {"app_label": "auth", "model": "group"}}, {"model": "contenttypes.contenttype", "pk": 4, "fields": {"app_label": "auth", "model": "user"}}, {"model": "contenttypes.contenttype", "pk": 5, "fields": {"app_label": "contenttypes", "model": "contenttype"}}, {"model": "contenttypes.contenttype", "pk": 6, "fields": {"app_label": "sessions", "model": "session"}}, {"model": "contenttypes.contenttype", "pk": 7, "fields": {"app_label": "listings", "model": "category"}}, {"model": "contenttypes.contenttype", "pk": 8, "fields": {"app_label": "listings", "model": "book"}}, {"model": "contenttypes.contenttype", "pk": 9, "fields": {"app_label": "owners", "model": "owner"}}, {"model": "sessions.session", "pk": "2cmslasm5snzf6cfept35uwg3nhe5s90", "fields": {"session_data": "MzQxN2ZlNzg4MTMwNWYwZGM3NzEyOTVmODkxYjgzNDNjNjFlMmE5Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI4YTk0MDM1NTJjNmJlMzA5NDI0MGVmMjUyOGQ4YTA2MTA0ODc4Mzg2In0=", "expire_date": "2020-07-15T17:43:02.159Z"}}, {"model": "sessions.session", "pk": "2pexkdfu2bijfy0veakby8ohr75ld4ta", "fields": {"session_data": "MzQxN2ZlNzg4MTMwNWYwZGM3NzEyOTVmODkxYjgzNDNjNjFlMmE5Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI4YTk0MDM1NTJjNmJlMzA5NDI0MGVmMjUyOGQ4YTA2MTA0ODc4Mzg2In0=", "expire_date": "2020-06-16T08:03:15.727Z"}}, {"model": "sessions.session", "pk": "96iioodkpisk8knc9k49e741ds903n03", "fields": {"session_data": "MzQxN2ZlNzg4MTMwNWYwZGM3NzEyOTVmODkxYjgzNDNjNjFlMmE5Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI4YTk0MDM1NTJjNmJlMzA5NDI0MGVmMjUyOGQ4YTA2MTA0ODc4Mzg2In0=", "expire_date": "2020-06-16T09:47:30.556Z"}}, {"model": "sessions.session", "pk": "kt9x8sh94t7igkiczfcna1mehuag5rje", "fields": {"session_data": "MzQxN2ZlNzg4MTMwNWYwZGM3NzEyOTVmODkxYjgzNDNjNjFlMmE5Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI4YTk0MDM1NTJjNmJlMzA5NDI0MGVmMjUyOGQ4YTA2MTA0ODc4Mzg2In0=", "expire_date": "2020-06-18T12:57:43.684Z"}}, {"model": "sessions.session", "pk": "zu0prpp91ti3n9lith9bfcqj4fc3mdbo", "fields": {"session_data": "MzQxN2ZlNzg4MTMwNWYwZGM3NzEyOTVmODkxYjgzNDNjNjFlMmE5Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI4YTk0MDM1NTJjNmJlMzA5NDI0MGVmMjUyOGQ4YTA2MTA0ODc4Mzg2In0=", "expire_date": "2020-07-10T14:08:25.245Z"}}, {"model": "listings.category", "pk": 1, "fields": {"title": "\u0420\u043e\u043c\u0430\u043d", "slug": "roman"}}, {"model": "listings.category", "pk": 2, "fields": {"title": "\u0406\u0441\u0442\u043e\u0440\u0438\u0447\u043d\u0438\u0439", "slug": "istorichnij"}}, {"model": "listings.category", "pk": 3, "fields": {"title": "\u041b\u044e\u0431\u043e\u0432\u043d\u0438\u0439 \u0440\u043e\u043c\u0430\u043d", "slug": "lyubovnij-roman"}}, {"model": "listings.category", "pk": 4, "fields": {"title": "\u041c\u0456\u0441\u0442\u0438\u0447\u043d\u0438\u0439 \u0440\u043e\u043c\u0430\u043d", "slug": "mistichnij-roman"}}, {"model": "listings.category", "pk": 5, "fields": {"title": "\u041d\u0430\u0443\u043a\u043e\u0432\u043e-\u0444\u0430\u043d\u0442\u0430\u0441\u0442\u0438\u0447\u043d\u0438\u0439", "slug": "naukovo-fantastichnij"}}, {"model": "listings.category", "pk": 6, "fields": {"title": "\u0420\u043e\u043c\u0430\u043d\u0442\u0438\u0447\u043d\u043e-\u043f\u0440\u0438\u0433\u043e\u0434\u043d\u0438\u0446\u044c\u043a\u0438\u0439", "slug": "romantichno-prigodnickij"}}, {"model": "listings.category", "pk": 7, "fields": {"title": "\u041f\u0441\u0438\u0445\u043e\u0442\u0435\u0440\u0430\u043f\u0435\u0432\u0442\u0438\u0447\u043d\u0456 \u043e\u043f\u043e\u0432\u0456\u0434\u0456", "slug": "psihoterapevtichni-opovidi"}}, {"model": "listings.category", "pk": 8, "fields": {"title": "\u041a\u043b\u0430\u0441\u0438\u043a\u0430", "slug": "klasika"}}, {"model": "listings.category", "pk": 9, "fields": {"title": "\u041b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430 \u0434\u043b\u044f \u0441\u0430\u043c\u043e\u0440\u043e\u0437\u0432\u0438\u0442\u043a\u0443", "slug": "literatura-dlya-samorozvitku"}}, {"model": "listings.category", "pk": 10, "fields": {"title": "\u0421\u0430\u0442\u0438\u0440\u0430", "slug": "satira"}}, {"model": "listings.category", "pk": 11, "fields": {"title": "\u0425\u0443\u0434\u043e\u0436\u043d\u044f \u043b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430", "slug": "hudozhnya-literatura"}}, {"model": "listings.category", "pk": 12, "fields": {"title": "\u0415\u0440\u043e\u0442\u0438\u043a\u0430", "slug": "erotika"}}, {"model": "listings.category", "pk": 13, "fields": {"title": "\u0414\u0440\u0430\u043c\u0430", "slug": "drama"}}, {"model": "listings.category", "pk": 14, "fields": {"title": "\u0411\u0456\u0437\u043d\u0435\u0441 \u043b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430", "slug": "biznes-literatura"}}, {"model": "listings.category", "pk": 15, "fields": {"title": "\u0422\u0440\u0430\u0433\u0435\u0434\u0456\u044f", "slug": "tragediya"}}, {"model": "listings.category", "pk": 16, "fields": {"title": "\u0422\u0440\u0438\u043b\u0435\u0440", "slug": "triler"}}, {"model": "listings.category", "pk": 17, "fields": {"title": "\u0414\u0435\u0442\u0435\u043a\u0442\u0438\u0432", "slug": "detektiv"}}, {"model": "listings.category", "pk": 18, "fields": {"title": "\u0411\u0456\u043e\u0433\u0440\u0430\u0444\u0456\u044f", "slug": "biografiya"}}, {"model": "listings.category", "pk": 19, "fields": {"title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u043b\u044c\u043d\u0438\u0439 \u0434\u0435\u0442\u0435\u043a\u0442\u0438\u0432", "slug": "dokumentalnij-detektiv"}}, {"model": "listings.category", "pk": 20, "fields": {"title": "\u0422\u0435\u0445\u043d\u043e\u0442\u0440\u0438\u043b\u0435\u0440", "slug": "tehnotriler"}}, {"model": "listings.category", "pk": 21, "fields": {"title": "\u0412\u0456\u0439\u0441\u044c\u043a\u043e\u0432\u0438\u0439", "slug": "vijskovij"}}, {"model": "listings.category", "pk": 22, "fields": {"title": "\u0424\u0435\u043d\u0442\u0435\u0437\u0456", "slug": "fentezi"}}, {"model": "listings.book", "pk": 1, "fields": {"created": "2020-07-01T07:59:20.097Z", "updated": "2020-07-01T08:02:24.255Z", "title": "\u041c\u0456\u0441\u0442\u043e \u0414\u0456\u0432\u0447\u0430\u0442", "slug": "misto-divchat", "author": "\u0415\u043b\u0456\u0437\u0430\u0431\u0435\u0442 \u0490\u0456\u043b\u0431\u0435\u0440\u0442", "description": "\u041a\u043d\u0438\u0433\u0430 \u043d\u0435\u0449\u043e\u0434\u0430\u0432\u043d\u043e \u043a\u0443\u043f\u043b\u0435\u043d\u0430, \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456.", "publisher": "\u0412\u0438\u0434\u0430\u0432\u043d\u0438\u0446\u0442\u0432\u043e \u0441\u0442\u0430\u0440\u043e\u0433\u043e \u043b\u0435\u0432\u0430", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2020, "number_of_pages": 534, "translator": "\u0413\u0430\u043d\u043d\u0430 \u041b\u0435\u043f\u0456\u0432", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/Misto-divchat.jpg", "category": [2, 3, 1]}}, {"model": "listings.book", "pk": 2, "fields": {"created": "2020-07-01T08:07:32.008Z", "updated": "2020-07-01T08:07:42.373Z", "title": "\u041d\u0435 \u043e\u0437\u0438\u0440\u0430\u0439\u0441\u044f \u0456 \u043c\u043e\u0432\u0447\u0438", "slug": "ne-oshirajsya-i-movchi", "author": "\u041c\u0430\u043a\u0441 \u041a\u0456\u0434\u0440\u0443\u043a", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2017, "number_of_pages": 506, "translator": null, "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/dont_look_back.jpg", "category": [4]}}, {"model": "listings.book", "pk": 3, "fields": {"created": "2020-07-01T08:12:04.762Z", "updated": "2020-07-01T08:12:04.762Z", "title": "\u0413\u043e\u0441\u0442\u044c\u044f", "slug": "gostya", "author": "\u0421\u0442\u0435\u0444\u0430\u043d\u0438 \u041c\u0430\u0439\u0435\u0440", "description": "\u0423 \u043a\u043d\u0438\u0433\u0438 \u0434\u0443\u0436\u0435 \u0437\u0430\u0442\u0435\u0440\u0442\u0430 \u043e\u0431\u043a\u043b\u0430\u0434\u0438\u043d\u043a\u0430, \u0432\u0456\u0434 \u0441\u0442\u0430\u0440\u043e\u0441\u0442\u0456 \u0441\u0442\u043e\u0440\u0456\u043d\u043a\u0438 \u0432\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456 \u0442\u0440\u0456\u0448\u043a\u0438 \u043f\u043e\u0436\u043e\u0432\u0442\u0456\u043b\u0438", "publisher": "\u041c\u043e\u0441\u043a\u0432\u0430", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2009, "number_of_pages": 668, "translator": "\u0428\u043a\u043e\u043b\u0430 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0430 \u0411\u0430\u043a\u0430\u043d\u043e\u0432\u0430", "book_cover": "\u041c'\u044f\u0433\u043a\u0430", "rate": 3, "image_main": "photos/2020/07/01/\u0433\u043e\u0441\u0442\u044c\u044f.jpg", "category": [5, 6]}}, {"model": "listings.book", "pk": 4, "fields": {"created": "2020-07-01T08:30:58.862Z", "updated": "2020-07-01T08:30:58.862Z", "title": "\u0411\u0440\u0435\u0445\u0443\u043d\u0438 \u043d\u0430 \u043a\u0443\u0448\u0435\u0442\u0446\u0456", "slug": "brehuni-na-kushetci", "author": "\u0406\u0440\u0432\u0456\u043d \u042f\u043b\u043e\u043c", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "Hemiro Ltd.", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2018, "number_of_pages": 509, "translator": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/48294_78710_k.jpg", "category": [7]}}, {"model": "listings.book", "pk": 5, "fields": {"created": "2020-07-01T10:05:29.908Z", "updated": "2020-07-01T10:05:29.909Z", "title": "\u041c\u0430\u0441\u0442\u0435\u0440 \u0438 \u041c\u0430\u0440\u0433\u0430\u0440\u0438\u0442\u0430", "slug": "master-i-margarita", "author": "\u041c\u0438\u0445\u0430\u0438\u043b \u0411\u0443\u043b\u0433\u0430\u043a\u043e\u0432", "description": "\u0423 \u043a\u043d\u0438\u0433\u0438 \u0442\u0440\u0456\u0448\u043a\u0438 \u043f\u043e\u0448\u0430\u0440\u043f\u0430\u043d\u0430 \u043e\u0431\u043a\u043b\u0430\u0434\u0438\u043d\u043a\u0430", "publisher": "\u041c\u043e\u0441\u043a\u0432\u0430", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2011, "number_of_pages": 446, "translator": null, "book_cover": "\u041c'\u044f\u0433\u043a\u0430", "rate": 3, "image_main": "photos/2020/07/01/\u043c\u0430\u0441\u0442\u0435\u0440.jpeg", "category": [8]}}, {"model": "listings.book", "pk": 6, "fields": {"created": "2020-07-01T10:09:13.925Z", "updated": "2020-07-01T10:09:13.925Z", "title": "\u0411\u043e\u0433\u0430\u0442\u044b\u0439 \u041f\u0430\u043f\u0430, \u0411\u0435\u0434\u043d\u044b\u0439 \u041f\u0430\u043f\u0430", "slug": "bogatyj-papa-bednyj-papa", "author": "\u0420\u043e\u0431\u0435\u0440\u0442 \u0422. \u041a\u0438\u043e\u0441\u0430\u043a\u0438, \u0428\u0430\u0440\u043e\u043d \u041b. \u041b\u0435\u0442\u0447\u0435\u0440", "description": "\u0423 \u043a\u043d\u0438\u0433\u0438 \u0437\u043e\u0432\u0441\u0456\u043c \u0442\u0440\u0456\u0448\u043a\u0438 \u043f\u043e\u0442\u0435\u0440\u043b\u0430\u0441\u044c \u043e\u0431\u043a\u043b\u0430\u0434\u0438\u043d\u043a\u0430", "publisher": "\u0421\u0432\u0456\u0442", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2012, "number_of_pages": 192, "translator": null, "book_cover": "\u041c'\u044f\u0433\u043a\u0430", "rate": 4, "image_main": "photos/2020/07/01/2411485573_w640_h640_2411485573.jpg", "category": [9]}}, {"model": "listings.book", "pk": 7, "fields": {"created": "2020-07-01T10:13:36.297Z", "updated": "2020-07-01T10:13:36.297Z", "title": "\u042f\u0440\u043c\u0430\u0440\u043a\u0430 \u0442\u0449\u0435\u0441\u043b\u0430\u0432\u0438\u044f", "slug": "yarmarka-tsheslaviya", "author": "\u0423\u0438\u043b\u044c\u044f\u043c \u0422\u0435\u043a\u043a\u0435\u0440\u0435\u0439", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456 (\u043c\u0430\u044e \u043b\u0438\u0448\u0435 2 \u0447\u0430\u0441\u0442\u0438\u043d\u0443), 1 \u0447\u0438\u0442\u0430\u043b\u0430 \u0432 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u043e\u043c\u0443 \u0432\u0438\u0433\u043b\u044f\u0434\u0456", "publisher": "\u041f\u0440\u0430\u0432\u0434\u0430", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 1990, "number_of_pages": 414, "translator": "\u041c. \u0414\u044c\u044f\u043a\u043e\u043d\u043e\u0432\u0430", "book_cover": "\u041c'\u044f\u0433\u043a\u0430", "rate": 5, "image_main": "photos/2020/07/01/1003216432.jpg", "category": [8, 10]}}, {"model": "listings.book", "pk": 8, "fields": {"created": "2020-07-01T10:15:55.781Z", "updated": "2020-07-01T10:15:55.781Z", "title": "\u0411\u0440\u0438\u0434\u0430", "slug": "brida", "author": "\u041f\u0430\u0443\u043b\u043e \u041a\u043e\u0435\u043b\u044c\u0439\u043e", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2015, "number_of_pages": 284, "translator": "\u0412\u0456\u043a\u0442\u043e\u0440 \u0428\u043e\u0432\u043a\u0443\u043d", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0431\u0440\u0438\u0434\u0430.jpg", "category": [1, 11]}}, {"model": "listings.book", "pk": 9, "fields": {"created": "2020-07-01T10:18:22.204Z", "updated": "2020-07-01T10:18:22.204Z", "title": "9 1/2 \u0442\u0438\u0436\u043d\u0456\u0432", "slug": "9-12-tizhniv", "author": "\u0415\u043b\u0456\u0437\u0430\u0431\u0435\u0442 \u041c\u0430\u043a-\u041d\u0456\u043b\u043b", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2020, "number_of_pages": 220, "translator": "\u041c\u0430\u0440\u0456\u044f \u0428\u0430\u043a\u0443\u0440\u0430", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0442\u0438\u0436\u043d\u0456\u0432.jpg", "category": [13, 12, 1]}}, {"model": "listings.book", "pk": 10, "fields": {"created": "2020-07-01T10:25:18.094Z", "updated": "2020-07-01T10:25:18.094Z", "title": "\u041f\u0440\u0438\u043d\u0446\u0438\u043f 80/20", "slug": "princip-8020", "author": "\u0420\u0456\u0447\u0430\u0440\u0434 \u041a\u043e\u0445", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u041c-\u0411\u0423\u041a\u0421", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2017, "number_of_pages": 335, "translator": "\u041d. \u041b\u0430\u0432\u0441\u044c\u043a\u0430", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/80.jpeg", "category": [9]}}, {"model": "listings.book", "pk": 11, "fields": {"created": "2020-07-01T10:28:42.555Z", "updated": "2020-07-01T10:28:42.555Z", "title": "\u0414\u0436\u0435\u0439\u043d \u042d\u0439\u0440", "slug": "dzhejn-ejr", "author": "\u0428\u0430\u0440\u043b\u043e\u0442\u0442\u044f \u0411\u0440\u043e\u043d\u0442\u0435", "description": "\u041a\u043d\u0438\u0433\u0430 \u0441\u0442\u0430\u0440\u0430, \u0432\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456 \u043f\u0456\u0434\u043a\u043b\u0435\u0454\u043d\u0438\u0439 \u043a\u043e\u0440\u0435\u0448\u043e\u043a, \u0441\u0442\u043e\u0440\u0456\u043d\u043a\u0438 \u0442\u0440\u0456\u0448\u043a\u0438 \u043f\u043e\u0434\u043e\u0432\u043a\u043b\u0438, \u043f\u0440\u043e\u0442\u0435 \u0432 \u0437\u0430\u0433\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0432 \u0433\u0430\u0440\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041f\u0440\u0430\u0432\u0434\u0430", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 1988, "number_of_pages": 507, "translator": "\u0412. \u0421\u0442\u0430\u043d\u0435\u0432\u0438\u0447", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 4, "image_main": "photos/2020/07/01/\u0431\u0440\u043e\u043d\u0442\u0435.jpg", "category": [1]}}, {"model": "listings.book", "pk": 12, "fields": {"created": "2020-07-01T10:31:52.627Z", "updated": "2020-07-01T10:31:52.627Z", "title": "\u0413\u0440\u043e\u0437\u043e\u0432\u043e\u0439 \u043f\u0435\u0440\u0435\u0432\u0430\u043b", "slug": "grozovoj-pereval", "author": "\u042d\u043c\u0438\u043b\u0438 \u0411\u0440\u043e\u043d\u0442\u0435", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0433\u0430\u0440\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u042d\u043a\u0441\u043c\u043e", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2009, "number_of_pages": 477, "translator": "\u041d.\u0412\u043e\u043b\u044c\u043f\u0438\u043d", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0431\u0440\u043e\u043d\u0442\u04352.jpg", "category": [3, 1, 15]}}, {"model": "listings.book", "pk": 13, "fields": {"created": "2020-07-01T10:36:01.069Z", "updated": "2020-07-01T10:36:01.069Z", "title": "\u041d\u0435\u0437\u0434\u043e\u043b\u0430\u043d\u043d\u0438\u0439", "slug": "nezdolannij", "author": "\u041b\u0456 \u0427\u0430\u0439\u043b\u0434", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2016, "number_of_pages": 381, "translator": "\u041e\u043a\u0441\u0430\u043d\u0430 \u041f\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u044c\u043a\u0430", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u043d\u0435\u0437\u0434\u043e\u043b\u0430\u043d\u0438\u043d\u0438\u0439.jpg", "category": [17, 1, 16, 11]}}, {"model": "listings.book", "pk": 14, "fields": {"created": "2020-07-01T10:41:28.063Z", "updated": "2020-07-01T10:41:28.063Z", "title": "\u0414\u0438\u044f\u0432\u043e\u043b \u0443 \u0431\u0456\u043b\u043e\u043c\u0443 \u043c\u0456\u0441\u0442\u0456", "slug": "diyavol-u-bilomu-misti", "author": "\u0415\u0440\u0456\u043a \u041b\u0430\u0440\u0441\u043e\u043d", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "Hemiro Ltd.", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2016, "number_of_pages": 526, "translator": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0434\u0438\u044f\u0432\u043e\u043b.jpg", "category": [18, 19, 2, 1]}}, {"model": "listings.book", "pk": 15, "fields": {"created": "2020-07-01T10:45:18.246Z", "updated": "2020-07-01T10:45:18.246Z", "title": "\u0412\u0435\u0434\u044c\u043c\u0430 \u0441 \u041b\u0430\u0439\u043c-\u0441\u0442\u0440\u0438\u0442", "slug": "vedma-s-lajm-strit", "author": "\u0414\u044d\u0432\u0438\u0434 \u0414\u0436\u0430\u044d\u0440", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2016, "number_of_pages": 573, "translator": "\u041e\u043b\u0435\u0441\u044f \u041c\u0430\u043b\u0430", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0432\u0435\u0434\u044c\u043c\u0430.jpg", "category": [17, 2, 1]}}, {"model": "listings.book", "pk": 16, "fields": {"created": "2020-07-01T10:51:21.372Z", "updated": "2020-07-01T10:51:21.372Z", "title": "\u0421\u0438\u0440\u0456\u0442\u0441\u044c\u043a\u0438\u0439 \u043f\u043e\u0442\u044f\u0433", "slug": "siritskij-potyag", "author": "\u041a\u0440\u0456\u0441\u0442\u0456\u043d\u0430 \u0411\u0435\u0439\u043a\u0435\u0440 \u041a\u043b\u0430\u0439\u043d", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2016, "number_of_pages": 298, "translator": "\u041e\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u0430 \u0413\u043e\u0440\u0434\u0438\u043d\u0447\u0443\u043a", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u043f\u043e\u0442\u044f\u0433.jpg", "category": [1]}}, {"model": "listings.book", "pk": 17, "fields": {"created": "2020-07-01T11:16:00.564Z", "updated": "2020-07-01T11:16:00.564Z", "title": "\u0420\u0435\u0431\u0435\u043a\u043a\u0430", "slug": "rebekka", "author": "\u0414\u0430\u0444\u043d\u0430 \u0414\u044e\u043c\u043e\u0440\u044c\u0435", "description": "\u041a\u043d\u0438\u0433\u0430 \u0441\u0442\u0430\u0440\u0430, \u043f\u0440\u043e\u0442\u0435 \u0432 \u0434\u0443\u0436\u0435 \u0430\u0433\u0440\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u0420\u0438\u044f", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 1992, "number_of_pages": 397, "translator": "\u0413. \u041e\u0441\u0442\u0440\u043e\u0432\u0441\u044c\u043a\u0438\u0439", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 4, "image_main": "photos/2020/07/01/httrf.jpeg", "category": [17, 3]}}, {"model": "listings.book", "pk": 18, "fields": {"created": "2020-07-01T11:21:35.373Z", "updated": "2020-07-01T11:21:35.373Z", "title": "\u041a\u043d\u0438\u0433\u0430 \u0414\u0437\u0435\u0440\u043a\u0430\u043b", "slug": "kniga-dzerkal", "author": "\u042e.\u041e.\u041a\u0456\u0440\u043e\u0432\u0456\u0446", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2017, "number_of_pages": 250, "translator": "\u041d\u0430\u0434\u0456\u044f \u0425\u0430\u0454\u0446\u044c\u043a\u0430", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0434\u0437\u0435\u0440\u043a\u0430\u043b.jpg", "category": [17, 11]}}, {"model": "listings.book", "pk": 19, "fields": {"created": "2020-07-01T11:25:11.105Z", "updated": "2020-07-01T11:25:11.105Z", "title": "\u0411\u043e\u0442. \u0490\u0443\u0430\u044f\u043a\u0456\u043b\u044c\u0441\u044c\u043a\u0438\u0439 \u043f\u0430\u0440\u0430\u0434\u043e\u043a\u0441", "slug": "bot-guayakilskij-paradoks", "author": "\u041c\u0430\u043a\u0441 \u041a\u0456\u0434\u0440\u0443\u043a", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2015, "number_of_pages": 506, "translator": null, "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u043f\u0430\u0440\u0430\u0434\u043e\u043a\u0441.jpg", "category": [20]}}, {"model": "listings.book", "pk": 20, "fields": {"created": "2020-07-01T11:36:15.311Z", "updated": "2020-07-01T11:36:15.311Z", "title": "\u041f\u0440\u0438\u0441\u043b\u0443\u0433\u0430", "slug": "prisluga", "author": "\u041a\u0435\u0442\u0440\u0456\u043d \u0421\u0442\u043e\u043a\u0435\u0442\u0442", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2017, "number_of_pages": 492, "translator": "\u041d\u0430\u0434\u0456\u044f \u0425\u0430\u0454\u0446\u044c\u043a\u0430", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/orig.jpeg", "category": [1]}}, {"model": "listings.book", "pk": 21, "fields": {"created": "2020-07-01T11:40:36.602Z", "updated": "2020-07-01T11:40:36.602Z", "title": "\u0414\u0456\u043c \u0434\u0438\u0432\u043d\u0438\u0445 \u0434\u0456\u0442\u0435\u0439", "slug": "dim-divnih-ditej", "author": "\u0420\u0435\u043d\u0441\u043e\u043c \u0420\u0456\u0491\u0491\u0437", "description": "\u041c\u0430\u044e \u0432\u0441\u044e \u0441\u0435\u0440\u0456\u044e \u0456\u0437 \u0442\u0440\u044c\u043e\u0445 \u043a\u043d\u0438\u0436\u043e\u043a, \u0432\u043e\u043d\u0438 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2012, "number_of_pages": 429, "translator": "\u0412\u043e\u043b\u043e\u0434\u0438\u043c\u0438\u0440 \u0413\u043e\u0440\u0431\u0430\u0442\u044c\u043a\u043e", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0434\u0456\u043c.jpg", "category": [1, 11]}}, {"model": "listings.book", "pk": 22, "fields": {"created": "2020-07-01T11:42:03.340Z", "updated": "2020-07-01T11:42:03.340Z", "title": "\u041c\u0456\u0441\u0442\u043e \u043f\u043e\u0440\u043e\u0436\u043d\u0456\u0445", "slug": "misto-porozhnih", "author": "\u0420\u0435\u043d\u0441\u043e\u043c \u0420\u0456\u0491\u0491\u0437", "description": "\u041c\u0430\u044e \u0432\u0441\u044e \u0441\u0435\u0440\u0456\u044e \u0456\u0437 \u0442\u0440\u044c\u043e\u0445 \u043a\u043d\u0438\u0436\u043e\u043a, \u0432\u043e\u043d\u0438 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2014, "number_of_pages": 459, "translator": "\u041e\u043b\u0435\u043d\u0430 \u041b\u044e\u0431\u0435\u043d\u043a\u043e", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u043c\u0456\u0441\u0442\u043e.jpeg", "category": [1, 11]}}, {"model": "listings.book", "pk": 23, "fields": {"created": "2020-07-01T11:42:58.570Z", "updated": "2020-07-01T11:42:58.570Z", "title": "\u0411\u0456\u0431\u043b\u0456\u043e\u0442\u0435\u043a\u0430 \u0434\u0443\u0448", "slug": "biblioteka-dush", "author": "\u0420\u0435\u043d\u0441\u043e\u043c \u0420\u0456\u0491\u0491\u0437", "description": "\u041c\u0430\u044e \u0432\u0441\u044e \u0441\u0435\u0440\u0456\u044e \u0456\u0437 \u0442\u0440\u044c\u043e\u0445 \u043a\u043d\u0438\u0436\u043e\u043a, \u0432\u043e\u043d\u0438 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2016, "number_of_pages": 476, "translator": "\u041e\u043b\u0435\u043d\u0430 \u041b\u044e\u0431\u0435\u043d\u043a\u043e", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0431\u0456\u0431\u043b\u0456\u043e\u0442\u0435\u043a\u0430.jpg", "category": [1, 11]}}, {"model": "listings.book", "pk": 24, "fields": {"created": "2020-07-01T11:46:43.479Z", "updated": "2020-07-01T11:49:58.297Z", "title": "\u0414\u043d\u0435\u0432\u043d\u0438\u043a \u043c\u0430\u0433\u0430", "slug": "dnevnik-maga", "author": "\u041f\u0430\u0443\u043b\u043e \u041a\u043e\u0435\u043b\u044c\u0439\u043e", "description": "\u041a\u043d\u0438\u0433\u0430 \u043c\u0430\u0454 \u0434\u0435\u043a\u0456\u043b\u044c\u043a\u0430 \u043f\u043e\u0437\u043d\u0430\u0447\u0435\u043d\u044c \u0432\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456, \u0434\u0435\u044f\u043a\u0456 \u0441\u0442\u043e\u0440\u0456\u043d\u043a\u0438 \u0432\u0456\u0434\u043a\u043b\u0435\u0457\u043b\u0438\u0441\u044c \u0432\u0456\u0434 \u043a\u043e\u0440\u0435\u0448\u043a\u0430, \u043f\u0440\u043e\u0442\u0435 \u043a\u043d\u0438\u0433\u0430 \u0432 \u0433\u0430\u0440\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456, \u0437\u0437\u043e\u0432\u043d\u0456 \u044f\u043a \u043d\u043e\u0432\u0430", "publisher": "\u0410\u0441\u0442\u0440\u0435\u043b\u044c", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2011, "number_of_pages": 287, "translator": "\u0410. \u0411\u043e\u0433\u0434\u0430\u043d\u043e\u0432\u0441\u044c\u043a\u0438\u0439", "book_cover": "\u041c'\u044f\u0433\u043a\u0430", "rate": 3, "image_main": "photos/2020/07/01/\u0434\u043d\u0435\u0432\u043d\u0438\u043a.jpg", "category": [1, 11]}}, {"model": "listings.book", "pk": 25, "fields": {"created": "2020-07-01T11:49:47.675Z", "updated": "2020-07-01T11:49:47.675Z", "title": "\u041f\u043e\u0431\u0435\u0434\u0438\u0442\u0435\u043b\u044c \u043e\u0441\u0442\u0430\u0435\u0442\u0441\u044f \u043e\u0434\u0438\u043d", "slug": "pobeditel-ostaetsya-odin", "author": "\u041f\u0430\u0443\u043b\u043e \u041a\u043e\u0435\u043b\u044c\u0439\u043e", "description": "\u0414\u0435\u044f\u043a\u0456 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u043a\u043d\u0438\u0433\u0438 \u0432\u0456\u0434\u043a\u043b\u0435\u0457\u043b\u0438\u0441\u044c \u0432\u0456\u0434 \u043a\u043e\u0440\u0435\u0448\u043a\u0443, \u043a\u043d\u0438\u0433\u0430 \u043d\u0435 \u0437\u0430\u0442\u0435\u0440\u0442\u0430 \u0456 \u0431\u0435\u0437 \u043f\u043e\u0437\u043d\u0430\u0447\u043e\u043a", "publisher": "\u0410\u0441\u0442\u0440\u0435\u043b\u044c", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2011, "number_of_pages": 443, "translator": "\u0410. \u0411\u043e\u0433\u0434\u0430\u043d\u043e\u0432\u0441\u044c\u043a\u0438\u0439", "book_cover": "\u041c'\u044f\u0433\u043a\u0430", "rate": 2, "image_main": "photos/2020/07/01/\u043f\u043e\u0431\u0435\u0434\u0438\u0442\u0435\u043b\u044c.jpg", "category": [1, 11]}}, {"model": "listings.book", "pk": 26, "fields": {"created": "2020-07-01T11:53:01.530Z", "updated": "2020-07-01T11:53:01.530Z", "title": "\u0410\u043b\u0445\u0438\u043c\u0438\u043a", "slug": "alhimik", "author": "\u041f\u0430\u0443\u043b\u043e \u041a\u043e\u0435\u043b\u044c\u0439\u043e", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0433\u0430\u0440\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456, \u0454 \u0434\u0435\u043a\u0456\u043b\u044c\u043a\u0430 \u043f\u043e\u0437\u043d\u0430\u0447\u043e\u043a \u0432\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456", "publisher": "\u0410\u0441\u0442\u0440\u0435\u043b\u044c", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2011, "number_of_pages": 221, "translator": "\u0410. \u0411\u043e\u0433\u0434\u0430\u043d\u043e\u0432\u0441\u044c\u043a\u0438\u0439", "book_cover": "\u041c'\u044f\u0433\u043a\u0430", "rate": 4, "image_main": "photos/2020/07/01/\u0430\u043b\u0445\u0438\u043c\u0438\u043a.jpeg", "category": [13, 1, 11]}}, {"model": "listings.book", "pk": 27, "fields": {"created": "2020-07-01T11:56:08.115Z", "updated": "2020-07-01T11:56:08.115Z", "title": "\u041e\u0441\u0442\u0430\u0432\u044c\u0442\u0435 \u0431\u0440\u0435\u0437\u0433\u043b\u0438\u0432\u043e\u0441\u0442\u044c, \u0441\u044a\u0435\u0448\u044c\u0442\u0435 \u043b\u044f\u0433\u0443\u0448\u043a\u0443", "slug": "ostavte-brezglivost-seshte-lyagushku", "author": "\u0411\u0440\u0430\u0439\u0430\u043d \u0422\u0440\u0435\u0439\u0441\u0438", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041f\u043e\u043f\u0443\u0440\u0440\u0438", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2001, "number_of_pages": 110, "translator": "\u0415. \u0410. \u0421\u0430\u043c\u0441\u043e\u043d\u043e\u0432", "book_cover": "\u041c'\u044f\u0433\u043a\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u043b\u044f\u0433\u0443\u0448\u043a\u0430.jpg", "category": [9]}}, {"model": "listings.book", "pk": 28, "fields": {"created": "2020-07-01T11:58:17.412Z", "updated": "2020-07-01T11:59:14.602Z", "title": "\u0413\u043e\u0440\u0434\u043e\u0441\u0442\u044c \u0438 \u043f\u0440\u0435\u0434\u0443\u0431\u0435\u0436\u0434\u0435\u043d\u0438\u0435", "slug": "gordost-i-predubezhdenie", "author": "\u0414\u0436\u0435\u0439\u043d \u041e\u0441\u0442\u0438\u043d", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2016, "number_of_pages": 414, "translator": "\u041d\u0430\u0442\u0430\u043b\u0456\u044f \u0424\u0456\u043b\u0456\u043c\u043e\u043d\u043e\u0432\u0430", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0433\u043e\u0440\u0434\u043e\u043c\u0442\u044c.jpeg", "category": [13, 3, 10]}}, {"model": "listings.book", "pk": 29, "fields": {"created": "2020-07-01T12:00:51.270Z", "updated": "2020-07-01T12:00:51.270Z", "title": "\u0414\u0435 \u043d\u0435\u043c\u0430\u0454 \u0411\u043e\u0433\u0430", "slug": "de-nemaye-boga", "author": "\u041c\u0430\u043a\u0441 \u041a\u0456\u0434\u0440\u0443\u043a", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2018, "number_of_pages": 476, "translator": null, "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0431\u043e\u0433.jpg", "category": [1]}}, {"model": "listings.book", "pk": 30, "fields": {"created": "2020-07-01T13:51:03.315Z", "updated": "2020-07-01T13:51:03.315Z", "title": "\u0420\u0435\u0431\u0435\u043a\u043a\u0430", "slug": "rebekka-2", "author": "\u0414\u0430\u0444\u043d\u0430 \u0434\u044e \u041c\u043e\u0440'\u0454", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2017, "number_of_pages": 478, "translator": "\u0413\u0454\u043d\u0438\u043a \u0411\u0454\u043b\u044f\u043a\u043e\u0432", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0440\u0435\u0431\u0435\u043a\u0430.jpg", "category": [17, 3]}}, {"model": "listings.book", "pk": 31, "fields": {"created": "2020-07-01T13:52:50.107Z", "updated": "2020-07-01T13:52:50.107Z", "title": "\u041f\u0441\u0438\u0445\u043e\u043b\u043e\u0433\u0456\u044f \u0432\u043f\u043b\u0438\u0432\u0443", "slug": "psihologiya-vplivu", "author": "\u0420\u043e\u0431\u0435\u0440\u0442 \u0427\u0430\u043b\u0434\u0438\u043d\u0456", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2016, "number_of_pages": 366, "translator": "\u041c\u0438\u043a\u0438\u0442\u0430 \u0421\u043a\u043e\u0440\u043e\u0431\u043e\u0433\u0430\u0442\u043e\u0432", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/Robert_Chaldini__Psihologiya_vplivu.jpg", "category": [9]}}, {"model": "listings.book", "pk": 32, "fields": {"created": "2020-07-01T13:54:45.709Z", "updated": "2020-07-01T13:54:45.709Z", "title": "\u0406\u0433\u0440\u0438, \u0443 \u044f\u043a\u0456 \u0433\u0440\u0430\u044e\u0442\u044c \u043b\u044e\u0434\u0438", "slug": "igri-u-yaki-grayut-lyudi", "author": "\u0415\u0440\u0456\u043a \u0411\u0435\u0440\u043d", "description": "\u041a\u043d\u0438\u0433\u0430 \u0443 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2016, "number_of_pages": 252, "translator": "\u041a\u0430\u0440\u0438\u043d\u0430 \u041c\u0435\u043d\u044c\u0448\u0438\u043a\u043e\u0432\u0430", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0456\u0433\u0440\u0438.jpg", "category": [9]}}, {"model": "listings.book", "pk": 33, "fields": {"created": "2020-07-01T13:57:00.211Z", "updated": "2020-07-01T13:57:00.211Z", "title": "\u0421\u0442\u0440\u0430\u0442\u0435\u0433\u0456\u0457 \u0433\u0435\u043d\u0456\u0457\u0432", "slug": "strategiyi-geniyiv", "author": "\u041c\u0430\u0439\u043a\u043b \u0410.\u041a\u0443\u0441\u0443\u043c\u0430\u043d\u043e, \u0414\u0435\u0432\u0456\u0434 \u0411.\u0419\u043e\u0444\u0444\u0456", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2018, "number_of_pages": 256, "translator": "\u0421\u0432\u0456\u0442\u043b\u0430\u043d\u0430 \u041d\u043e\u0432\u0456\u043a\u043e\u0432\u0430", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0433\u0435\u043d\u0456\u0457.jpg", "category": [14, 9]}}, {"model": "listings.book", "pk": 34, "fields": {"created": "2020-07-01T13:58:58.769Z", "updated": "2020-07-01T13:58:58.769Z", "title": "\u041d\u0430 \u0431\u0435\u0440\u0435\u0433\u0443 \u0420\u0438\u043e-\u041f\u044c\u0435\u0434\u0440\u0430 \u0441\u0435\u043b\u0430 \u044f \u0438 \u0437\u0430\u043f\u043b\u0430\u043a\u0430\u043b\u0430", "slug": "na-beregu-rio-pedra-sela-ya-i-zaplakala", "author": "\u041f\u0430\u0443\u043b\u043e \u041a\u043e\u0435\u043b\u044c\u0439\u043e", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456, \u0454 \u0434\u0435\u043a\u0456\u043b\u044c\u043a\u0430 \u043f\u043e\u043c\u0456\u0442\u043e\u043a \u0432\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456", "publisher": "\u0421\u043e\u0444\u0438\u044f", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2007, "number_of_pages": 213, "translator": "\u0410. \u0411\u043e\u0433\u0434\u0430\u043d\u043e\u0432\u0441\u044c\u043a\u0438\u0439", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0431\u0435\u0440\u0435\u0433.jpg", "category": [3, 1, 11]}}, {"model": "listings.book", "pk": 35, "fields": {"created": "2020-07-01T14:02:07.789Z", "updated": "2020-07-01T15:34:39.999Z", "title": "\u041e\u0434\u0438\u043d\u043d\u0430\u0434\u0446\u0430\u0442\u044c \u043c\u0438\u043d\u0443\u0442", "slug": "odinnadcat-minut", "author": "\u041f\u0430\u0443\u043b\u043e \u041a\u043e\u0435\u043b\u044c\u0439\u043e", "description": "\u0423 \u043a\u043d\u0438\u0433\u0438 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 \u0441\u0442\u043e\u0440\u0456\u043d\u043e\u043a \u0432\u0456\u0434\u0434\u0456\u043b\u0438\u043b\u0438\u0441\u044c \u0432\u0456\u0434 \u043a\u043e\u0440\u0435\u0448\u043a\u0443, \u0454 \u0434\u0435\u043a\u0456\u043b\u044c\u043a\u0430 \u043f\u043e\u043c\u0430\u0440\u043e\u043a \u0432\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456", "publisher": "\u0410\u0441\u0442\u0440\u0435\u043b\u044c", "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2020, "number_of_pages": 315, "translator": "\u0410. \u0411\u043e\u0433\u0434\u0430\u043d\u043e\u0432\u0441\u044c\u043a\u0438\u0439", "book_cover": "\u041c'\u044f\u0433\u043a\u0430", "rate": 2, "image_main": "photos/2020/07/01/\u043e\u0434\u0438\u043d\u0430\u0434\u0446\u0430\u0442\u044c.jpg", "category": [12, 1, 11]}}, {"model": "listings.book", "pk": 36, "fields": {"created": "2020-07-01T14:05:26.293Z", "updated": "2020-07-01T14:05:26.293Z", "title": "Atonement", "slug": "atonement", "author": "Ivan McEwan", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0433\u0430\u0440\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456, \u0442\u0440\u0456\u0448\u043a\u0438 \u043d\u0430 \u043a\u0456\u043d\u0447\u0438\u043a\u0430\u0445 \u043f\u043e\u0442\u0435\u0440\u0442\u0430 \u043e\u0431\u043a\u043b\u0430\u0434\u0438\u043d\u043a\u0430", "publisher": "Vintage", "language": "\u0410\u043d\u0433\u043b\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2007, "number_of_pages": 371, "translator": null, "book_cover": "\u041c'\u044f\u0433\u043a\u0430", "rate": 4, "image_main": "photos/2020/07/01/aton.jpg", "category": [21, 17, 13, 1]}}, {"model": "listings.book", "pk": 37, "fields": {"created": "2020-07-01T14:07:37.477Z", "updated": "2020-07-01T14:07:37.477Z", "title": "\u0425\u043b\u043e\u043f\u0447\u0438\u043a \u0443 \u0441\u043c\u0443\u0433\u0430\u0441\u0442\u0456\u0439 \u043f\u0456\u0436\u0430\u043c\u0456", "slug": "hlopchik-u-smugastij-pizhami", "author": "\u0414\u0436\u043e\u043d \u0411\u043e\u0439\u043d", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u0412\u0438\u0434\u0430\u0432\u043d\u0438\u0446\u0442\u0432\u043e \u0441\u0442\u0430\u0440\u043e\u0433\u043e \u043b\u0435\u0432\u0430", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2017, "number_of_pages": 184, "translator": "\u0412\u0456\u043a\u0442\u043e\u0440 \u0428\u043e\u0432\u043a\u0443\u043d", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0445\u043b\u043e\u043f\u0447\u0438\u043a.jpg", "category": [21, 13, 2]}}, {"model": "listings.book", "pk": 38, "fields": {"created": "2020-07-01T14:10:00.593Z", "updated": "2020-07-01T14:10:00.593Z", "title": "English Reader 9", "slug": "english-reader-9", "author": "Laryssa Davydenko", "description": "\u041f\u0456\u0434\u0440\u0443\u0447\u043d\u0438\u043a \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041f\u0456\u0434\u0440\u0443\u0447\u043d\u0438\u043a\u0438 \u0456 \u043f\u043e\u0441\u0456\u0431\u043d\u0438\u043a\u0438", "language": "\u0410\u043d\u0433\u043b\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2009, "number_of_pages": 143, "translator": null, "book_cover": "\u041c'\u044f\u0433\u043a\u0430", "rate": 5, "image_main": "photos/2020/07/01/engl.jpg", "category": [9]}}, {"model": "listings.book", "pk": 39, "fields": {"created": "2020-07-01T14:11:59.866Z", "updated": "2020-07-01T14:11:59.866Z", "title": "\u0414\u0456\u0432\u0447\u0438\u043d\u0430 \u0443 \u043f\u043e\u0442\u044f\u0433\u0443", "slug": "divchina-u-potyagu", "author": "\u041f\u043e\u043b\u0430 \u0413\u043e\u0443\u043a\u0456\u043d\u0437", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2016, "number_of_pages": 316, "translator": "\u0406\u043d\u043d\u0430 \u041f\u0430\u043d\u0435\u043d\u043a\u043e", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u043f\u043e\u0442\u044f\u0433_2xfw1lP.jpg", "category": [17, 1, 16]}}, {"model": "listings.book", "pk": 40, "fields": {"created": "2020-07-01T14:13:53.702Z", "updated": "2020-07-01T14:13:53.702Z", "title": "\u0412\u0456\u0434 \u043d\u0443\u043b\u044f - \u0434\u043e \u043e\u0434\u0438\u043d\u0438\u0446\u0456", "slug": "vid-nulya-do-odinici", "author": "\u041f\u0456\u0442\u0435\u0440 \u0422\u0456\u043b\u044c", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041d\u0430\u0448 \u0444\u043e\u0440\u043c\u0430\u0442", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2016, "number_of_pages": 224, "translator": "\u0420\u043e\u043c\u0430\u043d \u041e\u0431\u0443\u0445\u0456\u0432", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u043d\u0443\u043b\u044c.jpeg", "category": [14, 9]}}, {"model": "listings.book", "pk": 41, "fields": {"created": "2020-07-01T14:16:11.003Z", "updated": "2020-07-01T14:16:11.004Z", "title": "\u0414\u0440\u0443\u0436\u0438\u043d\u0430 \u043c\u0430\u043d\u0434\u0440\u0456\u0432\u043d\u0438\u043a\u0430 \u0432 \u0447\u0430\u0441\u0456", "slug": "druzhina-mandrivnika-v-chasi", "author": "\u041e\u0434\u0440\u0456 \u041d\u0456\u0444\u0444\u0435\u043d\u0435\u0433\u0433\u0435\u0440", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2016, "number_of_pages": 589, "translator": "\u041d\u0430\u0434\u0456\u044f \u0425\u0430\u0454\u0446\u044c\u043a\u0430", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0414\u0440\u0443\u0436\u0438\u043d\u0430_\u043c\u0430\u043d\u0434\u0440\u0456\u0432\u043d\u0438\u043a\u0430_\u0432_\u0447\u0430\u0441\u0456.jpg", "category": [3, 5, 1, 22, 11]}}, {"model": "listings.book", "pk": 42, "fields": {"created": "2020-07-01T14:27:36.789Z", "updated": "2020-07-01T14:27:36.790Z", "title": "\u0421\u0438\u043b\u0430 \u0437\u0432\u0438\u0447\u043a\u0438", "slug": "sila-zvichki", "author": "\u0427\u0430\u0440\u043b\u0437 \u0414\u0430\u0445\u0456\u0491\u0491", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430", "year_of_publishing": 2017, "number_of_pages": 430, "translator": "\u0413\u0430\u043d\u043d\u0430 \u041b\u0435\u043b\u0456\u0432", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0441\u0438\u043b\u0430-\u0437\u0432\u0438\u0447\u043a\u0438.jpg", "category": [9]}}, {"model": "listings.book", "pk": 43, "fields": {"created": "2020-07-01T14:29:32.984Z", "updated": "2020-07-01T14:29:32.984Z", "title": "\u0414\u0436\u0435\u0440\u0435\u043b\u043e", "slug": "dzherelo", "author": "\u0414\u0435\u043d \u0411\u0440\u0430\u0443\u043d", "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456", "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f", "language": "\u0410\u043d\u0433\u043b\u0456\u0439\u0441\u044c\u043a\u0430", "year_of_publishing": 2018, "number_of_pages": 523, "translator": "\u0413\u0430\u043d\u043d\u0430 \u042f\u043d\u043e\u0432\u0441\u044c\u043a\u0430", "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430", "rate": 5, "image_main": "photos/2020/07/01/\u0434\u0436\u0435\u0440\u0435\u043b\u043e.JPG", "category": [17, 16]}}, {"model": "auth.permission", "pk": 1, "fields": {"name": "Can add log entry", "content_type": 1, "codename": "add_logentry"}}, {"model": "auth.permission", "pk": 2, "fields": {"name": "Can change log entry", "content_type": 1, "codename": "change_logentry"}}, {"model": "auth.permission", "pk": 3, "fields": {"name": "Can delete log entry", "content_type": 1, "codename": "delete_logentry"}}, {"model": "auth.permission", "pk": 4, "fields": {"name": "Can view log entry", "content_type": 1, "codename": "view_logentry"}}, {"model": "auth.permission", "pk": 5, "fields": {"name": "Can add permission", "content_type": 2, "codename": "add_permission"}}, {"model": "auth.permission", "pk": 6, "fields": {"name": "Can change permission", "content_type": 2, "codename": "change_permission"}}, {"model": "auth.permission", "pk": 7, "fields": {"name": "Can delete permission", "content_type": 2, "codename": "delete_permission"}}, {"model": "auth.permission", "pk": 8, "fields": {"name": "Can view permission", "content_type": 2, "codename": "view_permission"}}, {"model": "auth.permission", "pk": 9, "fields": {"name": "Can add group", "content_type": 3, "codename": "add_group"}}, {"model": "auth.permission", "pk": 10, "fields": {"name": "Can change group", "content_type": 3, "codename": "change_group"}}, {"model": "auth.permission", "pk": 11, "fields": {"name": "Can delete group", "content_type": 3, "codename": "delete_group"}}, {"model": "auth.permission", "pk": 12, "fields": {"name": "Can view group", "content_type": 3, "codename": "view_group"}}, {"model": "auth.permission", "pk": 13, "fields": {"name": "Can add user", "content_type": 4, "codename": "add_user"}}, {"model": "auth.permission", "pk": 14, "fields": {"name": "Can change user", "content_type": 4, "codename": "change_user"}}, {"model": "auth.permission", "pk": 15, "fields": {"name": "Can delete user", "content_type": 4, "codename": "delete_user"}}, {"model": "auth.permission", "pk": 16, "fields": {"name": "Can view user", "content_type": 4, "codename": "view_user"}}, {"model": "auth.permission", "pk": 17, "fields": {"name": "Can add content type", "content_type": 5, "codename": "add_contenttype"}}, {"model": "auth.permission", "pk": 18, "fields": {"name": "Can change content type", "content_type": 5, "codename": "change_contenttype"}}, {"model": "auth.permission", "pk": 19, "fields": {"name": "Can delete content type", "content_type": 5, "codename": "delete_contenttype"}}, {"model": "auth.permission", "pk": 20, "fields": {"name": "Can view content type", "content_type": 5, "codename": "view_contenttype"}}, {"model": "auth.permission", "pk": 21, "fields": {"name": "Can add session", "content_type": 6, "codename": "add_session"}}, {"model": "auth.permission", "pk": 22, "fields": {"name": "Can change session", "content_type": 6, "codename": "change_session"}}, {"model": "auth.permission", "pk": 23, "fields": {"name": "Can delete session", "content_type": 6, "codename": "delete_session"}}, {"model": "auth.permission", "pk": 24, "fields": {"name": "Can view session", "content_type": 6, "codename": "view_session"}}, {"model": "auth.permission", "pk": 25, "fields": {"name": "Can add category", "content_type": 7, "codename": "add_category"}}, {"model": "auth.permission", "pk": 26, "fields": {"name": "Can change category", "content_type": 7, "codename": "change_category"}}, {"model": "auth.permission", "pk": 27, "fields": {"name": "Can delete category", "content_type": 7, "codename": "delete_category"}}, {"model": "auth.permission", "pk": 28, "fields": {"name": "Can view category", "content_type": 7, "codename": "view_category"}}, {"model": "auth.permission", "pk": 29, "fields": {"name": "Can add book", "content_type": 8, "codename": "add_book"}}, {"model": "auth.permission", "pk": 30, "fields": {"name": "Can change book", "content_type": 8, "codename": "change_book"}}, {"model": "auth.permission", "pk": 31, "fields": {"name": "Can delete book", "content_type": 8, "codename": "delete_book"}}, {"model": "auth.permission", "pk": 32, "fields": {"name": "Can view book", "content_type": 8, "codename": "view_book"}}, {"model": "auth.permission", "pk": 33, "fields": {"name": "Can add owner", "content_type": 9, "codename": "add_owner"}}, {"model": "auth.permission", "pk": 34, "fields": {"name": "Can change owner", "content_type": 9, "codename": "change_owner"}}, {"model": "auth.permission", "pk": 35, "fields": {"name": "Can delete owner", "content_type": 9, "codename": "delete_owner"}}, {"model": "auth.permission", "pk": 36, "fields": {"name": "Can view owner", "content_type": 9, "codename": "view_owner"}}, {"model": "auth.user", "pk": 1, "fields": {"password": "pbkdf2_sha256$180000$1l3PVPpyvHS6$OuvQx2oIG5Y27NoRdqzIr7lbyZd44V1qCVs51169Yn0=", "last_login": "2020-07-01T17:43:02.157Z", "is_superuser": true, "username": "sofiia", "first_name": "", "last_name": "", "email": "", "is_staff": true, "is_active": true, "date_joined": "2020-06-02T08:02:44.325Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "pk": 2, "fields": {"password": "pbkdf2_sha256$180000$SQK8maU8r4Sz$QOr1/A42kY6PVkfgrIE93fhaSg1b62BEXV8NYqwITPU=", "last_login": null, "is_superuser": false, "username": "kapa", "first_name": "", "last_name": "", "email": "", "is_staff": false, "is_active": true, "date_joined": "2020-06-02T09:59:31.794Z", "groups": [], "user_permissions": []}}, {"model": "auth.user", "pk": 4, "fields": {"password": "pbkdf2_sha256$180000$YtzvoUmfaatV$RKDLXD5oKF3zWc/m2QHXQs0yDE7450rtvsXFD7L789w=", "last_login": "2020-06-26T13:11:40.012Z", "is_superuser": false, "username": "sofiia3", "first_name": "", "last_name": "", "email": "sofiia3@sofiia3.com", "is_staff": false, "is_active": true, "date_joined": "2020-06-26T13:08:56.970Z", "groups": [], "user_permissions": []}}, {"model": "admin.logentry", "pk": 1, "fields": {"action_time": "2020-06-02T09:52:40.713Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "Fiction", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 2, "fields": {"action_time": "2020-06-02T09:55:14.630Z", "user": 1, "content_type": 9, "object_id": "1", "object_repr": " ", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 3, "fields": {"action_time": "2020-06-02T09:56:15.489Z", "user": 1, "content_type": 9, "object_id": "1", "object_repr": " ", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 4, "fields": {"action_time": "2020-06-02T09:58:25.418Z", "user": 1, "content_type": 8, "object_id": "1", "object_repr": "le-passanger", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 5, "fields": {"action_time": "2020-06-02T09:59:31.900Z", "user": 1, "content_type": 4, "object_id": "2", "object_repr": "kapa", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 6, "fields": {"action_time": "2020-06-02T10:02:05.389Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": " ", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 7, "fields": {"action_time": "2020-06-02T10:02:21.524Z", "user": 1, "content_type": 9, "object_id": "2", "object_repr": " ", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 8, "fields": {"action_time": "2020-06-02T10:02:21.529Z", "user": 1, "content_type": 9, "object_id": "1", "object_repr": " ", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 9, "fields": {"action_time": "2020-06-02T10:03:20.495Z", "user": 1, "content_type": 9, "object_id": "3", "object_repr": "kapa", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 10, "fields": {"action_time": "2020-06-02T10:03:59.122Z", "user": 1, "content_type": 8, "object_id": "2", "object_repr": "le-passanger", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 11, "fields": {"action_time": "2020-06-02T10:06:08.732Z", "user": 1, "content_type": 8, "object_id": "3", "object_repr": "grim-reaper-end-days", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 12, "fields": {"action_time": "2020-06-02T10:08:23.592Z", "user": 1, "content_type": 8, "object_id": "4", "object_repr": "dont-look-back", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 13, "fields": {"action_time": "2020-06-02T11:19:42.865Z", "user": 1, "content_type": 8, "object_id": "2", "object_repr": "le-passanger", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Image main\"]}}]"}}, {"model": "admin.logentry", "pk": 14, "fields": {"action_time": "2020-06-02T11:19:53.151Z", "user": 1, "content_type": 8, "object_id": "4", "object_repr": "dont-look-back", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Image main\"]}}]"}}, {"model": "admin.logentry", "pk": 15, "fields": {"action_time": "2020-06-02T11:20:07.088Z", "user": 1, "content_type": 8, "object_id": "3", "object_repr": "grim-reaper-end-days", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Image main\"]}}]"}}, {"model": "admin.logentry", "pk": 16, "fields": {"action_time": "2020-06-02T13:54:56.139Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "Technical", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 17, "fields": {"action_time": "2020-06-02T13:55:30.668Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Health and Beauty", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 18, "fields": {"action_time": "2020-06-02T13:55:41.623Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "Classic", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 19, "fields": {"action_time": "2020-06-02T13:56:59.201Z", "user": 1, "content_type": 8, "object_id": "5", "object_repr": "master-and-margarita", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 20, "fields": {"action_time": "2020-06-02T13:58:04.475Z", "user": 1, "content_type": 8, "object_id": "6", "object_repr": "body-book", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 21, "fields": {"action_time": "2020-06-02T13:58:55.917Z", "user": 1, "content_type": 8, "object_id": "7", "object_repr": "django-2-example", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 22, "fields": {"action_time": "2020-06-03T11:28:32.796Z", "user": 1, "content_type": 8, "object_id": "8", "object_repr": "lost-symbol", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 23, "fields": {"action_time": "2020-06-04T12:51:26.075Z", "user": 1, "content_type": 8, "object_id": "7", "object_repr": "django-2-example", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Image 1\"]}}]"}}, {"model": "admin.logentry", "pk": 24, "fields": {"action_time": "2020-06-04T12:58:11.282Z", "user": 1, "content_type": 8, "object_id": "7", "object_repr": "django-2-example", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Image 2\", \"Image 3\", \"Image 4\"]}}]"}}, {"model": "admin.logentry", "pk": 25, "fields": {"action_time": "2020-06-05T10:06:29.498Z", "user": 1, "content_type": 8, "object_id": "8", "object_repr": "lost-symbol", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 26, "fields": {"action_time": "2020-06-05T10:06:33.293Z", "user": 1, "content_type": 8, "object_id": "8", "object_repr": "lost-symbol", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 27, "fields": {"action_time": "2020-06-05T10:06:39.381Z", "user": 1, "content_type": 8, "object_id": "7", "object_repr": "django-2-example", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 28, "fields": {"action_time": "2020-06-05T10:06:43.736Z", "user": 1, "content_type": 8, "object_id": "6", "object_repr": "body-book", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 29, "fields": {"action_time": "2020-06-05T10:06:48.047Z", "user": 1, "content_type": 8, "object_id": "5", "object_repr": "master-and-margarita", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 30, "fields": {"action_time": "2020-06-05T10:07:21.908Z", "user": 1, "content_type": 8, "object_id": "4", "object_repr": "dont-look-back", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 31, "fields": {"action_time": "2020-06-05T10:07:25.829Z", "user": 1, "content_type": 8, "object_id": "3", "object_repr": "grim-reaper-end-days", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 32, "fields": {"action_time": "2020-06-05T10:07:30.052Z", "user": 1, "content_type": 8, "object_id": "2", "object_repr": "le-passanger", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 33, "fields": {"action_time": "2020-06-05T13:35:36.525Z", "user": 1, "content_type": 8, "object_id": "8", "object_repr": "lost-symbol", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"}}, {"model": "admin.logentry", "pk": 34, "fields": {"action_time": "2020-06-05T13:35:42.059Z", "user": 1, "content_type": 8, "object_id": "7", "object_repr": "django-2-example", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"}}, {"model": "admin.logentry", "pk": 35, "fields": {"action_time": "2020-06-05T13:35:48.999Z", "user": 1, "content_type": 8, "object_id": "6", "object_repr": "body-book", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Author\"]}}]"}}, {"model": "admin.logentry", "pk": 36, "fields": {"action_time": "2020-06-05T13:35:54.398Z", "user": 1, "content_type": 8, "object_id": "7", "object_repr": "django-2-example", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"}}, {"model": "admin.logentry", "pk": 37, "fields": {"action_time": "2020-06-05T13:36:00.047Z", "user": 1, "content_type": 8, "object_id": "8", "object_repr": "lost-symbol", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"}}, {"model": "admin.logentry", "pk": 38, "fields": {"action_time": "2020-06-05T13:36:07.772Z", "user": 1, "content_type": 8, "object_id": "5", "object_repr": "master-and-margarita", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Author\"]}}]"}}, {"model": "admin.logentry", "pk": 39, "fields": {"action_time": "2020-06-05T13:47:51.038Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "CLASSIC", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 40, "fields": {"action_time": "2020-06-05T13:48:02.130Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "Classic", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 41, "fields": {"action_time": "2020-06-05T13:48:09.606Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Health And Beauty", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 42, "fields": {"action_time": "2020-06-05T13:48:13.613Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "Health And Beauty", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 43, "fields": {"action_time": "2020-06-26T13:10:44.815Z", "user": 1, "content_type": 4, "object_id": "3", "object_repr": "sofiia2", "action_flag": 3, "change_message": ""}}, {"model": "admin.logentry", "pk": 44, "fields": {"action_time": "2020-06-26T13:11:29.732Z", "user": 1, "content_type": 4, "object_id": "4", "object_repr": "sofiia3", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"}}, {"model": "admin.logentry", "pk": 45, "fields": {"action_time": "2020-06-29T09:09:32.356Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "\u041a\u043b\u0430\u0441\u0438\u043a\u0430", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"}}, {"model": "admin.logentry", "pk": 46, "fields": {"action_time": "2020-06-29T09:09:44.496Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "\u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u041b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"}}, {"model": "admin.logentry", "pk": 47, "fields": {"action_time": "2020-06-29T09:09:58.949Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "\u0417\u0434\u043e\u0440\u043e\u0432\"\u042f \u0406 \u041a\u0440\u0430\u0441\u0430", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"}}, {"model": "admin.logentry", "pk": 48, "fields": {"action_time": "2020-06-29T09:10:06.209Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "\u0417\u0434\u043e\u0440\u043e\u0432\"\u042f \u0406 \u041a\u0440\u0430\u0441\u0430", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"}}, {"model": "admin.logentry", "pk": 49, "fields": {"action_time": "2020-06-29T09:10:15.282Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "\u0417\u0434\u043e\u0440\u043e\u0432'\u042f \u0406 \u041a\u0440\u0430\u0441\u0430", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"}}, {"model": "admin.logentry", "pk": 50, "fields": {"action_time": "2020-06-29T09:10:25.375Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "\u0417\u0434\u043e\u0440\u043e\u0432'\u042f \u0406 \u041a\u0440\u0430\u0441\u0430", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"}}, {"model": "admin.logentry", "pk": 51, "fields": {"action_time": "2020-06-29T09:10:32.648Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "\u0424\u0430\u043d\u0442\u0430\u0441\u0442\u0438\u043a\u0430", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"}}, {"model": "admin.logentry", "pk": 52, "fields": {"action_time": "2020-06-29T09:11:36.645Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "\u0417\u0434\u043e\u0440\u043e\u0432'\u044f \u0456 \u043a\u0440\u0430\u0441\u0430", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"}}, {"model": "admin.logentry", "pk": 53, "fields": {"action_time": "2020-06-29T09:11:43.374Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "\u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u043b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 54, "fields": {"action_time": "2020-06-29T09:11:49.402Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "\u0417\u0434\u043e\u0440\u043e\u0432'\u044f \u0456 \u043a\u0440\u0430\u0441\u0430", "action_flag": 2, "change_message": "[]"}}, {"model": "admin.logentry", "pk": 55, "fields": {"action_time": "2020-07-01T07:48:42.776Z", "user": 1, "content_type": 7, "object_id": "1", "object_repr": "\u0420\u043e\u043c\u0430\u043d", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 56, "fields": {"action_time": "2020-07-01T07:49:34.324Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "\u0406\u0441\u0442\u043e\u0440\u0438\u0447\u043d\u0438\u0439 \u0436\u0430\u043d\u0440", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 57, "fields": {"action_time": "2020-07-01T07:49:39.946Z", "user": 1, "content_type": 7, "object_id": "3", "object_repr": "\u041b\u044e\u0431\u043e\u0432\u043d\u0438\u0439 \u0440\u043e\u043c\u0430\u043d", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 58, "fields": {"action_time": "2020-07-01T07:59:20.116Z", "user": 1, "content_type": 8, "object_id": "1", "object_repr": "misto-divchat", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 59, "fields": {"action_time": "2020-07-01T08:00:19.353Z", "user": 1, "content_type": 8, "object_id": "1", "object_repr": "misto-divchat", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Rate\"]}}]"}}, {"model": "admin.logentry", "pk": 60, "fields": {"action_time": "2020-07-01T08:02:24.257Z", "user": 1, "content_type": 8, "object_id": "1", "object_repr": "misto-divchat", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Language\", \"Book cover\"]}}]"}}, {"model": "admin.logentry", "pk": 61, "fields": {"action_time": "2020-07-01T08:04:02.248Z", "user": 1, "content_type": 7, "object_id": "4", "object_repr": "\u041c\u0456\u0441\u0442\u0438\u0447\u043d\u0438\u0439 \u0440\u043e\u043c\u0430\u043d", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 62, "fields": {"action_time": "2020-07-01T08:07:32.013Z", "user": 1, "content_type": 8, "object_id": "2", "object_repr": "ne-oshirajsya-i-movchi", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 63, "fields": {"action_time": "2020-07-01T08:07:42.378Z", "user": 1, "content_type": 8, "object_id": "2", "object_repr": "ne-oshirajsya-i-movchi", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"}}, {"model": "admin.logentry", "pk": 64, "fields": {"action_time": "2020-07-01T08:09:35.713Z", "user": 1, "content_type": 7, "object_id": "5", "object_repr": "\u041d\u0430\u0443\u043a\u043e\u0432\u043e-\u0444\u0430\u043d\u0442\u0430\u0441\u0442\u0438\u0447\u043d\u0438\u0439", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 65, "fields": {"action_time": "2020-07-01T08:09:58.747Z", "user": 1, "content_type": 7, "object_id": "6", "object_repr": "\u0420\u043e\u043c\u0430\u043d\u0442\u0438\u0447\u043d\u043e-\u043f\u0440\u0438\u0433\u043e\u0434\u043d\u0438\u0446\u044c\u043a\u0438\u0439", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 66, "fields": {"action_time": "2020-07-01T08:12:04.768Z", "user": 1, "content_type": 8, "object_id": "3", "object_repr": "gostya", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 67, "fields": {"action_time": "2020-07-01T08:14:40.035Z", "user": 1, "content_type": 7, "object_id": "7", "object_repr": "\u041f\u0441\u0438\u0445\u043e\u0442\u0435\u0440\u0430\u043f\u0435\u0432\u0442\u0438\u0447\u043d\u0456 \u043e\u043f\u043e\u0432\u0456\u0434\u0456", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 68, "fields": {"action_time": "2020-07-01T08:30:58.872Z", "user": 1, "content_type": 8, "object_id": "4", "object_repr": "brehuni-na-kushetci", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 69, "fields": {"action_time": "2020-07-01T10:03:07.746Z", "user": 1, "content_type": 7, "object_id": "8", "object_repr": "\u041a\u043b\u0430\u0441\u0438\u043a\u0430", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 70, "fields": {"action_time": "2020-07-01T10:05:29.920Z", "user": 1, "content_type": 8, "object_id": "5", "object_repr": "master-i-margarita", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 71, "fields": {"action_time": "2020-07-01T10:07:07.161Z", "user": 1, "content_type": 7, "object_id": "9", "object_repr": "\u041b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430 \u0434\u043b\u044f \u0441\u0430\u043c\u043e\u0440\u043e\u0437\u0432\u0438\u0442\u043a\u0443", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 72, "fields": {"action_time": "2020-07-01T10:09:13.934Z", "user": 1, "content_type": 8, "object_id": "6", "object_repr": "bogatyj-papa-bednyj-papa", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 73, "fields": {"action_time": "2020-07-01T10:10:42.758Z", "user": 1, "content_type": 7, "object_id": "10", "object_repr": "\u0421\u0430\u0442\u0438\u0440\u0430", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 74, "fields": {"action_time": "2020-07-01T10:13:36.302Z", "user": 1, "content_type": 8, "object_id": "7", "object_repr": "yarmarka-tsheslaviya", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 75, "fields": {"action_time": "2020-07-01T10:14:48.759Z", "user": 1, "content_type": 7, "object_id": "11", "object_repr": "\u0425\u0443\u0434\u043e\u0436\u043d\u044f \u043b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 76, "fields": {"action_time": "2020-07-01T10:15:55.788Z", "user": 1, "content_type": 8, "object_id": "8", "object_repr": "brida", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 77, "fields": {"action_time": "2020-07-01T10:17:20.479Z", "user": 1, "content_type": 7, "object_id": "12", "object_repr": "\u0415\u0440\u043e\u0442\u0438\u043a\u0430", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 78, "fields": {"action_time": "2020-07-01T10:17:24.670Z", "user": 1, "content_type": 7, "object_id": "13", "object_repr": "\u0414\u0440\u0430\u043c\u0430", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 79, "fields": {"action_time": "2020-07-01T10:18:22.211Z", "user": 1, "content_type": 8, "object_id": "9", "object_repr": "9-12-tizhniv", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 80, "fields": {"action_time": "2020-07-01T10:20:04.064Z", "user": 1, "content_type": 7, "object_id": "14", "object_repr": "\u0411\u0456\u0437\u043d\u0435\u0441 \u043b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 81, "fields": {"action_time": "2020-07-01T10:25:18.100Z", "user": 1, "content_type": 8, "object_id": "10", "object_repr": "princip-8020", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 82, "fields": {"action_time": "2020-07-01T10:28:42.566Z", "user": 1, "content_type": 8, "object_id": "11", "object_repr": "dzhejn-ejr", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 83, "fields": {"action_time": "2020-07-01T10:29:42.357Z", "user": 1, "content_type": 7, "object_id": "15", "object_repr": "\u0422\u0440\u0430\u0433\u0435\u0434\u0456\u044f", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 84, "fields": {"action_time": "2020-07-01T10:31:52.632Z", "user": 1, "content_type": 8, "object_id": "12", "object_repr": "grozovoj-pereval", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 85, "fields": {"action_time": "2020-07-01T10:34:39.430Z", "user": 1, "content_type": 7, "object_id": "16", "object_repr": "\u0422\u0440\u0438\u043b\u0435\u0440", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 86, "fields": {"action_time": "2020-07-01T10:34:49.226Z", "user": 1, "content_type": 7, "object_id": "17", "object_repr": "\u0414\u0435\u0442\u0435\u043a\u0442\u0438\u0432", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 87, "fields": {"action_time": "2020-07-01T10:36:01.076Z", "user": 1, "content_type": 8, "object_id": "13", "object_repr": "nezdolannij", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 88, "fields": {"action_time": "2020-07-01T10:38:51.442Z", "user": 1, "content_type": 7, "object_id": "18", "object_repr": "\u0411\u0456\u043e\u0433\u0440\u0430\u0444\u0456\u044f", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 89, "fields": {"action_time": "2020-07-01T10:39:01.983Z", "user": 1, "content_type": 7, "object_id": "19", "object_repr": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u043b\u044c\u043d\u0438\u0439 \u0434\u0435\u0442\u0435\u043a\u0442\u0438\u0432", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 90, "fields": {"action_time": "2020-07-01T10:41:28.073Z", "user": 1, "content_type": 8, "object_id": "14", "object_repr": "diyavol-u-bilomu-misti", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 91, "fields": {"action_time": "2020-07-01T10:45:18.252Z", "user": 1, "content_type": 8, "object_id": "15", "object_repr": "vedma-s-lajm-strit", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 92, "fields": {"action_time": "2020-07-01T10:51:21.379Z", "user": 1, "content_type": 8, "object_id": "16", "object_repr": "siritskij-potyag", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 93, "fields": {"action_time": "2020-07-01T11:16:00.579Z", "user": 1, "content_type": 8, "object_id": "17", "object_repr": "rebekka", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 94, "fields": {"action_time": "2020-07-01T11:21:35.380Z", "user": 1, "content_type": 8, "object_id": "18", "object_repr": "kniga-dzerkal", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 95, "fields": {"action_time": "2020-07-01T11:23:40.629Z", "user": 1, "content_type": 7, "object_id": "20", "object_repr": "\u0422\u0435\u0445\u043d\u043e\u0442\u0440\u0438\u043b\u0435\u0440", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 96, "fields": {"action_time": "2020-07-01T11:25:11.113Z", "user": 1, "content_type": 8, "object_id": "19", "object_repr": "bot-guayakilskij-paradoks", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 97, "fields": {"action_time": "2020-07-01T11:36:15.318Z", "user": 1, "content_type": 8, "object_id": "20", "object_repr": "prisluga", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 98, "fields": {"action_time": "2020-07-01T11:40:36.610Z", "user": 1, "content_type": 8, "object_id": "21", "object_repr": "dim-divnih-ditej", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 99, "fields": {"action_time": "2020-07-01T11:42:03.348Z", "user": 1, "content_type": 8, "object_id": "22", "object_repr": "misto-porozhnih", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 100, "fields": {"action_time": "2020-07-01T11:42:58.578Z", "user": 1, "content_type": 8, "object_id": "23", "object_repr": "biblioteka-dush", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 101, "fields": {"action_time": "2020-07-01T11:46:43.485Z", "user": 1, "content_type": 8, "object_id": "24", "object_repr": "dnevnik-maga", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 102, "fields": {"action_time": "2020-07-01T11:49:47.687Z", "user": 1, "content_type": 8, "object_id": "25", "object_repr": "pobeditel-ostaetsya-odin", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 103, "fields": {"action_time": "2020-07-01T11:49:58.303Z", "user": 1, "content_type": 8, "object_id": "24", "object_repr": "dnevnik-maga", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Year of publishing\"]}}]"}}, {"model": "admin.logentry", "pk": 104, "fields": {"action_time": "2020-07-01T11:53:01.536Z", "user": 1, "content_type": 8, "object_id": "26", "object_repr": "alhimik", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 105, "fields": {"action_time": "2020-07-01T11:56:08.120Z", "user": 1, "content_type": 8, "object_id": "27", "object_repr": "ostavte-brezglivost-seshte-lyagushku", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 106, "fields": {"action_time": "2020-07-01T11:58:17.426Z", "user": 1, "content_type": 8, "object_id": "28", "object_repr": "gordost-i-predubezhdenie", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 107, "fields": {"action_time": "2020-07-01T11:59:14.610Z", "user": 1, "content_type": 8, "object_id": "28", "object_repr": "gordost-i-predubezhdenie", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"}}, {"model": "admin.logentry", "pk": 108, "fields": {"action_time": "2020-07-01T12:00:51.279Z", "user": 1, "content_type": 8, "object_id": "29", "object_repr": "de-nemaye-boga", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 109, "fields": {"action_time": "2020-07-01T13:51:03.323Z", "user": 1, "content_type": 8, "object_id": "30", "object_repr": "rebekka-2", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 110, "fields": {"action_time": "2020-07-01T13:52:50.115Z", "user": 1, "content_type": 8, "object_id": "31", "object_repr": "psihologiya-vplivu", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 111, "fields": {"action_time": "2020-07-01T13:54:45.717Z", "user": 1, "content_type": 8, "object_id": "32", "object_repr": "igri-u-yaki-grayut-lyudi", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 112, "fields": {"action_time": "2020-07-01T13:57:00.218Z", "user": 1, "content_type": 8, "object_id": "33", "object_repr": "strategiyi-geniyiv", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 113, "fields": {"action_time": "2020-07-01T13:58:58.776Z", "user": 1, "content_type": 8, "object_id": "34", "object_repr": "na-beregu-rio-pedra-sela-ya-i-zaplakala", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 114, "fields": {"action_time": "2020-07-01T14:02:07.795Z", "user": 1, "content_type": 8, "object_id": "35", "object_repr": "odinnadcat-minut", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 115, "fields": {"action_time": "2020-07-01T14:03:31.437Z", "user": 1, "content_type": 7, "object_id": "21", "object_repr": "\u0412\u0456\u0439\u0441\u044c\u043a\u043e\u0432\u0438\u0439", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 116, "fields": {"action_time": "2020-07-01T14:05:26.301Z", "user": 1, "content_type": 8, "object_id": "36", "object_repr": "atonement", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 117, "fields": {"action_time": "2020-07-01T14:06:44.347Z", "user": 1, "content_type": 7, "object_id": "2", "object_repr": "\u0406\u0441\u0442\u043e\u0440\u0438\u0447\u043d\u0438\u0439", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Slug\"]}}]"}}, {"model": "admin.logentry", "pk": 118, "fields": {"action_time": "2020-07-01T14:07:37.483Z", "user": 1, "content_type": 8, "object_id": "37", "object_repr": "hlopchik-u-smugastij-pizhami", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 119, "fields": {"action_time": "2020-07-01T14:10:00.601Z", "user": 1, "content_type": 8, "object_id": "38", "object_repr": "english-reader-9", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 120, "fields": {"action_time": "2020-07-01T14:11:59.872Z", "user": 1, "content_type": 8, "object_id": "39", "object_repr": "divchina-u-potyagu", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 121, "fields": {"action_time": "2020-07-01T14:13:53.709Z", "user": 1, "content_type": 8, "object_id": "40", "object_repr": "vid-nulya-do-odinici", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 122, "fields": {"action_time": "2020-07-01T14:15:09.838Z", "user": 1, "content_type": 7, "object_id": "22", "object_repr": "\u0424\u0435\u043d\u0442\u0435\u0437\u0456", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 123, "fields": {"action_time": "2020-07-01T14:16:11.010Z", "user": 1, "content_type": 8, "object_id": "41", "object_repr": "druzhina-mandrivnika-v-chasi", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 124, "fields": {"action_time": "2020-07-01T14:27:36.800Z", "user": 1, "content_type": 8, "object_id": "42", "object_repr": "sila-zvichki", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 125, "fields": {"action_time": "2020-07-01T14:29:32.988Z", "user": 1, "content_type": 8, "object_id": "43", "object_repr": "dzherelo", "action_flag": 1, "change_message": "[{\"added\": {}}]"}}, {"model": "admin.logentry", "pk": 126, "fields": {"action_time": "2020-07-01T15:34:40.006Z", "user": 1, "content_type": 8, "object_id": "35", "object_repr": "odinnadcat-minut", "action_flag": 2, "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"}}]
+[
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 1,
+    "fields": {
+      "app_label": "admin",
+      "model": "logentry"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 2,
+    "fields": {
+      "app_label": "auth",
+      "model": "permission"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 3,
+    "fields": {
+      "app_label": "auth",
+      "model": "group"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 4,
+    "fields": {
+      "app_label": "auth",
+      "model": "user"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 5,
+    "fields": {
+      "app_label": "contenttypes",
+      "model": "contenttype"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 6,
+    "fields": {
+      "app_label": "sessions",
+      "model": "session"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 7,
+    "fields": {
+      "app_label": "listings",
+      "model": "category"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 8,
+    "fields": {
+      "app_label": "listings",
+      "model": "book"
+    }
+  },
+  {
+    "model": "contenttypes.contenttype",
+    "pk": 9,
+    "fields": {
+      "app_label": "owners",
+      "model": "owner"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "2cmslasm5snzf6cfept35uwg3nhe5s90",
+    "fields": {
+      "session_data": "MzQxN2ZlNzg4MTMwNWYwZGM3NzEyOTVmODkxYjgzNDNjNjFlMmE5Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI4YTk0MDM1NTJjNmJlMzA5NDI0MGVmMjUyOGQ4YTA2MTA0ODc4Mzg2In0=",
+      "expire_date": "2020-07-15T17:43:02.159Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "2pexkdfu2bijfy0veakby8ohr75ld4ta",
+    "fields": {
+      "session_data": "MzQxN2ZlNzg4MTMwNWYwZGM3NzEyOTVmODkxYjgzNDNjNjFlMmE5Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI4YTk0MDM1NTJjNmJlMzA5NDI0MGVmMjUyOGQ4YTA2MTA0ODc4Mzg2In0=",
+      "expire_date": "2020-06-16T08:03:15.727Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "96iioodkpisk8knc9k49e741ds903n03",
+    "fields": {
+      "session_data": "MzQxN2ZlNzg4MTMwNWYwZGM3NzEyOTVmODkxYjgzNDNjNjFlMmE5Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI4YTk0MDM1NTJjNmJlMzA5NDI0MGVmMjUyOGQ4YTA2MTA0ODc4Mzg2In0=",
+      "expire_date": "2020-06-16T09:47:30.556Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "kt9x8sh94t7igkiczfcna1mehuag5rje",
+    "fields": {
+      "session_data": "MzQxN2ZlNzg4MTMwNWYwZGM3NzEyOTVmODkxYjgzNDNjNjFlMmE5Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI4YTk0MDM1NTJjNmJlMzA5NDI0MGVmMjUyOGQ4YTA2MTA0ODc4Mzg2In0=",
+      "expire_date": "2020-06-18T12:57:43.684Z"
+    }
+  },
+  {
+    "model": "sessions.session",
+    "pk": "zu0prpp91ti3n9lith9bfcqj4fc3mdbo",
+    "fields": {
+      "session_data": "MzQxN2ZlNzg4MTMwNWYwZGM3NzEyOTVmODkxYjgzNDNjNjFlMmE5Nzp7Il9hdXRoX3VzZXJfaWQiOiIxIiwiX2F1dGhfdXNlcl9iYWNrZW5kIjoiZGphbmdvLmNvbnRyaWIuYXV0aC5iYWNrZW5kcy5Nb2RlbEJhY2tlbmQiLCJfYXV0aF91c2VyX2hhc2giOiI4YTk0MDM1NTJjNmJlMzA5NDI0MGVmMjUyOGQ4YTA2MTA0ODc4Mzg2In0=",
+      "expire_date": "2020-07-10T14:08:25.245Z"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 1,
+    "fields": {
+      "title": "\u0420\u043e\u043c\u0430\u043d",
+      "slug": "roman"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 2,
+    "fields": {
+      "title": "\u0406\u0441\u0442\u043e\u0440\u0438\u0447\u043d\u0438\u0439",
+      "slug": "istorichnij"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 3,
+    "fields": {
+      "title": "\u041b\u044e\u0431\u043e\u0432\u043d\u0438\u0439 \u0440\u043e\u043c\u0430\u043d",
+      "slug": "lyubovnij-roman"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 4,
+    "fields": {
+      "title": "\u041c\u0456\u0441\u0442\u0438\u0447\u043d\u0438\u0439 \u0440\u043e\u043c\u0430\u043d",
+      "slug": "mistichnij-roman"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 5,
+    "fields": {
+      "title": "\u041d\u0430\u0443\u043a\u043e\u0432\u043e-\u0444\u0430\u043d\u0442\u0430\u0441\u0442\u0438\u0447\u043d\u0438\u0439",
+      "slug": "naukovo-fantastichnij"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 6,
+    "fields": {
+      "title": "\u0420\u043e\u043c\u0430\u043d\u0442\u0438\u0447\u043d\u043e-\u043f\u0440\u0438\u0433\u043e\u0434\u043d\u0438\u0446\u044c\u043a\u0438\u0439",
+      "slug": "romantichno-prigodnickij"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 7,
+    "fields": {
+      "title": "\u041f\u0441\u0438\u0445\u043e\u0442\u0435\u0440\u0430\u043f\u0435\u0432\u0442\u0438\u0447\u043d\u0456 \u043e\u043f\u043e\u0432\u0456\u0434\u0456",
+      "slug": "psihoterapevtichni-opovidi"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 8,
+    "fields": {
+      "title": "\u041a\u043b\u0430\u0441\u0438\u043a\u0430",
+      "slug": "klasika"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 9,
+    "fields": {
+      "title": "\u041b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430 \u0434\u043b\u044f \u0441\u0430\u043c\u043e\u0440\u043e\u0437\u0432\u0438\u0442\u043a\u0443",
+      "slug": "literatura-dlya-samorozvitku"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 10,
+    "fields": {
+      "title": "\u0421\u0430\u0442\u0438\u0440\u0430",
+      "slug": "satira"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 11,
+    "fields": {
+      "title": "\u0425\u0443\u0434\u043e\u0436\u043d\u044f \u043b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430",
+      "slug": "hudozhnya-literatura"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 12,
+    "fields": {
+      "title": "\u0415\u0440\u043e\u0442\u0438\u043a\u0430",
+      "slug": "erotika"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 13,
+    "fields": {
+      "title": "\u0414\u0440\u0430\u043c\u0430",
+      "slug": "drama"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 14,
+    "fields": {
+      "title": "\u0411\u0456\u0437\u043d\u0435\u0441 \u043b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430",
+      "slug": "biznes-literatura"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 15,
+    "fields": {
+      "title": "\u0422\u0440\u0430\u0433\u0435\u0434\u0456\u044f",
+      "slug": "tragediya"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 16,
+    "fields": {
+      "title": "\u0422\u0440\u0438\u043b\u0435\u0440",
+      "slug": "triler"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 17,
+    "fields": {
+      "title": "\u0414\u0435\u0442\u0435\u043a\u0442\u0438\u0432",
+      "slug": "detektiv"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 18,
+    "fields": {
+      "title": "\u0411\u0456\u043e\u0433\u0440\u0430\u0444\u0456\u044f",
+      "slug": "biografiya"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 19,
+    "fields": {
+      "title": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u043b\u044c\u043d\u0438\u0439 \u0434\u0435\u0442\u0435\u043a\u0442\u0438\u0432",
+      "slug": "dokumentalnij-detektiv"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 20,
+    "fields": {
+      "title": "\u0422\u0435\u0445\u043d\u043e\u0442\u0440\u0438\u043b\u0435\u0440",
+      "slug": "tehnotriler"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 21,
+    "fields": {
+      "title": "\u0412\u0456\u0439\u0441\u044c\u043a\u043e\u0432\u0438\u0439",
+      "slug": "vijskovij"
+    }
+  },
+  {
+    "model": "listings.category",
+    "pk": 22,
+    "fields": {
+      "title": "\u0424\u0435\u043d\u0442\u0435\u0437\u0456",
+      "slug": "fentezi"
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 1,
+    "fields": {
+      "created": "2020-07-01T07:59:20.097Z",
+      "updated": "2020-07-01T08:02:24.255Z",
+      "title": "\u041c\u0456\u0441\u0442\u043e \u0414\u0456\u0432\u0447\u0430\u0442",
+      "slug": "misto-divchat",
+      "author": "\u0415\u043b\u0456\u0437\u0430\u0431\u0435\u0442 \u0490\u0456\u043b\u0431\u0435\u0440\u0442",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u043d\u0435\u0449\u043e\u0434\u0430\u0432\u043d\u043e \u043a\u0443\u043f\u043b\u0435\u043d\u0430, \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456.",
+      "publisher": "\u0412\u0438\u0434\u0430\u0432\u043d\u0438\u0446\u0442\u0432\u043e \u0441\u0442\u0430\u0440\u043e\u0433\u043e \u043b\u0435\u0432\u0430",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2020,
+      "number_of_pages": 534,
+      "translator": "\u0413\u0430\u043d\u043d\u0430 \u041b\u0435\u043f\u0456\u0432",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/Misto-divchat.jpg",
+      "category": [
+        2,
+        3,
+        1
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 2,
+    "fields": {
+      "created": "2020-07-01T08:07:32.008Z",
+      "updated": "2020-07-01T08:07:42.373Z",
+      "title": "\u041d\u0435 \u043e\u0437\u0438\u0440\u0430\u0439\u0441\u044f \u0456 \u043c\u043e\u0432\u0447\u0438",
+      "slug": "ne-oshirajsya-i-movchi",
+      "author": "\u041c\u0430\u043a\u0441 \u041a\u0456\u0434\u0440\u0443\u043a",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2017,
+      "number_of_pages": 506,
+      "translator": null,
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/dont_look_back.jpg",
+      "category": [
+        4
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 3,
+    "fields": {
+      "created": "2020-07-01T08:12:04.762Z",
+      "updated": "2020-07-01T08:12:04.762Z",
+      "title": "\u0413\u043e\u0441\u0442\u044c\u044f",
+      "slug": "gostya",
+      "author": "\u0421\u0442\u0435\u0444\u0430\u043d\u0438 \u041c\u0430\u0439\u0435\u0440",
+      "description": "\u0423 \u043a\u043d\u0438\u0433\u0438 \u0434\u0443\u0436\u0435 \u0437\u0430\u0442\u0435\u0440\u0442\u0430 \u043e\u0431\u043a\u043b\u0430\u0434\u0438\u043d\u043a\u0430, \u0432\u0456\u0434 \u0441\u0442\u0430\u0440\u043e\u0441\u0442\u0456 \u0441\u0442\u043e\u0440\u0456\u043d\u043a\u0438 \u0432\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456 \u0442\u0440\u0456\u0448\u043a\u0438 \u043f\u043e\u0436\u043e\u0432\u0442\u0456\u043b\u0438",
+      "publisher": "\u041c\u043e\u0441\u043a\u0432\u0430",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2009,
+      "number_of_pages": 668,
+      "translator": "\u0428\u043a\u043e\u043b\u0430 \u043f\u0435\u0440\u0435\u0432\u043e\u0434\u0430 \u0411\u0430\u043a\u0430\u043d\u043e\u0432\u0430",
+      "book_cover": "\u041c'\u044f\u0433\u043a\u0430",
+      "rate": 3,
+      "image_main": "photos/2020/07/01/\u0433\u043e\u0441\u0442\u044c\u044f.jpg",
+      "category": [
+        5,
+        6
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 4,
+    "fields": {
+      "created": "2020-07-01T08:30:58.862Z",
+      "updated": "2020-07-01T08:30:58.862Z",
+      "title": "\u0411\u0440\u0435\u0445\u0443\u043d\u0438 \u043d\u0430 \u043a\u0443\u0448\u0435\u0442\u0446\u0456",
+      "slug": "brehuni-na-kushetci",
+      "author": "\u0406\u0440\u0432\u0456\u043d \u042f\u043b\u043e\u043c",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "Hemiro Ltd.",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2018,
+      "number_of_pages": 509,
+      "translator": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/48294_78710_k.jpg",
+      "category": [
+        7
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 5,
+    "fields": {
+      "created": "2020-07-01T10:05:29.908Z",
+      "updated": "2020-07-01T10:05:29.909Z",
+      "title": "\u041c\u0430\u0441\u0442\u0435\u0440 \u0438 \u041c\u0430\u0440\u0433\u0430\u0440\u0438\u0442\u0430",
+      "slug": "master-i-margarita",
+      "author": "\u041c\u0438\u0445\u0430\u0438\u043b \u0411\u0443\u043b\u0433\u0430\u043a\u043e\u0432",
+      "description": "\u0423 \u043a\u043d\u0438\u0433\u0438 \u0442\u0440\u0456\u0448\u043a\u0438 \u043f\u043e\u0448\u0430\u0440\u043f\u0430\u043d\u0430 \u043e\u0431\u043a\u043b\u0430\u0434\u0438\u043d\u043a\u0430",
+      "publisher": "\u041c\u043e\u0441\u043a\u0432\u0430",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2011,
+      "number_of_pages": 446,
+      "translator": null,
+      "book_cover": "\u041c'\u044f\u0433\u043a\u0430",
+      "rate": 3,
+      "image_main": "photos/2020/07/01/\u043c\u0430\u0441\u0442\u0435\u0440.jpeg",
+      "category": [
+        8
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 6,
+    "fields": {
+      "created": "2020-07-01T10:09:13.925Z",
+      "updated": "2020-07-01T10:09:13.925Z",
+      "title": "\u0411\u043e\u0433\u0430\u0442\u044b\u0439 \u041f\u0430\u043f\u0430, \u0411\u0435\u0434\u043d\u044b\u0439 \u041f\u0430\u043f\u0430",
+      "slug": "bogatyj-papa-bednyj-papa",
+      "author": "\u0420\u043e\u0431\u0435\u0440\u0442 \u0422. \u041a\u0438\u043e\u0441\u0430\u043a\u0438, \u0428\u0430\u0440\u043e\u043d \u041b. \u041b\u0435\u0442\u0447\u0435\u0440",
+      "description": "\u0423 \u043a\u043d\u0438\u0433\u0438 \u0437\u043e\u0432\u0441\u0456\u043c \u0442\u0440\u0456\u0448\u043a\u0438 \u043f\u043e\u0442\u0435\u0440\u043b\u0430\u0441\u044c \u043e\u0431\u043a\u043b\u0430\u0434\u0438\u043d\u043a\u0430",
+      "publisher": "\u0421\u0432\u0456\u0442",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2012,
+      "number_of_pages": 192,
+      "translator": null,
+      "book_cover": "\u041c'\u044f\u0433\u043a\u0430",
+      "rate": 4,
+      "image_main": "photos/2020/07/01/2411485573_w640_h640_2411485573.jpg",
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 7,
+    "fields": {
+      "created": "2020-07-01T10:13:36.297Z",
+      "updated": "2020-07-01T10:13:36.297Z",
+      "title": "\u042f\u0440\u043c\u0430\u0440\u043a\u0430 \u0442\u0449\u0435\u0441\u043b\u0430\u0432\u0438\u044f",
+      "slug": "yarmarka-tsheslaviya",
+      "author": "\u0423\u0438\u043b\u044c\u044f\u043c \u0422\u0435\u043a\u043a\u0435\u0440\u0435\u0439",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456 (\u043c\u0430\u044e \u043b\u0438\u0448\u0435 2 \u0447\u0430\u0441\u0442\u0438\u043d\u0443), 1 \u0447\u0438\u0442\u0430\u043b\u0430 \u0432 \u0435\u043b\u0435\u043a\u0442\u0440\u043e\u043d\u043d\u043e\u043c\u0443 \u0432\u0438\u0433\u043b\u044f\u0434\u0456",
+      "publisher": "\u041f\u0440\u0430\u0432\u0434\u0430",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 1990,
+      "number_of_pages": 414,
+      "translator": "\u041c. \u0414\u044c\u044f\u043a\u043e\u043d\u043e\u0432\u0430",
+      "book_cover": "\u041c'\u044f\u0433\u043a\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/1003216432.jpg",
+      "category": [
+        8,
+        10
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 8,
+    "fields": {
+      "created": "2020-07-01T10:15:55.781Z",
+      "updated": "2020-07-01T10:15:55.781Z",
+      "title": "\u0411\u0440\u0438\u0434\u0430",
+      "slug": "brida",
+      "author": "\u041f\u0430\u0443\u043b\u043e \u041a\u043e\u0435\u043b\u044c\u0439\u043e",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2015,
+      "number_of_pages": 284,
+      "translator": "\u0412\u0456\u043a\u0442\u043e\u0440 \u0428\u043e\u0432\u043a\u0443\u043d",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0431\u0440\u0438\u0434\u0430.jpg",
+      "category": [
+        1,
+        11
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 9,
+    "fields": {
+      "created": "2020-07-01T10:18:22.204Z",
+      "updated": "2020-07-01T10:18:22.204Z",
+      "title": "9 1/2 \u0442\u0438\u0436\u043d\u0456\u0432",
+      "slug": "9-12-tizhniv",
+      "author": "\u0415\u043b\u0456\u0437\u0430\u0431\u0435\u0442 \u041c\u0430\u043a-\u041d\u0456\u043b\u043b",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2020,
+      "number_of_pages": 220,
+      "translator": "\u041c\u0430\u0440\u0456\u044f \u0428\u0430\u043a\u0443\u0440\u0430",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0442\u0438\u0436\u043d\u0456\u0432.jpg",
+      "category": [
+        13,
+        12,
+        1
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 10,
+    "fields": {
+      "created": "2020-07-01T10:25:18.094Z",
+      "updated": "2020-07-01T10:25:18.094Z",
+      "title": "\u041f\u0440\u0438\u043d\u0446\u0438\u043f 80/20",
+      "slug": "princip-8020",
+      "author": "\u0420\u0456\u0447\u0430\u0440\u0434 \u041a\u043e\u0445",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u041c-\u0411\u0423\u041a\u0421",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2017,
+      "number_of_pages": 335,
+      "translator": "\u041d. \u041b\u0430\u0432\u0441\u044c\u043a\u0430",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/80.jpeg",
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 11,
+    "fields": {
+      "created": "2020-07-01T10:28:42.555Z",
+      "updated": "2020-07-01T10:28:42.555Z",
+      "title": "\u0414\u0436\u0435\u0439\u043d \u042d\u0439\u0440",
+      "slug": "dzhejn-ejr",
+      "author": "\u0428\u0430\u0440\u043b\u043e\u0442\u0442\u044f \u0411\u0440\u043e\u043d\u0442\u0435",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0441\u0442\u0430\u0440\u0430, \u0432\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456 \u043f\u0456\u0434\u043a\u043b\u0435\u0454\u043d\u0438\u0439 \u043a\u043e\u0440\u0435\u0448\u043e\u043a, \u0441\u0442\u043e\u0440\u0456\u043d\u043a\u0438 \u0442\u0440\u0456\u0448\u043a\u0438 \u043f\u043e\u0434\u043e\u0432\u043a\u043b\u0438, \u043f\u0440\u043e\u0442\u0435 \u0432 \u0437\u0430\u0433\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0432 \u0433\u0430\u0440\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041f\u0440\u0430\u0432\u0434\u0430",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 1988,
+      "number_of_pages": 507,
+      "translator": "\u0412. \u0421\u0442\u0430\u043d\u0435\u0432\u0438\u0447",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 4,
+      "image_main": "photos/2020/07/01/\u0431\u0440\u043e\u043d\u0442\u0435.jpg",
+      "category": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 12,
+    "fields": {
+      "created": "2020-07-01T10:31:52.627Z",
+      "updated": "2020-07-01T10:31:52.627Z",
+      "title": "\u0413\u0440\u043e\u0437\u043e\u0432\u043e\u0439 \u043f\u0435\u0440\u0435\u0432\u0430\u043b",
+      "slug": "grozovoj-pereval",
+      "author": "\u042d\u043c\u0438\u043b\u0438 \u0411\u0440\u043e\u043d\u0442\u0435",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0433\u0430\u0440\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u042d\u043a\u0441\u043c\u043e",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2009,
+      "number_of_pages": 477,
+      "translator": "\u041d.\u0412\u043e\u043b\u044c\u043f\u0438\u043d",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0431\u0440\u043e\u043d\u0442\u04352.jpg",
+      "category": [
+        3,
+        1,
+        15
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 13,
+    "fields": {
+      "created": "2020-07-01T10:36:01.069Z",
+      "updated": "2020-07-01T10:36:01.069Z",
+      "title": "\u041d\u0435\u0437\u0434\u043e\u043b\u0430\u043d\u043d\u0438\u0439",
+      "slug": "nezdolannij",
+      "author": "\u041b\u0456 \u0427\u0430\u0439\u043b\u0434",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2016,
+      "number_of_pages": 381,
+      "translator": "\u041e\u043a\u0441\u0430\u043d\u0430 \u041f\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u044c\u043a\u0430",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u043d\u0435\u0437\u0434\u043e\u043b\u0430\u043d\u0438\u043d\u0438\u0439.jpg",
+      "category": [
+        17,
+        1,
+        16,
+        11
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 14,
+    "fields": {
+      "created": "2020-07-01T10:41:28.063Z",
+      "updated": "2020-07-01T10:41:28.063Z",
+      "title": "\u0414\u0438\u044f\u0432\u043e\u043b \u0443 \u0431\u0456\u043b\u043e\u043c\u0443 \u043c\u0456\u0441\u0442\u0456",
+      "slug": "diyavol-u-bilomu-misti",
+      "author": "\u0415\u0440\u0456\u043a \u041b\u0430\u0440\u0441\u043e\u043d",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "Hemiro Ltd.",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2016,
+      "number_of_pages": 526,
+      "translator": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0434\u0438\u044f\u0432\u043e\u043b.jpg",
+      "category": [
+        18,
+        19,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 15,
+    "fields": {
+      "created": "2020-07-01T10:45:18.246Z",
+      "updated": "2020-07-01T10:45:18.246Z",
+      "title": "\u0412\u0435\u0434\u044c\u043c\u0430 \u0441 \u041b\u0430\u0439\u043c-\u0441\u0442\u0440\u0438\u0442",
+      "slug": "vedma-s-lajm-strit",
+      "author": "\u0414\u044d\u0432\u0438\u0434 \u0414\u0436\u0430\u044d\u0440",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2016,
+      "number_of_pages": 573,
+      "translator": "\u041e\u043b\u0435\u0441\u044f \u041c\u0430\u043b\u0430",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0432\u0435\u0434\u044c\u043c\u0430.jpg",
+      "category": [
+        17,
+        2,
+        1
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 16,
+    "fields": {
+      "created": "2020-07-01T10:51:21.372Z",
+      "updated": "2020-07-01T10:51:21.372Z",
+      "title": "\u0421\u0438\u0440\u0456\u0442\u0441\u044c\u043a\u0438\u0439 \u043f\u043e\u0442\u044f\u0433",
+      "slug": "siritskij-potyag",
+      "author": "\u041a\u0440\u0456\u0441\u0442\u0456\u043d\u0430 \u0411\u0435\u0439\u043a\u0435\u0440 \u041a\u043b\u0430\u0439\u043d",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2016,
+      "number_of_pages": 298,
+      "translator": "\u041e\u043b\u0435\u043a\u0441\u0430\u043d\u0434\u0440\u0430 \u0413\u043e\u0440\u0434\u0438\u043d\u0447\u0443\u043a",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u043f\u043e\u0442\u044f\u0433.jpg",
+      "category": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 17,
+    "fields": {
+      "created": "2020-07-01T11:16:00.564Z",
+      "updated": "2020-07-01T11:16:00.564Z",
+      "title": "\u0420\u0435\u0431\u0435\u043a\u043a\u0430",
+      "slug": "rebekka",
+      "author": "\u0414\u0430\u0444\u043d\u0430 \u0414\u044e\u043c\u043e\u0440\u044c\u0435",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0441\u0442\u0430\u0440\u0430, \u043f\u0440\u043e\u0442\u0435 \u0432 \u0434\u0443\u0436\u0435 \u0430\u0433\u0440\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u0420\u0438\u044f",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 1992,
+      "number_of_pages": 397,
+      "translator": "\u0413. \u041e\u0441\u0442\u0440\u043e\u0432\u0441\u044c\u043a\u0438\u0439",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 4,
+      "image_main": "photos/2020/07/01/httrf.jpeg",
+      "category": [
+        17,
+        3
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 18,
+    "fields": {
+      "created": "2020-07-01T11:21:35.373Z",
+      "updated": "2020-07-01T11:21:35.373Z",
+      "title": "\u041a\u043d\u0438\u0433\u0430 \u0414\u0437\u0435\u0440\u043a\u0430\u043b",
+      "slug": "kniga-dzerkal",
+      "author": "\u042e.\u041e.\u041a\u0456\u0440\u043e\u0432\u0456\u0446",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2017,
+      "number_of_pages": 250,
+      "translator": "\u041d\u0430\u0434\u0456\u044f \u0425\u0430\u0454\u0446\u044c\u043a\u0430",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0434\u0437\u0435\u0440\u043a\u0430\u043b.jpg",
+      "category": [
+        17,
+        11
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 19,
+    "fields": {
+      "created": "2020-07-01T11:25:11.105Z",
+      "updated": "2020-07-01T11:25:11.105Z",
+      "title": "\u0411\u043e\u0442. \u0490\u0443\u0430\u044f\u043a\u0456\u043b\u044c\u0441\u044c\u043a\u0438\u0439 \u043f\u0430\u0440\u0430\u0434\u043e\u043a\u0441",
+      "slug": "bot-guayakilskij-paradoks",
+      "author": "\u041c\u0430\u043a\u0441 \u041a\u0456\u0434\u0440\u0443\u043a",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2015,
+      "number_of_pages": 506,
+      "translator": null,
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u043f\u0430\u0440\u0430\u0434\u043e\u043a\u0441.jpg",
+      "category": [
+        20
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 20,
+    "fields": {
+      "created": "2020-07-01T11:36:15.311Z",
+      "updated": "2020-07-01T11:36:15.311Z",
+      "title": "\u041f\u0440\u0438\u0441\u043b\u0443\u0433\u0430",
+      "slug": "prisluga",
+      "author": "\u041a\u0435\u0442\u0440\u0456\u043d \u0421\u0442\u043e\u043a\u0435\u0442\u0442",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2017,
+      "number_of_pages": 492,
+      "translator": "\u041d\u0430\u0434\u0456\u044f \u0425\u0430\u0454\u0446\u044c\u043a\u0430",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/orig.jpeg",
+      "category": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 21,
+    "fields": {
+      "created": "2020-07-01T11:40:36.602Z",
+      "updated": "2020-07-01T11:40:36.602Z",
+      "title": "\u0414\u0456\u043c \u0434\u0438\u0432\u043d\u0438\u0445 \u0434\u0456\u0442\u0435\u0439",
+      "slug": "dim-divnih-ditej",
+      "author": "\u0420\u0435\u043d\u0441\u043e\u043c \u0420\u0456\u0491\u0491\u0437",
+      "description": "\u041c\u0430\u044e \u0432\u0441\u044e \u0441\u0435\u0440\u0456\u044e \u0456\u0437 \u0442\u0440\u044c\u043e\u0445 \u043a\u043d\u0438\u0436\u043e\u043a, \u0432\u043e\u043d\u0438 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2012,
+      "number_of_pages": 429,
+      "translator": "\u0412\u043e\u043b\u043e\u0434\u0438\u043c\u0438\u0440 \u0413\u043e\u0440\u0431\u0430\u0442\u044c\u043a\u043e",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0434\u0456\u043c.jpg",
+      "category": [
+        1,
+        11
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 22,
+    "fields": {
+      "created": "2020-07-01T11:42:03.340Z",
+      "updated": "2020-07-01T11:42:03.340Z",
+      "title": "\u041c\u0456\u0441\u0442\u043e \u043f\u043e\u0440\u043e\u0436\u043d\u0456\u0445",
+      "slug": "misto-porozhnih",
+      "author": "\u0420\u0435\u043d\u0441\u043e\u043c \u0420\u0456\u0491\u0491\u0437",
+      "description": "\u041c\u0430\u044e \u0432\u0441\u044e \u0441\u0435\u0440\u0456\u044e \u0456\u0437 \u0442\u0440\u044c\u043e\u0445 \u043a\u043d\u0438\u0436\u043e\u043a, \u0432\u043e\u043d\u0438 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2014,
+      "number_of_pages": 459,
+      "translator": "\u041e\u043b\u0435\u043d\u0430 \u041b\u044e\u0431\u0435\u043d\u043a\u043e",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u043c\u0456\u0441\u0442\u043e.jpeg",
+      "category": [
+        1,
+        11
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 23,
+    "fields": {
+      "created": "2020-07-01T11:42:58.570Z",
+      "updated": "2020-07-01T11:42:58.570Z",
+      "title": "\u0411\u0456\u0431\u043b\u0456\u043e\u0442\u0435\u043a\u0430 \u0434\u0443\u0448",
+      "slug": "biblioteka-dush",
+      "author": "\u0420\u0435\u043d\u0441\u043e\u043c \u0420\u0456\u0491\u0491\u0437",
+      "description": "\u041c\u0430\u044e \u0432\u0441\u044e \u0441\u0435\u0440\u0456\u044e \u0456\u0437 \u0442\u0440\u044c\u043e\u0445 \u043a\u043d\u0438\u0436\u043e\u043a, \u0432\u043e\u043d\u0438 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2016,
+      "number_of_pages": 476,
+      "translator": "\u041e\u043b\u0435\u043d\u0430 \u041b\u044e\u0431\u0435\u043d\u043a\u043e",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0431\u0456\u0431\u043b\u0456\u043e\u0442\u0435\u043a\u0430.jpg",
+      "category": [
+        1,
+        11
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 24,
+    "fields": {
+      "created": "2020-07-01T11:46:43.479Z",
+      "updated": "2020-07-01T11:49:58.297Z",
+      "title": "\u0414\u043d\u0435\u0432\u043d\u0438\u043a \u043c\u0430\u0433\u0430",
+      "slug": "dnevnik-maga",
+      "author": "\u041f\u0430\u0443\u043b\u043e \u041a\u043e\u0435\u043b\u044c\u0439\u043e",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u043c\u0430\u0454 \u0434\u0435\u043a\u0456\u043b\u044c\u043a\u0430 \u043f\u043e\u0437\u043d\u0430\u0447\u0435\u043d\u044c \u0432\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456, \u0434\u0435\u044f\u043a\u0456 \u0441\u0442\u043e\u0440\u0456\u043d\u043a\u0438 \u0432\u0456\u0434\u043a\u043b\u0435\u0457\u043b\u0438\u0441\u044c \u0432\u0456\u0434 \u043a\u043e\u0440\u0435\u0448\u043a\u0430, \u043f\u0440\u043e\u0442\u0435 \u043a\u043d\u0438\u0433\u0430 \u0432 \u0433\u0430\u0440\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456, \u0437\u0437\u043e\u0432\u043d\u0456 \u044f\u043a \u043d\u043e\u0432\u0430",
+      "publisher": "\u0410\u0441\u0442\u0440\u0435\u043b\u044c",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2011,
+      "number_of_pages": 287,
+      "translator": "\u0410. \u0411\u043e\u0433\u0434\u0430\u043d\u043e\u0432\u0441\u044c\u043a\u0438\u0439",
+      "book_cover": "\u041c'\u044f\u0433\u043a\u0430",
+      "rate": 3,
+      "image_main": "photos/2020/07/01/\u0434\u043d\u0435\u0432\u043d\u0438\u043a.jpg",
+      "category": [
+        1,
+        11
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 25,
+    "fields": {
+      "created": "2020-07-01T11:49:47.675Z",
+      "updated": "2020-07-01T11:49:47.675Z",
+      "title": "\u041f\u043e\u0431\u0435\u0434\u0438\u0442\u0435\u043b\u044c \u043e\u0441\u0442\u0430\u0435\u0442\u0441\u044f \u043e\u0434\u0438\u043d",
+      "slug": "pobeditel-ostaetsya-odin",
+      "author": "\u041f\u0430\u0443\u043b\u043e \u041a\u043e\u0435\u043b\u044c\u0439\u043e",
+      "description": "\u0414\u0435\u044f\u043a\u0456 \u0447\u0430\u0441\u0442\u0438\u043d\u0438 \u043a\u043d\u0438\u0433\u0438 \u0432\u0456\u0434\u043a\u043b\u0435\u0457\u043b\u0438\u0441\u044c \u0432\u0456\u0434 \u043a\u043e\u0440\u0435\u0448\u043a\u0443, \u043a\u043d\u0438\u0433\u0430 \u043d\u0435 \u0437\u0430\u0442\u0435\u0440\u0442\u0430 \u0456 \u0431\u0435\u0437 \u043f\u043e\u0437\u043d\u0430\u0447\u043e\u043a",
+      "publisher": "\u0410\u0441\u0442\u0440\u0435\u043b\u044c",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2011,
+      "number_of_pages": 443,
+      "translator": "\u0410. \u0411\u043e\u0433\u0434\u0430\u043d\u043e\u0432\u0441\u044c\u043a\u0438\u0439",
+      "book_cover": "\u041c'\u044f\u0433\u043a\u0430",
+      "rate": 2,
+      "image_main": "photos/2020/07/01/\u043f\u043e\u0431\u0435\u0434\u0438\u0442\u0435\u043b\u044c.jpg",
+      "category": [
+        1,
+        11
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 26,
+    "fields": {
+      "created": "2020-07-01T11:53:01.530Z",
+      "updated": "2020-07-01T11:53:01.530Z",
+      "title": "\u0410\u043b\u0445\u0438\u043c\u0438\u043a",
+      "slug": "alhimik",
+      "author": "\u041f\u0430\u0443\u043b\u043e \u041a\u043e\u0435\u043b\u044c\u0439\u043e",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0433\u0430\u0440\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456, \u0454 \u0434\u0435\u043a\u0456\u043b\u044c\u043a\u0430 \u043f\u043e\u0437\u043d\u0430\u0447\u043e\u043a \u0432\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456",
+      "publisher": "\u0410\u0441\u0442\u0440\u0435\u043b\u044c",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2011,
+      "number_of_pages": 221,
+      "translator": "\u0410. \u0411\u043e\u0433\u0434\u0430\u043d\u043e\u0432\u0441\u044c\u043a\u0438\u0439",
+      "book_cover": "\u041c'\u044f\u0433\u043a\u0430",
+      "rate": 4,
+      "image_main": "photos/2020/07/01/\u0430\u043b\u0445\u0438\u043c\u0438\u043a.jpeg",
+      "category": [
+        13,
+        1,
+        11
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 27,
+    "fields": {
+      "created": "2020-07-01T11:56:08.115Z",
+      "updated": "2020-07-01T11:56:08.115Z",
+      "title": "\u041e\u0441\u0442\u0430\u0432\u044c\u0442\u0435 \u0431\u0440\u0435\u0437\u0433\u043b\u0438\u0432\u043e\u0441\u0442\u044c, \u0441\u044a\u0435\u0448\u044c\u0442\u0435 \u043b\u044f\u0433\u0443\u0448\u043a\u0443",
+      "slug": "ostavte-brezglivost-seshte-lyagushku",
+      "author": "\u0411\u0440\u0430\u0439\u0430\u043d \u0422\u0440\u0435\u0439\u0441\u0438",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041f\u043e\u043f\u0443\u0440\u0440\u0438",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2001,
+      "number_of_pages": 110,
+      "translator": "\u0415. \u0410. \u0421\u0430\u043c\u0441\u043e\u043d\u043e\u0432",
+      "book_cover": "\u041c'\u044f\u0433\u043a\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u043b\u044f\u0433\u0443\u0448\u043a\u0430.jpg",
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 28,
+    "fields": {
+      "created": "2020-07-01T11:58:17.412Z",
+      "updated": "2020-07-01T11:59:14.602Z",
+      "title": "\u0413\u043e\u0440\u0434\u043e\u0441\u0442\u044c \u0438 \u043f\u0440\u0435\u0434\u0443\u0431\u0435\u0436\u0434\u0435\u043d\u0438\u0435",
+      "slug": "gordost-i-predubezhdenie",
+      "author": "\u0414\u0436\u0435\u0439\u043d \u041e\u0441\u0442\u0438\u043d",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2016,
+      "number_of_pages": 414,
+      "translator": "\u041d\u0430\u0442\u0430\u043b\u0456\u044f \u0424\u0456\u043b\u0456\u043c\u043e\u043d\u043e\u0432\u0430",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0433\u043e\u0440\u0434\u043e\u043c\u0442\u044c.jpeg",
+      "category": [
+        13,
+        3,
+        10
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 29,
+    "fields": {
+      "created": "2020-07-01T12:00:51.270Z",
+      "updated": "2020-07-01T12:00:51.270Z",
+      "title": "\u0414\u0435 \u043d\u0435\u043c\u0430\u0454 \u0411\u043e\u0433\u0430",
+      "slug": "de-nemaye-boga",
+      "author": "\u041c\u0430\u043a\u0441 \u041a\u0456\u0434\u0440\u0443\u043a",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2018,
+      "number_of_pages": 476,
+      "translator": null,
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0431\u043e\u0433.jpg",
+      "category": [
+        1
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 30,
+    "fields": {
+      "created": "2020-07-01T13:51:03.315Z",
+      "updated": "2020-07-01T13:51:03.315Z",
+      "title": "\u0420\u0435\u0431\u0435\u043a\u043a\u0430",
+      "slug": "rebekka-2",
+      "author": "\u0414\u0430\u0444\u043d\u0430 \u0434\u044e \u041c\u043e\u0440'\u0454",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2017,
+      "number_of_pages": 478,
+      "translator": "\u0413\u0454\u043d\u0438\u043a \u0411\u0454\u043b\u044f\u043a\u043e\u0432",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0440\u0435\u0431\u0435\u043a\u0430.jpg",
+      "category": [
+        17,
+        3
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 31,
+    "fields": {
+      "created": "2020-07-01T13:52:50.107Z",
+      "updated": "2020-07-01T13:52:50.107Z",
+      "title": "\u041f\u0441\u0438\u0445\u043e\u043b\u043e\u0433\u0456\u044f \u0432\u043f\u043b\u0438\u0432\u0443",
+      "slug": "psihologiya-vplivu",
+      "author": "\u0420\u043e\u0431\u0435\u0440\u0442 \u0427\u0430\u043b\u0434\u0438\u043d\u0456",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2016,
+      "number_of_pages": 366,
+      "translator": "\u041c\u0438\u043a\u0438\u0442\u0430 \u0421\u043a\u043e\u0440\u043e\u0431\u043e\u0433\u0430\u0442\u043e\u0432",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/Robert_Chaldini__Psihologiya_vplivu.jpg",
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 32,
+    "fields": {
+      "created": "2020-07-01T13:54:45.709Z",
+      "updated": "2020-07-01T13:54:45.709Z",
+      "title": "\u0406\u0433\u0440\u0438, \u0443 \u044f\u043a\u0456 \u0433\u0440\u0430\u044e\u0442\u044c \u043b\u044e\u0434\u0438",
+      "slug": "igri-u-yaki-grayut-lyudi",
+      "author": "\u0415\u0440\u0456\u043a \u0411\u0435\u0440\u043d",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0443 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2016,
+      "number_of_pages": 252,
+      "translator": "\u041a\u0430\u0440\u0438\u043d\u0430 \u041c\u0435\u043d\u044c\u0448\u0438\u043a\u043e\u0432\u0430",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0456\u0433\u0440\u0438.jpg",
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 33,
+    "fields": {
+      "created": "2020-07-01T13:57:00.211Z",
+      "updated": "2020-07-01T13:57:00.211Z",
+      "title": "\u0421\u0442\u0440\u0430\u0442\u0435\u0433\u0456\u0457 \u0433\u0435\u043d\u0456\u0457\u0432",
+      "slug": "strategiyi-geniyiv",
+      "author": "\u041c\u0430\u0439\u043a\u043b \u0410.\u041a\u0443\u0441\u0443\u043c\u0430\u043d\u043e, \u0414\u0435\u0432\u0456\u0434 \u0411.\u0419\u043e\u0444\u0444\u0456",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2018,
+      "number_of_pages": 256,
+      "translator": "\u0421\u0432\u0456\u0442\u043b\u0430\u043d\u0430 \u041d\u043e\u0432\u0456\u043a\u043e\u0432\u0430",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0433\u0435\u043d\u0456\u0457.jpg",
+      "category": [
+        14,
+        9
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 34,
+    "fields": {
+      "created": "2020-07-01T13:58:58.769Z",
+      "updated": "2020-07-01T13:58:58.769Z",
+      "title": "\u041d\u0430 \u0431\u0435\u0440\u0435\u0433\u0443 \u0420\u0438\u043e-\u041f\u044c\u0435\u0434\u0440\u0430 \u0441\u0435\u043b\u0430 \u044f \u0438 \u0437\u0430\u043f\u043b\u0430\u043a\u0430\u043b\u0430",
+      "slug": "na-beregu-rio-pedra-sela-ya-i-zaplakala",
+      "author": "\u041f\u0430\u0443\u043b\u043e \u041a\u043e\u0435\u043b\u044c\u0439\u043e",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456, \u0454 \u0434\u0435\u043a\u0456\u043b\u044c\u043a\u0430 \u043f\u043e\u043c\u0456\u0442\u043e\u043a \u0432\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456",
+      "publisher": "\u0421\u043e\u0444\u0438\u044f",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2007,
+      "number_of_pages": 213,
+      "translator": "\u0410. \u0411\u043e\u0433\u0434\u0430\u043d\u043e\u0432\u0441\u044c\u043a\u0438\u0439",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0431\u0435\u0440\u0435\u0433.jpg",
+      "category": [
+        3,
+        1,
+        11
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 35,
+    "fields": {
+      "created": "2020-07-01T14:02:07.789Z",
+      "updated": "2020-07-01T15:34:39.999Z",
+      "title": "\u041e\u0434\u0438\u043d\u043d\u0430\u0434\u0446\u0430\u0442\u044c \u043c\u0438\u043d\u0443\u0442",
+      "slug": "odinnadcat-minut",
+      "author": "\u041f\u0430\u0443\u043b\u043e \u041a\u043e\u0435\u043b\u044c\u0439\u043e",
+      "description": "\u0423 \u043a\u043d\u0438\u0433\u0438 \u0447\u0430\u0441\u0442\u0438\u043d\u0430 \u0441\u0442\u043e\u0440\u0456\u043d\u043e\u043a \u0432\u0456\u0434\u0434\u0456\u043b\u0438\u043b\u0438\u0441\u044c \u0432\u0456\u0434 \u043a\u043e\u0440\u0435\u0448\u043a\u0443, \u0454 \u0434\u0435\u043a\u0456\u043b\u044c\u043a\u0430 \u043f\u043e\u043c\u0430\u0440\u043e\u043a \u0432\u0441\u0435\u0440\u0435\u0434\u0438\u043d\u0456",
+      "publisher": "\u0410\u0441\u0442\u0440\u0435\u043b\u044c",
+      "language": "\u0420\u043e\u0441\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2020,
+      "number_of_pages": 315,
+      "translator": "\u0410. \u0411\u043e\u0433\u0434\u0430\u043d\u043e\u0432\u0441\u044c\u043a\u0438\u0439",
+      "book_cover": "\u041c'\u044f\u0433\u043a\u0430",
+      "rate": 2,
+      "image_main": "photos/2020/07/01/\u043e\u0434\u0438\u043d\u0430\u0434\u0446\u0430\u0442\u044c.jpg",
+      "category": [
+        12,
+        1,
+        11
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 36,
+    "fields": {
+      "created": "2020-07-01T14:05:26.293Z",
+      "updated": "2020-07-01T14:05:26.293Z",
+      "title": "Atonement",
+      "slug": "atonement",
+      "author": "Ivan McEwan",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0433\u0430\u0440\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456, \u0442\u0440\u0456\u0448\u043a\u0438 \u043d\u0430 \u043a\u0456\u043d\u0447\u0438\u043a\u0430\u0445 \u043f\u043e\u0442\u0435\u0440\u0442\u0430 \u043e\u0431\u043a\u043b\u0430\u0434\u0438\u043d\u043a\u0430",
+      "publisher": "Vintage",
+      "language": "\u0410\u043d\u0433\u043b\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2007,
+      "number_of_pages": 371,
+      "translator": null,
+      "book_cover": "\u041c'\u044f\u0433\u043a\u0430",
+      "rate": 4,
+      "image_main": "photos/2020/07/01/aton.jpg",
+      "category": [
+        21,
+        17,
+        13,
+        1
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 37,
+    "fields": {
+      "created": "2020-07-01T14:07:37.477Z",
+      "updated": "2020-07-01T14:07:37.477Z",
+      "title": "\u0425\u043b\u043e\u043f\u0447\u0438\u043a \u0443 \u0441\u043c\u0443\u0433\u0430\u0441\u0442\u0456\u0439 \u043f\u0456\u0436\u0430\u043c\u0456",
+      "slug": "hlopchik-u-smugastij-pizhami",
+      "author": "\u0414\u0436\u043e\u043d \u0411\u043e\u0439\u043d",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u0412\u0438\u0434\u0430\u0432\u043d\u0438\u0446\u0442\u0432\u043e \u0441\u0442\u0430\u0440\u043e\u0433\u043e \u043b\u0435\u0432\u0430",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2017,
+      "number_of_pages": 184,
+      "translator": "\u0412\u0456\u043a\u0442\u043e\u0440 \u0428\u043e\u0432\u043a\u0443\u043d",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0445\u043b\u043e\u043f\u0447\u0438\u043a.jpg",
+      "category": [
+        21,
+        13,
+        2
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 38,
+    "fields": {
+      "created": "2020-07-01T14:10:00.593Z",
+      "updated": "2020-07-01T14:10:00.593Z",
+      "title": "English Reader 9",
+      "slug": "english-reader-9",
+      "author": "Laryssa Davydenko",
+      "description": "\u041f\u0456\u0434\u0440\u0443\u0447\u043d\u0438\u043a \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041f\u0456\u0434\u0440\u0443\u0447\u043d\u0438\u043a\u0438 \u0456 \u043f\u043e\u0441\u0456\u0431\u043d\u0438\u043a\u0438",
+      "language": "\u0410\u043d\u0433\u043b\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2009,
+      "number_of_pages": 143,
+      "translator": null,
+      "book_cover": "\u041c'\u044f\u0433\u043a\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/engl.jpg",
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 39,
+    "fields": {
+      "created": "2020-07-01T14:11:59.866Z",
+      "updated": "2020-07-01T14:11:59.866Z",
+      "title": "\u0414\u0456\u0432\u0447\u0438\u043d\u0430 \u0443 \u043f\u043e\u0442\u044f\u0433\u0443",
+      "slug": "divchina-u-potyagu",
+      "author": "\u041f\u043e\u043b\u0430 \u0413\u043e\u0443\u043a\u0456\u043d\u0437",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2016,
+      "number_of_pages": 316,
+      "translator": "\u0406\u043d\u043d\u0430 \u041f\u0430\u043d\u0435\u043d\u043a\u043e",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u043f\u043e\u0442\u044f\u0433_2xfw1lP.jpg",
+      "category": [
+        17,
+        1,
+        16
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 40,
+    "fields": {
+      "created": "2020-07-01T14:13:53.702Z",
+      "updated": "2020-07-01T14:13:53.702Z",
+      "title": "\u0412\u0456\u0434 \u043d\u0443\u043b\u044f - \u0434\u043e \u043e\u0434\u0438\u043d\u0438\u0446\u0456",
+      "slug": "vid-nulya-do-odinici",
+      "author": "\u041f\u0456\u0442\u0435\u0440 \u0422\u0456\u043b\u044c",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041d\u0430\u0448 \u0444\u043e\u0440\u043c\u0430\u0442",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2016,
+      "number_of_pages": 224,
+      "translator": "\u0420\u043e\u043c\u0430\u043d \u041e\u0431\u0443\u0445\u0456\u0432",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u043d\u0443\u043b\u044c.jpeg",
+      "category": [
+        14,
+        9
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 41,
+    "fields": {
+      "created": "2020-07-01T14:16:11.003Z",
+      "updated": "2020-07-01T14:16:11.004Z",
+      "title": "\u0414\u0440\u0443\u0436\u0438\u043d\u0430 \u043c\u0430\u043d\u0434\u0440\u0456\u0432\u043d\u0438\u043a\u0430 \u0432 \u0447\u0430\u0441\u0456",
+      "slug": "druzhina-mandrivnika-v-chasi",
+      "author": "\u041e\u0434\u0440\u0456 \u041d\u0456\u0444\u0444\u0435\u043d\u0435\u0433\u0433\u0435\u0440",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2016,
+      "number_of_pages": 589,
+      "translator": "\u041d\u0430\u0434\u0456\u044f \u0425\u0430\u0454\u0446\u044c\u043a\u0430",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0414\u0440\u0443\u0436\u0438\u043d\u0430_\u043c\u0430\u043d\u0434\u0440\u0456\u0432\u043d\u0438\u043a\u0430_\u0432_\u0447\u0430\u0441\u0456.jpg",
+      "category": [
+        3,
+        5,
+        1,
+        22,
+        11
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 42,
+    "fields": {
+      "created": "2020-07-01T14:27:36.789Z",
+      "updated": "2020-07-01T14:27:36.790Z",
+      "title": "\u0421\u0438\u043b\u0430 \u0437\u0432\u0438\u0447\u043a\u0438",
+      "slug": "sila-zvichki",
+      "author": "\u0427\u0430\u0440\u043b\u0437 \u0414\u0430\u0445\u0456\u0491\u0491",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0447\u0443\u0434\u043e\u0432\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0423\u043a\u0440\u0430\u0457\u043d\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2017,
+      "number_of_pages": 430,
+      "translator": "\u0413\u0430\u043d\u043d\u0430 \u041b\u0435\u043b\u0456\u0432",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0441\u0438\u043b\u0430-\u0437\u0432\u0438\u0447\u043a\u0438.jpg",
+      "category": [
+        9
+      ]
+    }
+  },
+  {
+    "model": "listings.book",
+    "pk": 43,
+    "fields": {
+      "created": "2020-07-01T14:29:32.984Z",
+      "updated": "2020-07-01T14:29:32.984Z",
+      "title": "\u0414\u0436\u0435\u0440\u0435\u043b\u043e",
+      "slug": "dzherelo",
+      "author": "\u0414\u0435\u043d \u0411\u0440\u0430\u0443\u043d",
+      "description": "\u041a\u043d\u0438\u0433\u0430 \u0432 \u0456\u0434\u0435\u0430\u043b\u044c\u043d\u043e\u043c\u0443 \u0441\u0442\u0430\u043d\u0456",
+      "publisher": "\u041a\u043b\u0443\u0431 \u0441\u0456\u043c\u0435\u0439\u043d\u043e\u0433\u043e \u0434\u043e\u0437\u0432\u0456\u043b\u043b\u044f",
+      "language": "\u0410\u043d\u0433\u043b\u0456\u0439\u0441\u044c\u043a\u0430",
+      "year_of_publishing": 2018,
+      "number_of_pages": 523,
+      "translator": "\u0413\u0430\u043d\u043d\u0430 \u042f\u043d\u043e\u0432\u0441\u044c\u043a\u0430",
+      "book_cover": "\u0422\u0432\u0435\u0440\u0434\u0430",
+      "rate": 5,
+      "image_main": "photos/2020/07/01/\u0434\u0436\u0435\u0440\u0435\u043b\u043e.JPG",
+      "category": [
+        17,
+        16
+      ]
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 1,
+    "fields": {
+      "name": "Can add log entry",
+      "content_type": 1,
+      "codename": "add_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 2,
+    "fields": {
+      "name": "Can change log entry",
+      "content_type": 1,
+      "codename": "change_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 3,
+    "fields": {
+      "name": "Can delete log entry",
+      "content_type": 1,
+      "codename": "delete_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 4,
+    "fields": {
+      "name": "Can view log entry",
+      "content_type": 1,
+      "codename": "view_logentry"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 5,
+    "fields": {
+      "name": "Can add permission",
+      "content_type": 2,
+      "codename": "add_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 6,
+    "fields": {
+      "name": "Can change permission",
+      "content_type": 2,
+      "codename": "change_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 7,
+    "fields": {
+      "name": "Can delete permission",
+      "content_type": 2,
+      "codename": "delete_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 8,
+    "fields": {
+      "name": "Can view permission",
+      "content_type": 2,
+      "codename": "view_permission"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 9,
+    "fields": {
+      "name": "Can add group",
+      "content_type": 3,
+      "codename": "add_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 10,
+    "fields": {
+      "name": "Can change group",
+      "content_type": 3,
+      "codename": "change_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 11,
+    "fields": {
+      "name": "Can delete group",
+      "content_type": 3,
+      "codename": "delete_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 12,
+    "fields": {
+      "name": "Can view group",
+      "content_type": 3,
+      "codename": "view_group"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 13,
+    "fields": {
+      "name": "Can add user",
+      "content_type": 4,
+      "codename": "add_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 14,
+    "fields": {
+      "name": "Can change user",
+      "content_type": 4,
+      "codename": "change_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 15,
+    "fields": {
+      "name": "Can delete user",
+      "content_type": 4,
+      "codename": "delete_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 16,
+    "fields": {
+      "name": "Can view user",
+      "content_type": 4,
+      "codename": "view_user"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 17,
+    "fields": {
+      "name": "Can add content type",
+      "content_type": 5,
+      "codename": "add_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 18,
+    "fields": {
+      "name": "Can change content type",
+      "content_type": 5,
+      "codename": "change_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 19,
+    "fields": {
+      "name": "Can delete content type",
+      "content_type": 5,
+      "codename": "delete_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 20,
+    "fields": {
+      "name": "Can view content type",
+      "content_type": 5,
+      "codename": "view_contenttype"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 21,
+    "fields": {
+      "name": "Can add session",
+      "content_type": 6,
+      "codename": "add_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 22,
+    "fields": {
+      "name": "Can change session",
+      "content_type": 6,
+      "codename": "change_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 23,
+    "fields": {
+      "name": "Can delete session",
+      "content_type": 6,
+      "codename": "delete_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 24,
+    "fields": {
+      "name": "Can view session",
+      "content_type": 6,
+      "codename": "view_session"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 25,
+    "fields": {
+      "name": "Can add category",
+      "content_type": 7,
+      "codename": "add_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 26,
+    "fields": {
+      "name": "Can change category",
+      "content_type": 7,
+      "codename": "change_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 27,
+    "fields": {
+      "name": "Can delete category",
+      "content_type": 7,
+      "codename": "delete_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 28,
+    "fields": {
+      "name": "Can view category",
+      "content_type": 7,
+      "codename": "view_category"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 29,
+    "fields": {
+      "name": "Can add book",
+      "content_type": 8,
+      "codename": "add_book"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 30,
+    "fields": {
+      "name": "Can change book",
+      "content_type": 8,
+      "codename": "change_book"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 31,
+    "fields": {
+      "name": "Can delete book",
+      "content_type": 8,
+      "codename": "delete_book"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 32,
+    "fields": {
+      "name": "Can view book",
+      "content_type": 8,
+      "codename": "view_book"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 33,
+    "fields": {
+      "name": "Can add owner",
+      "content_type": 9,
+      "codename": "add_owner"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 34,
+    "fields": {
+      "name": "Can change owner",
+      "content_type": 9,
+      "codename": "change_owner"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 35,
+    "fields": {
+      "name": "Can delete owner",
+      "content_type": 9,
+      "codename": "delete_owner"
+    }
+  },
+  {
+    "model": "auth.permission",
+    "pk": 36,
+    "fields": {
+      "name": "Can view owner",
+      "content_type": 9,
+      "codename": "view_owner"
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$1l3PVPpyvHS6$OuvQx2oIG5Y27NoRdqzIr7lbyZd44V1qCVs51169Yn0=",
+      "last_login": "2020-07-01T17:43:02.157Z",
+      "is_superuser": true,
+      "username": "sofiia",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2020-06-02T08:02:44.325Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$SQK8maU8r4Sz$QOr1/A42kY6PVkfgrIE93fhaSg1b62BEXV8NYqwITPU=",
+      "last_login": null,
+      "is_superuser": false,
+      "username": "kapa",
+      "first_name": "",
+      "last_name": "",
+      "email": "",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2020-06-02T09:59:31.794Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.user",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$180000$YtzvoUmfaatV$RKDLXD5oKF3zWc/m2QHXQs0yDE7450rtvsXFD7L789w=",
+      "last_login": "2020-06-26T13:11:40.012Z",
+      "is_superuser": false,
+      "username": "sofiia3",
+      "first_name": "",
+      "last_name": "",
+      "email": "sofiia3@sofiia3.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2020-06-26T13:08:56.970Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 1,
+    "fields": {
+      "action_time": "2020-06-02T09:52:40.713Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "Fiction",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 2,
+    "fields": {
+      "action_time": "2020-06-02T09:55:14.630Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": " ",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 3,
+    "fields": {
+      "action_time": "2020-06-02T09:56:15.489Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": " ",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 4,
+    "fields": {
+      "action_time": "2020-06-02T09:58:25.418Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "le-passanger",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 5,
+    "fields": {
+      "action_time": "2020-06-02T09:59:31.900Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "2",
+      "object_repr": "kapa",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 6,
+    "fields": {
+      "action_time": "2020-06-02T10:02:05.389Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": " ",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 7,
+    "fields": {
+      "action_time": "2020-06-02T10:02:21.524Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "2",
+      "object_repr": " ",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 8,
+    "fields": {
+      "action_time": "2020-06-02T10:02:21.529Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "1",
+      "object_repr": " ",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 9,
+    "fields": {
+      "action_time": "2020-06-02T10:03:20.495Z",
+      "user": 1,
+      "content_type": 9,
+      "object_id": "3",
+      "object_repr": "kapa",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 10,
+    "fields": {
+      "action_time": "2020-06-02T10:03:59.122Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "le-passanger",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 11,
+    "fields": {
+      "action_time": "2020-06-02T10:06:08.732Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "grim-reaper-end-days",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 12,
+    "fields": {
+      "action_time": "2020-06-02T10:08:23.592Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "dont-look-back",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 13,
+    "fields": {
+      "action_time": "2020-06-02T11:19:42.865Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "le-passanger",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image main\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 14,
+    "fields": {
+      "action_time": "2020-06-02T11:19:53.151Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "dont-look-back",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image main\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 15,
+    "fields": {
+      "action_time": "2020-06-02T11:20:07.088Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "grim-reaper-end-days",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image main\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 16,
+    "fields": {
+      "action_time": "2020-06-02T13:54:56.139Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "Technical",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 17,
+    "fields": {
+      "action_time": "2020-06-02T13:55:30.668Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Health and Beauty",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 18,
+    "fields": {
+      "action_time": "2020-06-02T13:55:41.623Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Classic",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 19,
+    "fields": {
+      "action_time": "2020-06-02T13:56:59.201Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "master-and-margarita",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 20,
+    "fields": {
+      "action_time": "2020-06-02T13:58:04.475Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "body-book",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 21,
+    "fields": {
+      "action_time": "2020-06-02T13:58:55.917Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "django-2-example",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 22,
+    "fields": {
+      "action_time": "2020-06-03T11:28:32.796Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "lost-symbol",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 23,
+    "fields": {
+      "action_time": "2020-06-04T12:51:26.075Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "django-2-example",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image 1\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 24,
+    "fields": {
+      "action_time": "2020-06-04T12:58:11.282Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "django-2-example",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Image 2\", \"Image 3\", \"Image 4\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 25,
+    "fields": {
+      "action_time": "2020-06-05T10:06:29.498Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "lost-symbol",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 26,
+    "fields": {
+      "action_time": "2020-06-05T10:06:33.293Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "lost-symbol",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 27,
+    "fields": {
+      "action_time": "2020-06-05T10:06:39.381Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "django-2-example",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 28,
+    "fields": {
+      "action_time": "2020-06-05T10:06:43.736Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "body-book",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 29,
+    "fields": {
+      "action_time": "2020-06-05T10:06:48.047Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "master-and-margarita",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 30,
+    "fields": {
+      "action_time": "2020-06-05T10:07:21.908Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "dont-look-back",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 31,
+    "fields": {
+      "action_time": "2020-06-05T10:07:25.829Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "grim-reaper-end-days",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 32,
+    "fields": {
+      "action_time": "2020-06-05T10:07:30.052Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "le-passanger",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 33,
+    "fields": {
+      "action_time": "2020-06-05T13:35:36.525Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "lost-symbol",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 34,
+    "fields": {
+      "action_time": "2020-06-05T13:35:42.059Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "django-2-example",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 35,
+    "fields": {
+      "action_time": "2020-06-05T13:35:48.999Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "body-book",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Author\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 36,
+    "fields": {
+      "action_time": "2020-06-05T13:35:54.398Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "django-2-example",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 37,
+    "fields": {
+      "action_time": "2020-06-05T13:36:00.047Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "lost-symbol",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Author\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 38,
+    "fields": {
+      "action_time": "2020-06-05T13:36:07.772Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "master-and-margarita",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Author\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 39,
+    "fields": {
+      "action_time": "2020-06-05T13:47:51.038Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "CLASSIC",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 40,
+    "fields": {
+      "action_time": "2020-06-05T13:48:02.130Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "Classic",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 41,
+    "fields": {
+      "action_time": "2020-06-05T13:48:09.606Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Health And Beauty",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 42,
+    "fields": {
+      "action_time": "2020-06-05T13:48:13.613Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "Health And Beauty",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 43,
+    "fields": {
+      "action_time": "2020-06-26T13:10:44.815Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "3",
+      "object_repr": "sofiia2",
+      "action_flag": 3,
+      "change_message": ""
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 44,
+    "fields": {
+      "action_time": "2020-06-26T13:11:29.732Z",
+      "user": 1,
+      "content_type": 4,
+      "object_id": "4",
+      "object_repr": "sofiia3",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"password\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 45,
+    "fields": {
+      "action_time": "2020-06-29T09:09:32.356Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "\u041a\u043b\u0430\u0441\u0438\u043a\u0430",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 46,
+    "fields": {
+      "action_time": "2020-06-29T09:09:44.496Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "\u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u041b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 47,
+    "fields": {
+      "action_time": "2020-06-29T09:09:58.949Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "\u0417\u0434\u043e\u0440\u043e\u0432\"\u042f \u0406 \u041a\u0440\u0430\u0441\u0430",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 48,
+    "fields": {
+      "action_time": "2020-06-29T09:10:06.209Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "\u0417\u0434\u043e\u0440\u043e\u0432\"\u042f \u0406 \u041a\u0440\u0430\u0441\u0430",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 49,
+    "fields": {
+      "action_time": "2020-06-29T09:10:15.282Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "\u0417\u0434\u043e\u0440\u043e\u0432'\u042f \u0406 \u041a\u0440\u0430\u0441\u0430",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 50,
+    "fields": {
+      "action_time": "2020-06-29T09:10:25.375Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "\u0417\u0434\u043e\u0440\u043e\u0432'\u042f \u0406 \u041a\u0440\u0430\u0441\u0430",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 51,
+    "fields": {
+      "action_time": "2020-06-29T09:10:32.648Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "\u0424\u0430\u043d\u0442\u0430\u0441\u0442\u0438\u043a\u0430",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 52,
+    "fields": {
+      "action_time": "2020-06-29T09:11:36.645Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "\u0417\u0434\u043e\u0440\u043e\u0432'\u044f \u0456 \u043a\u0440\u0430\u0441\u0430",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 53,
+    "fields": {
+      "action_time": "2020-06-29T09:11:43.374Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "\u0422\u0435\u0445\u043d\u0456\u0447\u043d\u0430 \u043b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 54,
+    "fields": {
+      "action_time": "2020-06-29T09:11:49.402Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "\u0417\u0434\u043e\u0440\u043e\u0432'\u044f \u0456 \u043a\u0440\u0430\u0441\u0430",
+      "action_flag": 2,
+      "change_message": "[]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 55,
+    "fields": {
+      "action_time": "2020-07-01T07:48:42.776Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "1",
+      "object_repr": "\u0420\u043e\u043c\u0430\u043d",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 56,
+    "fields": {
+      "action_time": "2020-07-01T07:49:34.324Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "\u0406\u0441\u0442\u043e\u0440\u0438\u0447\u043d\u0438\u0439 \u0436\u0430\u043d\u0440",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 57,
+    "fields": {
+      "action_time": "2020-07-01T07:49:39.946Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "3",
+      "object_repr": "\u041b\u044e\u0431\u043e\u0432\u043d\u0438\u0439 \u0440\u043e\u043c\u0430\u043d",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 58,
+    "fields": {
+      "action_time": "2020-07-01T07:59:20.116Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "misto-divchat",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 59,
+    "fields": {
+      "action_time": "2020-07-01T08:00:19.353Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "misto-divchat",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Rate\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 60,
+    "fields": {
+      "action_time": "2020-07-01T08:02:24.257Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "1",
+      "object_repr": "misto-divchat",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Language\", \"Book cover\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 61,
+    "fields": {
+      "action_time": "2020-07-01T08:04:02.248Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "4",
+      "object_repr": "\u041c\u0456\u0441\u0442\u0438\u0447\u043d\u0438\u0439 \u0440\u043e\u043c\u0430\u043d",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 62,
+    "fields": {
+      "action_time": "2020-07-01T08:07:32.013Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "ne-oshirajsya-i-movchi",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 63,
+    "fields": {
+      "action_time": "2020-07-01T08:07:42.378Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "2",
+      "object_repr": "ne-oshirajsya-i-movchi",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 64,
+    "fields": {
+      "action_time": "2020-07-01T08:09:35.713Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "5",
+      "object_repr": "\u041d\u0430\u0443\u043a\u043e\u0432\u043e-\u0444\u0430\u043d\u0442\u0430\u0441\u0442\u0438\u0447\u043d\u0438\u0439",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 65,
+    "fields": {
+      "action_time": "2020-07-01T08:09:58.747Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "6",
+      "object_repr": "\u0420\u043e\u043c\u0430\u043d\u0442\u0438\u0447\u043d\u043e-\u043f\u0440\u0438\u0433\u043e\u0434\u043d\u0438\u0446\u044c\u043a\u0438\u0439",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 66,
+    "fields": {
+      "action_time": "2020-07-01T08:12:04.768Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "3",
+      "object_repr": "gostya",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 67,
+    "fields": {
+      "action_time": "2020-07-01T08:14:40.035Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "7",
+      "object_repr": "\u041f\u0441\u0438\u0445\u043e\u0442\u0435\u0440\u0430\u043f\u0435\u0432\u0442\u0438\u0447\u043d\u0456 \u043e\u043f\u043e\u0432\u0456\u0434\u0456",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 68,
+    "fields": {
+      "action_time": "2020-07-01T08:30:58.872Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "4",
+      "object_repr": "brehuni-na-kushetci",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 69,
+    "fields": {
+      "action_time": "2020-07-01T10:03:07.746Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "8",
+      "object_repr": "\u041a\u043b\u0430\u0441\u0438\u043a\u0430",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 70,
+    "fields": {
+      "action_time": "2020-07-01T10:05:29.920Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "5",
+      "object_repr": "master-i-margarita",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 71,
+    "fields": {
+      "action_time": "2020-07-01T10:07:07.161Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "9",
+      "object_repr": "\u041b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430 \u0434\u043b\u044f \u0441\u0430\u043c\u043e\u0440\u043e\u0437\u0432\u0438\u0442\u043a\u0443",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 72,
+    "fields": {
+      "action_time": "2020-07-01T10:09:13.934Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "6",
+      "object_repr": "bogatyj-papa-bednyj-papa",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 73,
+    "fields": {
+      "action_time": "2020-07-01T10:10:42.758Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "10",
+      "object_repr": "\u0421\u0430\u0442\u0438\u0440\u0430",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 74,
+    "fields": {
+      "action_time": "2020-07-01T10:13:36.302Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "7",
+      "object_repr": "yarmarka-tsheslaviya",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 75,
+    "fields": {
+      "action_time": "2020-07-01T10:14:48.759Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "11",
+      "object_repr": "\u0425\u0443\u0434\u043e\u0436\u043d\u044f \u043b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 76,
+    "fields": {
+      "action_time": "2020-07-01T10:15:55.788Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "8",
+      "object_repr": "brida",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 77,
+    "fields": {
+      "action_time": "2020-07-01T10:17:20.479Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "12",
+      "object_repr": "\u0415\u0440\u043e\u0442\u0438\u043a\u0430",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 78,
+    "fields": {
+      "action_time": "2020-07-01T10:17:24.670Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "13",
+      "object_repr": "\u0414\u0440\u0430\u043c\u0430",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 79,
+    "fields": {
+      "action_time": "2020-07-01T10:18:22.211Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "9",
+      "object_repr": "9-12-tizhniv",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 80,
+    "fields": {
+      "action_time": "2020-07-01T10:20:04.064Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "14",
+      "object_repr": "\u0411\u0456\u0437\u043d\u0435\u0441 \u043b\u0456\u0442\u0435\u0440\u0430\u0442\u0443\u0440\u0430",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 81,
+    "fields": {
+      "action_time": "2020-07-01T10:25:18.100Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "10",
+      "object_repr": "princip-8020",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 82,
+    "fields": {
+      "action_time": "2020-07-01T10:28:42.566Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "11",
+      "object_repr": "dzhejn-ejr",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 83,
+    "fields": {
+      "action_time": "2020-07-01T10:29:42.357Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "15",
+      "object_repr": "\u0422\u0440\u0430\u0433\u0435\u0434\u0456\u044f",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 84,
+    "fields": {
+      "action_time": "2020-07-01T10:31:52.632Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "12",
+      "object_repr": "grozovoj-pereval",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 85,
+    "fields": {
+      "action_time": "2020-07-01T10:34:39.430Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "16",
+      "object_repr": "\u0422\u0440\u0438\u043b\u0435\u0440",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 86,
+    "fields": {
+      "action_time": "2020-07-01T10:34:49.226Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "17",
+      "object_repr": "\u0414\u0435\u0442\u0435\u043a\u0442\u0438\u0432",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 87,
+    "fields": {
+      "action_time": "2020-07-01T10:36:01.076Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "13",
+      "object_repr": "nezdolannij",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 88,
+    "fields": {
+      "action_time": "2020-07-01T10:38:51.442Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "18",
+      "object_repr": "\u0411\u0456\u043e\u0433\u0440\u0430\u0444\u0456\u044f",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 89,
+    "fields": {
+      "action_time": "2020-07-01T10:39:01.983Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "19",
+      "object_repr": "\u0414\u043e\u043a\u0443\u043c\u0435\u043d\u0442\u0430\u043b\u044c\u043d\u0438\u0439 \u0434\u0435\u0442\u0435\u043a\u0442\u0438\u0432",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 90,
+    "fields": {
+      "action_time": "2020-07-01T10:41:28.073Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "14",
+      "object_repr": "diyavol-u-bilomu-misti",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 91,
+    "fields": {
+      "action_time": "2020-07-01T10:45:18.252Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "15",
+      "object_repr": "vedma-s-lajm-strit",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 92,
+    "fields": {
+      "action_time": "2020-07-01T10:51:21.379Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "16",
+      "object_repr": "siritskij-potyag",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 93,
+    "fields": {
+      "action_time": "2020-07-01T11:16:00.579Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "17",
+      "object_repr": "rebekka",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 94,
+    "fields": {
+      "action_time": "2020-07-01T11:21:35.380Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "18",
+      "object_repr": "kniga-dzerkal",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 95,
+    "fields": {
+      "action_time": "2020-07-01T11:23:40.629Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "20",
+      "object_repr": "\u0422\u0435\u0445\u043d\u043e\u0442\u0440\u0438\u043b\u0435\u0440",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 96,
+    "fields": {
+      "action_time": "2020-07-01T11:25:11.113Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "19",
+      "object_repr": "bot-guayakilskij-paradoks",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 97,
+    "fields": {
+      "action_time": "2020-07-01T11:36:15.318Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "20",
+      "object_repr": "prisluga",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 98,
+    "fields": {
+      "action_time": "2020-07-01T11:40:36.610Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "21",
+      "object_repr": "dim-divnih-ditej",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 99,
+    "fields": {
+      "action_time": "2020-07-01T11:42:03.348Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "22",
+      "object_repr": "misto-porozhnih",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 100,
+    "fields": {
+      "action_time": "2020-07-01T11:42:58.578Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "23",
+      "object_repr": "biblioteka-dush",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 101,
+    "fields": {
+      "action_time": "2020-07-01T11:46:43.485Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "24",
+      "object_repr": "dnevnik-maga",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 102,
+    "fields": {
+      "action_time": "2020-07-01T11:49:47.687Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "25",
+      "object_repr": "pobeditel-ostaetsya-odin",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 103,
+    "fields": {
+      "action_time": "2020-07-01T11:49:58.303Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "24",
+      "object_repr": "dnevnik-maga",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Year of publishing\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 104,
+    "fields": {
+      "action_time": "2020-07-01T11:53:01.536Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "26",
+      "object_repr": "alhimik",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 105,
+    "fields": {
+      "action_time": "2020-07-01T11:56:08.120Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "27",
+      "object_repr": "ostavte-brezglivost-seshte-lyagushku",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 106,
+    "fields": {
+      "action_time": "2020-07-01T11:58:17.426Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "28",
+      "object_repr": "gordost-i-predubezhdenie",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 107,
+    "fields": {
+      "action_time": "2020-07-01T11:59:14.610Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "28",
+      "object_repr": "gordost-i-predubezhdenie",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 108,
+    "fields": {
+      "action_time": "2020-07-01T12:00:51.279Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "29",
+      "object_repr": "de-nemaye-boga",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 109,
+    "fields": {
+      "action_time": "2020-07-01T13:51:03.323Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "30",
+      "object_repr": "rebekka-2",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 110,
+    "fields": {
+      "action_time": "2020-07-01T13:52:50.115Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "31",
+      "object_repr": "psihologiya-vplivu",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 111,
+    "fields": {
+      "action_time": "2020-07-01T13:54:45.717Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "32",
+      "object_repr": "igri-u-yaki-grayut-lyudi",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 112,
+    "fields": {
+      "action_time": "2020-07-01T13:57:00.218Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "33",
+      "object_repr": "strategiyi-geniyiv",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 113,
+    "fields": {
+      "action_time": "2020-07-01T13:58:58.776Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "34",
+      "object_repr": "na-beregu-rio-pedra-sela-ya-i-zaplakala",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 114,
+    "fields": {
+      "action_time": "2020-07-01T14:02:07.795Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "35",
+      "object_repr": "odinnadcat-minut",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 115,
+    "fields": {
+      "action_time": "2020-07-01T14:03:31.437Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "21",
+      "object_repr": "\u0412\u0456\u0439\u0441\u044c\u043a\u043e\u0432\u0438\u0439",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 116,
+    "fields": {
+      "action_time": "2020-07-01T14:05:26.301Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "36",
+      "object_repr": "atonement",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 117,
+    "fields": {
+      "action_time": "2020-07-01T14:06:44.347Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "2",
+      "object_repr": "\u0406\u0441\u0442\u043e\u0440\u0438\u0447\u043d\u0438\u0439",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Slug\"]}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 118,
+    "fields": {
+      "action_time": "2020-07-01T14:07:37.483Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "37",
+      "object_repr": "hlopchik-u-smugastij-pizhami",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 119,
+    "fields": {
+      "action_time": "2020-07-01T14:10:00.601Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "38",
+      "object_repr": "english-reader-9",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 120,
+    "fields": {
+      "action_time": "2020-07-01T14:11:59.872Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "39",
+      "object_repr": "divchina-u-potyagu",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 121,
+    "fields": {
+      "action_time": "2020-07-01T14:13:53.709Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "40",
+      "object_repr": "vid-nulya-do-odinici",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 122,
+    "fields": {
+      "action_time": "2020-07-01T14:15:09.838Z",
+      "user": 1,
+      "content_type": 7,
+      "object_id": "22",
+      "object_repr": "\u0424\u0435\u043d\u0442\u0435\u0437\u0456",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 123,
+    "fields": {
+      "action_time": "2020-07-01T14:16:11.010Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "41",
+      "object_repr": "druzhina-mandrivnika-v-chasi",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 124,
+    "fields": {
+      "action_time": "2020-07-01T14:27:36.800Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "42",
+      "object_repr": "sila-zvichki",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 125,
+    "fields": {
+      "action_time": "2020-07-01T14:29:32.988Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "43",
+      "object_repr": "dzherelo",
+      "action_flag": 1,
+      "change_message": "[{\"added\": {}}]"
+    }
+  },
+  {
+    "model": "admin.logentry",
+    "pk": 126,
+    "fields": {
+      "action_time": "2020-07-01T15:34:40.006Z",
+      "user": 1,
+      "content_type": 8,
+      "object_id": "35",
+      "object_repr": "odinnadcat-minut",
+      "action_flag": 2,
+      "change_message": "[{\"changed\": {\"fields\": [\"Category\"]}}]"
+    }
+  }
+]
