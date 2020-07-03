@@ -11,11 +11,11 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <ul class="navbar-nav">
-                <li {% if '/' == request.path %} class="nav-item active mr-3"
+                <li {% if 'main' in request.path %} class="nav-item active mr-3"
                 {% else %} class="nav-item mr-3" {% endif %}>
                     <a class="nav-link" href="{% url 'index' %}">Книги </a>
                 </li>
-                <li {% if 'about' in request.path %} class="nav-item active mr-3"
+                <li {% if '/' == request.path %} class="nav-item active mr-3"
                 {% else %} class="nav-item mr-3" {% endif %}>
                     <a class="nav-link" href="{% url 'about' %}">Про нас</a>
                 </li>
