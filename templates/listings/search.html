@@ -23,12 +23,13 @@
                             <div class="col-md-6 mb-3">
                                 <label class="sr-only">Category</label>
                                 <select name="category" class="form-control">
-                                <option selected style="font-weight: bold;">Категорія (Усі)</option>
+                                    <option selected style="font-weight: bold;">Категорія (Усі)
+                                    </option>
                                     {% for category in categories %}
                                         <option
-                                        {% if category_selected == category.title %}
-                                        selected
-                                        {% endif %}>{{ category }}</option>
+                                                {% if category_selected == category.title %}
+                                                    selected
+                                                {% endif %}>{{ category }}</option>
                                     {% endfor %}
                                 </select>
                             </div>
@@ -67,24 +68,37 @@
                 <!-- Listing 1 -->
                 {% if books|length > 0 %}
                     {% for book in books %}
-                        <div class="col-md-6 col-lg-2 mb-4">
-                            <div class="card listing-preview">
-                                <img class="card-img-top" src="{{ book.image_main.url }}"
-                                     alt="Book image">
-                                <div class="card-img-overlay">
-                                </div>
-                                <div class="card-body">
-                                    <div class="listing-heading text-center" style="height: 60px">
-                                        <b class="text-primary">{{ book.title|title }}</b>
-                                        <p>
-                                            <i class="fas fa-user-edit text-secondary"></i> {{ book.author|title }}
-                                        </p>
+                        <div class="col-md-3 col-lg-2 mb-4 col-sm-4">
+                            <a href="{% url 'listing' book.id %}"
+                               class=" btn-primary btn-block">
+                                <div class="card listing-preview">
+                                    <img class="card-img-top" src="{{ book.image_main.url }}"
+                                         alt="Book image">
+                                    <div class="card-img-overlay">
                                     </div>
-                                    <hr>
-                                    <a href="{% url 'listing' book.id %}"
-                                       class="btn btn-primary btn-block">Детальніше</a>
+                            </a>
+                            <div class="card-body">
+                                <div class="listing-heading text-center" style="height: 60px">
+                                    {% if book.title|length > 24 %}
+                                        <b class="text-primary">{{ book.title|title|truncatechars:24 }}</b>
+                                    {% else %}
+                                        <b class="text-primary">{{ book.title|title }}</b>
+                                    {% endif %}
+                                    <p>
+                                        {% if book.author|length > 13 %}
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                            {{ book.author|title|truncatechars:13 }}
+                                        {% else %}
+                                            <i class="fas fa-user-edit text-secondary"></i>
+                                            {{ book.author|title }}
+                                        {% endif %}
+                                    </p>
                                 </div>
+                                <hr>
+                                <a href="{% url 'listing' book.id %}"
+                                   class="btn btn-primary btn-block">Детальніше</a>
                             </div>
+                        </div>
                         </div>
                     {% endfor %}
                 {% else %}
@@ -100,37 +114,38 @@
                         </div>
                     </div>
                 {% endif %}
-            </div>
-            <div class="row">
-                <div class="col-md-12">
-                    {% if books.has_other_pages %}
-                        <ul class="pagination">
-                            {% if books.has_previous %}
-                                <li class="page-item">
-                                    <a class="page-link"
-                                       href="?page={{ books.previous_page_number }}">&laquo;</a>
-                                </li>
-                            {% endif %}
-                            {% for i in books.paginator.page_range %}
-                                {% if books.number == i %}
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                {% if books.has_other_pages %}
+                    <ul class="pagination">
+                        {% if books.has_previous %}
+                            <li class="page-item">
+                                <a class="page-link"
+                                   href="?page={{ books.previous_page_number }}&category={{ category_selected }}">&laquo;</a>
+                            </li>
+                        {% endif %}
+                        {% for i in books.paginator.page_range %}
+                            {% if books.number == i %}
 
-                                    <li class="page-item active"><a class="page-link">{{ i }}</a>
-                                    </li>
-                                {% else %}
-                                    <li class="page-item"><a href="?page={{ i }}"
-                                                             class="page-link">{{ i }}</a></li>
-                                {% endif %}
-                            {% endfor %}
-                            {% if books.has_next %}
-                                <li class="page-item">
-                                    <a class="page-link"
-                                       href="?page={{ books.next_page_number }}">&raquo;</a>
+                                <li class="page-item active"><a class="page-link">{{ i }}</a>
                                 </li>
+                            {% else %}
+                                <li class="page-item"><a
+                                        href="?page={{ i }}&category={{ category_selected }}"
+                                        class="page-link">{{ i }}</a></li>
                             {% endif %}
-                        </ul>
-                    {% endif %}
-                </div>
+                        {% endfor %}
+                        {% if books.has_next %}
+                            <li class="page-item">
+                                <a class="page-link"
+                                   href="?page={{ books.next_page_number }}&category={{ category_selected }}">&raquo;</a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                {% endif %}
             </div>
+        </div>
         </div>
     </section>
 {% endblock %}

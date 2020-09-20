@@ -6,10 +6,12 @@
         <div class="container text-center">
             <div class="home-search p-5">
                 <div class="overlay p-5">
-                    <h1 class="display-4 mb-4">
-                        Пошук Книг Став Зовсім Простим
+                    <h1 class="display-4 mb-4"><a href="{% url 'about' %}" style="color: white">Познайомся
+                        з нашою
+                        ціллю <i class="fas fa-arrow-alt-circle-right"></i></a>
+
                     </h1>
-                    <p class="lead"> Знайди те, що припаде до душі <i class="fas fa-heart"></i></p>
+                    <p class="lead">Пошук Книг Став Зовсім Простим</p>
                     <div class="search">
                         <form action="{% url 'search' %}">
                             <!-- Form Row 1 -->
@@ -44,62 +46,41 @@
             <h3 class="text-center mb-3">Останні додані книги</h3>
             <div class="row">
                 {% for book in books %}
-                    <div class="col-md-6 col-lg-2 mb-4">
-                        <div class="card listing-preview">
-                            <img class="card-img-top" src="{{ book.image_main.url }}"
-                                 alt="Book image">
-                            <div class="card-img-overlay">
-                            </div>
-                            <div class="card-body">
-                                <div class="listing-heading text-center" style="height: 60px">
-                                    <b class="text-primary">{{ book.title|title }}</b>
-                                    <p>
-                                        <i class="fas fa-user-edit text-secondary"></i> {{ book.author|title }}
-                                    </p>
+                    <div class="col-md-3 col-lg-2 mb-4">
+                        <a href="{% url 'listing' book.id %}"
+                           class=" btn-primary btn-block">
+                            <div class="card listing-preview">
+                                <img class="card-img-top" src="{{ book.image_main.url }}"
+                                     alt="Book image">
+                                <div class="card-img-overlay">
                                 </div>
-                                <hr>
-                                <a href="{% url 'listing' book.id %}"
-                                   class="btn btn-primary btn-block">Детальніше</a>
+                        </a>
+                        <div class="card-body">
+                            <div class="listing-heading text-center" style="height: 60px">
+                                {% if book.title|length > 24 %}
+                                    <b class="text-primary">{{ book.title|title|truncatechars:24 }}</b>
+                                {% else %}
+                                    <b class="text-primary">{{ book.title|title }}</b>
+                                {% endif %}
+                                <p>
+                                    {% if book.author|length > 13 %}
+                                        <i class="fas fa-user-edit text-secondary"></i>
+                                        {{ book.author|title|truncatechars:13 }}
+                                    {% else %}
+                                        <i class="fas fa-user-edit text-secondary"></i>
+                                        {{ book.author|title }}
+                                    {% endif %}
+                                </p>
                             </div>
+                            <hr>
+                            <a href="{% url 'listing' book.id %}"
+                               class="btn btn-primary btn-block">Детальніше</a>
                         </div>
                     </div>
+                    </div>
                 {% endfor %}
-            </div>
+        </div>
         </div>
     </section>
 
-    <section id="services" class="py-5 bg-secondary text-white">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-md-4">
-                    <i class="fas fa-comment fa-4x mr-4"></i>
-                    <hr>
-                    <h3>Контакти </h3>
-                    <p><i class="fas fa-phone"></i> (099)-600-72-68 <br>
-                        <i class="fas fa-envelope-open"></i> sofiia.kaparnyk@gmail.com <br>
-                        <a href="https://www.facebook.com/sonya.omelianets">
-                            <i class="fab fa-facebook" style="color: white"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/sofiia-kaparnyk-08a3bb140/">
-                            <i class="fab fa-linkedin" style="color: white"></i>
-                        </a>
-                        <a href="https://www.instagram.com/omelianets.sofiya28/">
-                            <i class="fab fa-instagram" style="color: white"></i>
-                        </a></p>
-                </div>
-                <div class="col-md-4">
-                    <i class="fas fa-book-reader fa-4x mr-4"></i>
-                    <hr>
-                    <h3> Люди</h3>
-                    <p> Наповни сві день добром <i class="fas fa-hand-holding-heart"></i></p>
-                </div>
-                <div class="col-md-4">
-                    <i class="fas fa-book-reader fa-4x mr-4"></i>
-                    <hr>
-                    <h3> Книги</h3>
-                    <p> Ти заслужив гарну книгу <i class="fas fa-smile-wink"></i></p>
-                </div>
-            </div>
-        </div>
-    </section>
 {% endblock %}
