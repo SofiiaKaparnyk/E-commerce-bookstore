@@ -26,9 +26,27 @@
             </ul>
 
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item mr-3">
-                         <a style="color: white"> Ласкаво прошу, ти - чудо !<i class="fas fa-smile-beam"></i></a>
-                </li>
+                {% if not request.user.is_authenticated %}
+                    <li class="nav-item mr-3">
+                        <a class="nav-link" href="{% url "register" %}">
+                            <i class="fas fa-user-plus"></i> Зареєструватися</a>
+                    </li>
+                    <li class="nav-item mr-3">
+
+                    <a class="nav-link" href="{% url "login" %}">
+                        <i class="fas fa-sign-in-alt"></i> Увійти</a>
+                    </li>
+                {% else %}
+                    <li class="nav-item mr-3">
+                    <a class="nav-link" href="{% url "dashboard" %}">
+                       Ласкаво прошу, {{ request.user.username }}</a>
+                    </li>
+                    <li class="nav-item mr-3">
+                    <a class="nav-link" href="{% url "logout" %}">
+                        <i class="fas fa-sign-in-alt"></i> Вийти</a>
+                    </li>
+                {% endif %}
+
             </ul>
         </div>
     </div>
