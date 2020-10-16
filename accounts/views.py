@@ -39,9 +39,13 @@ def login(request):
             user = auth.authenticate(email=username, password=password)
         if user:
             auth.login(request, user)
-            return redirect('dashboard')
+            next = request.POST.get('next')
+            return redirect(next) if next != '' else redirect('dashboard')
         messages.error(request, 'Invalid credentials')
         return redirect('login')
+    next = request.GET.get('next')
+    if next:
+        return render(request, 'accounts/login.html', {'next': next})
     return render(request, 'accounts/login.html')
 
 

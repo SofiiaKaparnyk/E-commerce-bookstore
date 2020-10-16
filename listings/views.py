@@ -1,3 +1,4 @@
+from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.db.models import Q
 from django.shortcuts import render, get_object_or_404
@@ -14,6 +15,7 @@ def index(request):
     return render(request, 'listings/search.html', {'books': page_books, 'categories': categories})
 
 
+@login_required
 def listing(request, book_id):
     book = get_object_or_404(Book, id=book_id)
     return render(request, 'listings/listing.html', {'book': book})
