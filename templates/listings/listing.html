@@ -32,6 +32,7 @@
 
     <!-- Listing -->
     <section id="listing" class="py-4">
+    {% include 'partials/_alerts.html' %}
         <div class="container">
             <a href="{% url 'listings' %}" class="btn btn-light mb-4">Назад до каталогу</a>
             <div class="row">
@@ -120,10 +121,59 @@
                             <span class="float-right"> {{ book.description }} </span>
                         </li>
                     </ul>
+                    <button class="btn-primary btn-block btn-lg" data-toggle="modal"
+                            data-target="#inquiryModal">Забрати Книгу
+                    </button>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Inquiry Modal -->
+    <div class="modal fade" id="inquiryModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="inquiryModalLabel">Залишити Запит</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="{% url 'contact' %}" method="POST">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <input type="hidden" name="book_id" class="form-control" value="{{ book.id }}">
+                            <input type="hidden" name="user_id" class="form-control" value="{{ user.id }}">
+                        </div>
+                        <div class="form-group">
+                            <label for="book" class="col-form-label">Назва:</label>
+                            <input type="text" name="book" class="form-control"
+                                   value="{{ book.title }}">
+                        </div>
+                        <div class="form-group">
+                            <label for="name" class="col-form-label">Ім'я:</label>
+                            <input type="text" name="name" class="form-control"
+                                   value="{{ user.username|title }}">
+                        </div>
+                        <div class="form-group">
+                            <label for="email" class="col-form-label">Пошта:</label>
+                            <input type="email" name="email" class="form-control" required value="{{ user.email }}">
+                        </div>
+                        <div class="form-group">
+                            <label for="phone" class="col-form-label">Телефон:</label>
+                            <input type="text" name="phone" class="form-control" value="{{ user.phone }}">
+                        </div>
+                        <div class="form-group">
+                            <label for="message" class="col-form-label">Повідомлення:</label>
+                            <textarea name="message" class="form-control"></textarea>
+                        </div>
+                        <hr>
+                        <input type="submit" value="Відправити" class="btn btn-block btn-secondary">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 
 {% endblock %}

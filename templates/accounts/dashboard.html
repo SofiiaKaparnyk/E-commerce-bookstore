@@ -2,59 +2,81 @@
 
 {% block content %}
 
-<section id="showcase-inner" class="py-5 text-white">
-    <div class="container">
-        <div class="row text-center">
-            <div class="col-md-12">
-                <h1 class="display-4">User Dashboard</h1>
-                <p class="lead">Manage your BT Real Estate account</p>
+    <section id="showcase-inner" class="py-5 text-white">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <h1 class="display-4">Ваші Запити</h1>
+                    <p class="lead">Ви Можете Редагувати Свої Запити Тут</p>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<!-- Breadcrumb -->
-<section id="bc" class="mt-3">
-    <div class="container">
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item">
-                    <a href="{% url 'index' %}">
-                        <i class="fas fa-home"></i> Home</a>
-                </li>
-                <li class="breadcrumb-item active"> Dashboard</li>
-            </ol>
-        </nav>
-    </div>
-</section>
+    <!-- Breadcrumb -->
+    <section id="bc" class="mt-3">
+        <div class="container">
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb">
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'index' %}">
+                            <i class="fas fa-home"></i> Книги</a>
+                    </li>
+                    <li class="breadcrumb-item active"> Запити</li>
+                </ol>
+            </nav>
+        </div>
+    </section>
 
-<section id="dashboard" class="py-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-md-12">
-                <h2>Welcome John</h2>
-                <p>Here are the book listings that you have inquired about</p>
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th scope="col">Book Name</th>
-                        <th scope="col">Book Author</th>
-                        <th></th>
-                    </tr>
-                    </thead>
-                    <tbody>
-                    <tr>
-                        <td>Name</td>
-                        <td>Author</td>
-                        <td>
-                            <a class="btn btn-light" href="{% url 'listings' %}">View Listing</a>
-                        </td>
-                    </tr>
-                    </tbody>
-                </table>
+    <section id="dashboard" class="py-4">
+    {% include 'partials/_alerts.html' %}
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2>Ласкаво прошу, {{ user.username|title }}</h2>
+                    <p>Знизу знаходиться список усіх ваших запитів</p>
+                    <table class="table">
+                        <thead>
+
+                        {% if inquiries %}
+                            <tr>
+                                <th scope="col">Назва книги</th>
+                                <th scope="col">Автор книги</th>
+                                <th scope="col">Дата створення запиту</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for inquirie in inquiries %}
+                                <tr>
+                                    <td>{{ inquirie.book.title }}</td>
+                                    <td>{{ inquirie.book.author }}</td>
+                                    <td>{{ inquirie.contact_date }}</td>
+                                    <td>
+                                        <a class="btn btn-light" href="{% url 'listing' inquirie.book.id %}">Подивитися
+                                            Книгу</a>
+                                    </td>
+                                    <td>
+                                        <form action="{% url 'delete_contact' %}" method="POST">
+                                            {% csrf_token %}
+                                            <input hidden name="book_id" value="{{ inquirie.book.id }}">
+                                            <input type="submit" value="Видалити запит"
+                                                   class="btn btn-light">
+                                        </form>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        {% else %}
+                            <tr>
+                                <td>У вас ще не має запитів.</td>
+                            </tr>
+                        {% endif %}
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
 {% endblock %}

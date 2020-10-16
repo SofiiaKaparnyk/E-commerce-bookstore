@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'listings.apps.ListingsConfig',
     'owners.apps.OwnersConfig',
     'accounts.apps.AccountsConfig',
+    'contacts.apps.ContactConfig',
     # third part apps
     'languages',
 ]
@@ -109,7 +110,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'uk'
 
 TIME_ZONE = 'UTC'
 
