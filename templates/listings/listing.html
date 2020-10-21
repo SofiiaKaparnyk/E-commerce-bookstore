@@ -32,7 +32,7 @@
 
     <!-- Listing -->
     <section id="listing" class="py-4">
-    {% include 'partials/_alerts.html' %}
+        {% include 'partials/_alerts.html' %}
         <div class="container">
             <a href="{% url 'listings' %}" class="btn btn-light mb-4">Назад до каталогу</a>
             <div class="row">
@@ -91,8 +91,11 @@
                         </li>
                         <li class="list-group-item text-secondary">
                             <i class="#"></i> Обкладинка:
-                            <span class="float-right">{{ book.book_cover }}
-                  </span>
+                            <span class="float-right">{{ book.book_cover }}</span>
+                        </li>
+                        <li class="list-group-item text-secondary">
+                            <i class="#"></i> Ціна:
+                            <span class="float-right">{{ book.price }} грн</span>
                         </li>
                         <li class="list-group-item text-secondary">
                             Мова:
@@ -115,6 +118,16 @@
                         <li class="list-group-item text-secondary">
                             Стан книги (від 1 до 5):
                             <span class="float-right"> {{ book.rate }} </span>
+                        </li>
+                        <li class="list-group-item text-secondary">
+                            Чи доступна для обміну:
+                            <span class="float-right">
+                                {% if book.can_be_exchanged %}
+                                    <i class="fas fa-check"></i>
+                                {% else %}
+                                    <i class="fas fa-times"></i>
+                                {% endif %}
+                            </span>
                         </li>
                         <li class="list-group-item text-secondary">
                             Опис:
@@ -143,29 +156,33 @@
                     <form action="{% url 'contact' %}" method="POST">
                         {% csrf_token %}
                         <div class="form-group">
-                            <input type="hidden" name="book_id" class="form-control" value="{{ book.id }}">
-                            <input type="hidden" name="user_id" class="form-control" value="{{ user.id }}">
+                            <input type="hidden" name="book_id" class="form-control"
+                                   value="{{ book.id }}">
+                            <input type="hidden" name="user_id" class="form-control"
+                                   value="{{ user.id }}">
                         </div>
                         <div class="form-group">
-                            <label for="book" class="col-form-label">Назва:</label>
+                            <label class="col-form-label">Назва:</label>
                             <input type="text" name="book" class="form-control"
                                    value="{{ book.title }}">
                         </div>
                         <div class="form-group">
-                            <label for="name" class="col-form-label">Ім'я:</label>
+                            <label class="col-form-label">Ім'я:</label>
                             <input type="text" name="name" class="form-control"
                                    value="{{ user.username|title }}">
                         </div>
                         <div class="form-group">
-                            <label for="email" class="col-form-label">Пошта:</label>
-                            <input type="email" name="email" class="form-control" required value="{{ user.email }}">
+                            <label class="col-form-label">Пошта:</label>
+                            <input type="email" name="email" class="form-control" required
+                                   value="{{ user.email }}">
                         </div>
                         <div class="form-group">
-                            <label for="phone" class="col-form-label">Телефон:</label>
-                            <input type="text" name="phone" class="form-control" value="{{ user.phone }}">
+                            <label class="col-form-label">Телефон:</label>
+                            <input type="tel" name="phone" class="form-control"
+                                   value="{{ user.phone }}">
                         </div>
                         <div class="form-group">
-                            <label for="message" class="col-form-label">Повідомлення:</label>
+                            <label class="col-form-label">Повідомлення:</label>
                             <textarea name="message" class="form-control"></textarea>
                         </div>
                         <hr>

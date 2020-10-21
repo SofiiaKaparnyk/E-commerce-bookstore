@@ -1,6 +1,5 @@
 from django.contrib import admin
 
-# Register your models here.
 from listings.models import Book, Category
 
 
@@ -11,7 +10,6 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    prepopulated_fields = {'slug': ('title',)}
     exclude = ['rate']
     list_display = ['id', 'title', 'author', 'price', 'owner', 'rate']
     list_display_links = ['id', 'title', 'owner']

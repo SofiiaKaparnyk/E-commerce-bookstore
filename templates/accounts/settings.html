@@ -18,15 +18,16 @@
         <div class="container">
             <nav aria-label="breadcrumb">
                 <ol class="breadcrumb">
-
-                    <li class="breadcrumb-item active"> Запити</li>
+                    <li class="breadcrumb-item">
+                        <a href="{% url 'dashboard' %}">
+                            <i class="fas fa-home"></i> Запити </a>
+                    </li>
                     <li class="breadcrumb-item">
                         <a href="{% url 'add_book' %}">
                             <i class="fas fa-plus"></i> Додати книгу</a>
                     </li>
-                    <li class="breadcrumb-item">
-                        <a href="{% url 'settings' %}">
-                            <i class="fas fa-user-cog"></i> Змінити дані</a>
+                    <li class="breadcrumb-item active">
+                        <i class="fas fa-user-cog"></i> Змінити дані
                     </li>
                 </ol>
             </nav>
@@ -34,7 +35,7 @@
     </section>
 
     <section id="dashboard" class="py-4">
-    {% include 'partials/_alerts.html' %}
+        {% include 'partials/_alerts.html' %}
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -59,15 +60,17 @@
                                     <td>{{ inquirie.book.author }}</td>
                                     <td>{{ inquirie.contact_date }}</td>
                                     <td>
-                                        <a class="btn btn-primary btn-block" href="{% url 'listing' inquirie.book.id %}">Подивитися
+                                        <a class="btn btn-light"
+                                           href="{% url 'listing' inquirie.book.id %}">Подивитися
                                             Книгу</a>
                                     </td>
                                     <td>
                                         <form action="{% url 'delete_contact' %}" method="POST">
                                             {% csrf_token %}
-                                            <input hidden name="book_id" value="{{ inquirie.book.id }}">
+                                            <input hidden name="book_id"
+                                                   value="{{ inquirie.book.id }}">
                                             <input type="submit" value="Видалити запит"
-                                                   class="btn btn-primary btn-block">
+                                                   class="btn btn-light">
                                         </form>
                                     </td>
                                 </tr>
