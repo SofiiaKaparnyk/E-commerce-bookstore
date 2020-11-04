@@ -24,7 +24,7 @@
                     </li>
                     <li class="breadcrumb-item">
                         <a href="{% url 'add_book' %}">
-                            <i class="fas fa-plus"></i> Додати книгу</a>
+                            <i class="fas fa-plus"></i> Книги/Додати книгу</a>
                     </li>
                     <li class="breadcrumb-item active">
                         <i class="fas fa-user-cog"></i> Змінити дані
@@ -39,49 +39,65 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <h2>Ласкаво прошу, {{ user.username|title }}</h2>
-                    <p>Знизу знаходиться список усіх ваших запитів</p>
-                    <table class="table">
-                        <thead>
+                    <p>Знизу ви можете змінити свої дані</p>
+                    <form action="{% url 'settings' %}" method="POST"
+                          enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <hr>
+                        <div class="form-group row">
+                            <div class="col-md-1">
+                                <label class="col-form-label">Ім'я юзера:</label>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" name="username" class="form-check-inline"
+                                       value="{{ owner.user.username }}" required>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group row">
+                            <div class="col-md-1">
+                                <label class="col-form-label">Номер:</label>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="tel" name="phone" class="form-check-inline"
+                                       value="{{ owner.phone }}" required>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group row">
+                            <div class="col-md-1">
+                                <label class="col-form-label">Місто:</label>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" name="city" class="form-check-inline"
+                                       value="{{ owner.city }}" required>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group row">
+                            <div class="col-md-1">
+                                <label class="col-form-label">Район:</label>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" name="region" class="form-check-inline"
+                                       value="{{ owner.region }}" required>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="form-group row">
+                            <div class="col-md-1">
+                                <label class="col-form-label">Вулиця:</label>
+                            </div>
+                            <div class="col-md-3">
+                                <input type="text" name="street" class="form-check-inline"
+                                       value="{{ owner.street }}">
+                            </div>
+                        </div>
+                        <hr>
+                        <input type="submit" value="Відправити"
+                               class="btn btn-block btn-secondary">
 
-                        {% if inquiries %}
-                            <tr>
-                                <th scope="col">Назва книги</th>
-                                <th scope="col">Автор книги</th>
-                                <th scope="col">Дата створення запиту</th>
-                                <th></th>
-                                <th></th>
-                            </tr>
-                            </thead>
-                            <tbody>
-                            {% for inquirie in inquiries %}
-                                <tr>
-                                    <td>{{ inquirie.book.title }}</td>
-                                    <td>{{ inquirie.book.author }}</td>
-                                    <td>{{ inquirie.contact_date }}</td>
-                                    <td>
-                                        <a class="btn btn-light"
-                                           href="{% url 'listing' inquirie.book.id %}">Подивитися
-                                            Книгу</a>
-                                    </td>
-                                    <td>
-                                        <form action="{% url 'delete_contact' %}" method="POST">
-                                            {% csrf_token %}
-                                            <input hidden name="book_id"
-                                                   value="{{ inquirie.book.id }}">
-                                            <input type="submit" value="Видалити запит"
-                                                   class="btn btn-light">
-                                        </form>
-                                    </td>
-                                </tr>
-                            {% endfor %}
-                        {% else %}
-                            <tr>
-                                <td>У вас ще не має запитів.</td>
-                            </tr>
-                        {% endif %}
-                        </tbody>
-                    </table>
+                    </form>
                 </div>
             </div>
         </div>

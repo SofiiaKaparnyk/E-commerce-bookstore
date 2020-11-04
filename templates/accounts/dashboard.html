@@ -22,7 +22,7 @@
                     <li class="breadcrumb-item active"> Запити</li>
                     <li class="breadcrumb-item">
                         <a href="{% url 'add_book' %}">
-                            <i class="fas fa-plus"></i> Додати книгу</a>
+                            <i class="fas fa-plus"></i> Книги/Додати книгу</a>
                     </li>
                     <li class="breadcrumb-item">
                         <a href="{% url 'settings' %}">
@@ -53,19 +53,19 @@
                             </tr>
                             </thead>
                             <tbody>
-                            {% for inquirie in inquiries %}
+                            {% for inquire in inquiries %}
                                 <tr>
-                                    <td>{{ inquirie.book.title }}</td>
-                                    <td>{{ inquirie.book.author }}</td>
-                                    <td>{{ inquirie.contact_date }}</td>
+                                    <td>{{ inquire.book.title }}</td>
+                                    <td>{{ inquire.book.author }}</td>
+                                    <td>{{ inquire.contact_date }}</td>
                                     <td>
-                                        <a class="btn btn-primary btn-block" href="{% url 'listing' inquirie.book.id %}">Подивитися
+                                        <a class="btn btn-primary btn-block" href="{% url 'listing' inquire.book.id %}">Подивитися
                                             Книгу</a>
                                     </td>
                                     <td>
                                         <form action="{% url 'delete_contact' %}" method="POST">
                                             {% csrf_token %}
-                                            <input hidden name="book_id" value="{{ inquirie.book.id }}">
+                                            <input hidden name="book_id" value="{{ inquire.book.id }}">
                                             <input type="submit" value="Видалити запит"
                                                    class="btn btn-primary btn-block">
                                         </form>

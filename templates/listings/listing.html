@@ -98,6 +98,12 @@
                             <span class="float-right">{{ book.price }} грн</span>
                         </li>
                         <li class="list-group-item text-secondary">
+                            <i class="#"></i> Категорії:
+                            {% for category in book.category.all %}
+                            <span class="float-right"> {{ category.title }} </span> <br>
+                            {% endfor %}
+                        </li>
+                        <li class="list-group-item text-secondary">
                             Мова:
                             <span class="float-right">{{ book.language }}</span>
                         </li>

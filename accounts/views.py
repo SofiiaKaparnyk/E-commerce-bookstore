@@ -2,8 +2,9 @@ from django.contrib import messages, auth
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 
+from accounts.forms import CategoryForm
 from contacts.models import Contact
-from listings.models import Book, Category
+from listings.models import Book
 from owners.models import Owner
 
 
@@ -66,22 +67,26 @@ def dashboard(request):
 def add_listing(request):
     if request.method == 'POST':
         data = request.POST
-        # category
+        form = CategoryForm(request.POST)
+        categories = None
+        if form.is_valid():
+            categories = form.cleaned_data.get('Categories')
         image_main = request.FILES['image_main']
         is_new = True if data.get('is_new') else False
         can_be_exchanged = True if data.get('can_be_exchanged') else False
-        Book.objects.create(title=data['title'], is_new=is_new, author=data['author'],
-                            price=data['price'], description=data.get('description'),
-                            owner=request.user.owner,
-                            publisher=data['publisher'], language=data['language'],
-                            year_of_publishing=data['year_of_publishing'],
-                            number_of_pages=data['number_of_pages'],
-                            translator=data['translator'], book_cover=data['book_cover'],
-                            can_be_exchanged=can_be_exchanged, rate=data['rate'],
-                            image_main=image_main)
-    categories = Category.objects.all()
+        book = Book.objects.create(title=data['title'], is_new=is_new, author=data['author'],
+                                   price=data['price'], description=data.get('description'),
+                                   owner=request.user.owner,
+                                   publisher=data['publisher'], language=data['language'],
+                                   year_of_publishing=data['year_of_publishing'],
+                                   number_of_pages=data['number_of_pages'],
+                                   translator=data['translator'], book_cover=data['book_cover'],
+                                   can_be_exchanged=can_be_exchanged, rate=data['rate'],
+                                   image_main=image_main)
+        [book.category.add(category) for category in categories]
+    categories = CategoryForm
     books = Book.objects.filter(owner=Owner.objects.get(user=request.user))
-    return render(request, 'accounts/add_listing.html', {'books': books, 'categories': categories})
+    return render(request, 'accounts/add_listing.html', {'books': books, 'form': categories})
 
 
 def delete_listing(request):
@@ -92,4 +97,19 @@ def delete_listing(request):
 
 
 def account_settings(request):
-    return render(request, 'accounts/settings.html')
+    owner = request.user.owner
+    if request.method == 'POST':
+        data = request.POST
+        username = data['username']
+        if User.objects.exclude(id=request.user.id).filter(username=username).exists():
+            messages.error(request, "Ім'я юзера уже існує, виберіть інакше.")
+            return render(request, 'accounts/settings.html', {'owner': owner})
+        owner.user.username = username
+        owner.user.save()
+        owner.phone = data['phone']
+        owner.city = data['city']
+        owner.region = data['region']
+        owner.street = data.get('street')
+        owner.save()
+        return render(request, 'accounts/settings.html', {'owner': owner})
+    return render(request, 'accounts/settings.html', {'owner': owner})
