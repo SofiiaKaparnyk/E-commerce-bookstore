@@ -25,6 +25,9 @@ def register(request):
                 return redirect('register')
             # All OK
             user = User.objects.create(username=username, email=email, password=password)
+            data = request.POST
+            Owner.objects.create(phone=data['phone'], city=data['city'], region=data['region'],
+                                 street=data.get('street'))
             # Login after register
             auth.login(request, user)
             return redirect('index')
@@ -61,7 +64,9 @@ def logout(request):
 
 def dashboard(request):
     inquiries = Contact.objects.filter(user_id=request.user.id)
-    return render(request, 'accounts/dashboard.html', {'inquiries': inquiries})
+    inquiries_from_other = Contact.objects.filter(book__owner=request.user.owner)
+    return render(request, 'accounts/dashboard.html',
+                  {'inquiries': inquiries, 'inquiries_from_other': inquiries_from_other})
 
 
 def add_listing(request):
@@ -86,7 +91,40 @@ def add_listing(request):
         [book.category.add(category) for category in categories]
     categories = CategoryForm
     books = Book.objects.filter(owner=Owner.objects.get(user=request.user))
-    return render(request, 'accounts/add_listing.html', {'books': books, 'form': categories})
+    year_range = [i for i in range(2020, 1950, -1)]
+    return render(request, 'accounts/add_listing.html',
+                  {'books': books, 'form': categories, 'year_range': year_range})
+
+
+def edit_listing(request):
+    if request.method == 'POST':
+        book = Book.objects.get(id=request.POST.get('book_id'))
+        data = request.POST
+        form = CategoryForm(request.POST)
+        categories = None
+        if form.is_valid():
+            categories = form.cleaned_data.get('Categories')
+        image_main = request.FILES['image_main']
+        is_new = True if data.get('is_new') else False
+        can_be_exchanged = True if data.get('can_be_exchanged') else False
+        book.title = data['title']
+        book.is_new = is_new
+        book.author = data['author']
+        book.price = data['price']
+        book.description = data['description']
+        book.owner = request.user.owner
+        book.publisher = data['publisher']
+        book.language = data['language']
+        book.year_of_publishing = data['year_of_publishing']
+        book.number_of_pages = data['number_of_pages']
+        book.translator = data['translator']
+        book.book_cover = data['book_cover']
+        book.can_be_exchanged = can_be_exchanged
+        book.rate = data['rate']
+        book.image_main = image_main
+        [book.category.add(category) for category in categories]
+        books = Book.objects.filter(owner=Owner.objects.get(user=request.user))
+        return redirect('/accounts/add/', {'books': books})
 
 
 def delete_listing(request):
@@ -111,5 +149,6 @@ def account_settings(request):
         owner.region = data['region']
         owner.street = data.get('street')
         owner.save()
+        messages.success(request, "Дані було оновлено.")
         return render(request, 'accounts/settings.html', {'owner': owner})
     return render(request, 'accounts/settings.html', {'owner': owner})

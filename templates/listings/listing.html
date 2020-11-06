@@ -100,7 +100,7 @@
                         <li class="list-group-item text-secondary">
                             <i class="#"></i> Категорії:
                             {% for category in book.category.all %}
-                            <span class="float-right"> {{ category.title }} </span> <br>
+                                <span class="float-right"> {{ category.title }} </span> <br>
                             {% endfor %}
                         </li>
                         <li class="list-group-item text-secondary">
@@ -136,13 +136,29 @@
                             </span>
                         </li>
                         <li class="list-group-item text-secondary">
+                            Чи нова:
+                            <span class="float-right">
+                                {% if book.is_new %}
+                                    <i class="fas fa-check"></i>
+                                {% else %}
+                                    <i class="fas fa-times"></i>
+                                {% endif %}
+                            </span>
+                        </li>
+                        <li class="list-group-item text-secondary">
                             Опис:
                             <span class="float-right"> {{ book.description }} </span>
                         </li>
                     </ul>
-                    <button class="btn-primary btn-block btn-lg" data-toggle="modal"
-                            data-target="#inquiryModal">Забрати Книгу
-                    </button>
+                    {% if book.owner != request.user.owner %}
+                        <button class="btn-primary btn-block btn-lg" data-toggle="modal"
+                                data-target="#inquiryModal">Забрати Книгу
+                        </button>
+                    {% else %}
+                        <button class="btn-primary btn-block btn-lg" data-toggle="modal"
+                                data-target="#inquiryEditModal">Редагувати Книгу
+                        </button>
+                    {% endif %}
                 </div>
             </div>
         </div>
@@ -193,6 +209,113 @@
                         </div>
                         <hr>
                         <input type="submit" value="Відправити" class="btn btn-block btn-secondary">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Inquiry Modal -->
+    <div class="modal fade" id="inquiryEditModal" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="inquiryModalLabel">Редагувати Книгу</h5>
+                    <button type="button" class="close" data-dismiss="modal">
+                        <span>&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form action="{% url 'edit_book' %}" method="POST"
+                          enctype="multipart/form-data">
+                        {% csrf_token %}
+                        <div class="form-group">
+                            <label class="col-form-label">Назва:</label>
+                            <input type="text" name="title" class="form-control"
+                                   value="{{ book.title }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Автор:</label>
+                            <input type="text" name="author" class="form-control"
+                                   value="{{ book.author }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Нова:</label>
+                            <input type="checkbox" name="is_new" value="{{ book.is_new }}">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Категорія (можна вибрати
+                                декілька):</label>
+                            <form method='post'>
+                                {% csrf_token %}
+                                {{ form.as_p }}
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Ціна (грн):</label>
+                            <input type="number" name="price" class="form-control" value="{{ book.price }}" required>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Видавництво:</label>
+                            <input type="text" name="publisher" class="form-control" value="{{ book.publisher }}" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-form-label">Мова:</label>
+                            <select name="language" class="form-control">
+                                <option>Українська</option>
+                                <option>Російська</option>
+                                <option>Англійська</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Рік видання:</label>
+                            <select name="year_of_publishing" class="form-control"
+                                    required>
+                                {% for i in year_range %}
+                                    <option>{{ i }}</option>
+                                {% endfor %}
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">К-сть сторінок:</label>
+                            <input type="number" name="number_of_pages" class="form-control" value="{{ book.number_of_pages }}"
+                                   required>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Перекладач:</label>
+                            <input type="text" name="translator" class="form-control" value="{{ book.translator }}">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Обкладинка:</label>
+                            <select name="book_cover" class="form-control">
+                                <option>М'яка обкладинка</option>
+                                <option>Тверда обкладинка</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Чи доступна для обміну:</label>
+                            <input type="checkbox" name="can_be_exchanged" value="{{ book.can_be_exchanged }}">
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Стан:</label>
+                            <select name="rate" class="form-control">
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label class="col-form-label">Опис:</label>
+                            <textarea name="description" class="form-control" required></textarea>
+                        </div>
+                        <div class="form-group">
+                            <input type="file" name="image_main" required>
+                        </div>
+                        <hr>
+                        <input type="submit" value="Відправити" class="btn btn-block btn-secondary">
+                    </form>
                     </form>
                 </div>
             </div>

@@ -3,6 +3,7 @@ from django.core.paginator import Paginator
 from django.db.models import Q
 from django.shortcuts import render, get_object_or_404
 
+from accounts.forms import CategoryForm
 from listings.models import Book, Category
 
 
@@ -18,7 +19,10 @@ def index(request):
 @login_required
 def listing(request, book_id):
     book = get_object_or_404(Book, id=book_id)
-    return render(request, 'listings/listing.html', {'book': book})
+    categories = CategoryForm
+    year_range = [i for i in range(2020, 1950, -1)]
+    return render(request, 'listings/listing.html',
+                  {'book': book, 'form': categories, 'year_range': year_range})
 
 
 def search(request):

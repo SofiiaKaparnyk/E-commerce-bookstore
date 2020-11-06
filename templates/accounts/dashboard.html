@@ -39,7 +39,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2>Ласкаво прошу, {{ user.username|title }}</h2>
-                    <p>Знизу знаходиться список усіх ваших запитів</p>
+                    <p><b>Знизу знаходиться список усіх ваших запитів</b></p>
                     <table class="table">
                         <thead>
 
@@ -74,7 +74,54 @@
                             {% endfor %}
                         {% else %}
                             <tr>
-                                <td>У вас ще не має запитів.</td>
+                                <td>У вас ще немає запитів.</td>
+                            </tr>
+                        {% endif %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+         <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p><b>Знизу знаходиться список усіх запитів, надісланих для ваших книг</b></p>
+                    <table class="table">
+                        <thead>
+
+                        {% if inquiries_from_other %}
+                            <tr>
+                                <th scope="col">Назва книги</th>
+                                <th scope="col">Автор книги</th>
+                                <th scope="col">Дата створення запиту</th>
+                                <th></th>
+                                <th></th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            {% for inquire in inquiries_from_other %}
+                                <tr>
+                                    <td>{{ inquire.book.title }}</td>
+                                    <td>{{ inquire.book.author }}</td>
+                                    <td>{{ inquire.contact_date }}</td>
+                                    <td>
+                                        <a class="btn btn-primary btn-block"
+                                           href="{% url 'listing' inquire.book.id %}">Подивитися
+                                            Книгу</a>
+                                    </td>
+                                    <td>
+                                        <form action="{% url 'delete_contact' %}" method="POST">
+                                            {% csrf_token %}
+                                            <input hidden name="book_id" value="{{ inquire.book.id }}">
+                                            <input type="submit" value="Видалити запит"
+                                                   class="btn btn-primary btn-block">
+                                        </form>
+                                    </td>
+                                </tr>
+                            {% endfor %}
+                        {% else %}
+                            <tr>
+                                <td>У вас ще немає запитів.</td>
                             </tr>
                         {% endif %}
                         </tbody>

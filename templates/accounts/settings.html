@@ -39,7 +39,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <p>Знизу ви можете змінити свої дані</p>
+                    <p><b>Знизу ви можете змінити свої дані</b></p>
                     <form action="{% url 'settings' %}" method="POST"
                           enctype="multipart/form-data">
                         {% csrf_token %}
@@ -94,7 +94,7 @@
                             </div>
                         </div>
                         <hr>
-                        <input type="submit" value="Відправити"
+                        <input type="submit" value="Зберегти"
                                class="btn btn-block btn-secondary">
 
                     </form>
