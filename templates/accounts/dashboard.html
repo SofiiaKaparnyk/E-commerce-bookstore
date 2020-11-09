@@ -92,7 +92,9 @@
                         {% if inquiries_from_other %}
                             <tr>
                                 <th scope="col">Назва книги</th>
-                                <th scope="col">Автор книги</th>
+                                <th scope="col">Ім'я користувача</th>
+                                <th scope="col">Номер</th>
+                                <th scope="col">Пошта</th>
                                 <th scope="col">Дата створення запиту</th>
                                 <th></th>
                                 <th></th>
@@ -103,6 +105,8 @@
                                 <tr>
                                     <td>{{ inquire.book.title }}</td>
                                     <td>{{ inquire.book.author }}</td>
+                                    <td>{{ inquire.phone }}</td>
+                                    <td>{{ inquire.email }}</td>
                                     <td>{{ inquire.contact_date }}</td>
                                     <td>
                                         <a class="btn btn-primary btn-block"

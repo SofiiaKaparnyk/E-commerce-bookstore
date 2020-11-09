@@ -1,4 +1,5 @@
 {% extends 'base.html' %}>
+{% load static %}
 {% block content %}
 
     <section id="showcase-inner" class="py-5 text-white">
@@ -201,7 +202,7 @@
                         <div class="form-group">
                             <label class="col-form-label">Телефон:</label>
                             <input type="tel" name="phone" class="form-control"
-                                   value="{{ user.phone }}">
+                                   value="{{ user.owner.phone }}">
                         </div>
                         <div class="form-group">
                             <label class="col-form-label">Повідомлення:</label>
@@ -215,7 +216,7 @@
         </div>
     </div>
 
-    <!-- Inquiry Modal -->
+    <!-- Inquiry Edit Modal -->
     <div class="modal fade" id="inquiryEditModal" role="dialog">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -241,30 +242,44 @@
                         </div>
                         <div class="form-group">
                             <label class="col-form-label">Нова:</label>
-                            <input type="checkbox" name="is_new" value="{{ book.is_new }}">
+                            {% if book.is_new %}
+                                <input type="checkbox" name="is_new" checked>
+                            {% else %}
+                                <input type="checkbox" name="is_new">
+                            {% endif %}
                         </div>
                         <div class="form-group">
-                            <label class="col-form-label">Категорія (можна вибрати
-                                декілька):</label>
                             <form method='post'>
                                 {% csrf_token %}
-                                {{ form.as_p }}
+                                {{ form.as_table }}
                         </div>
                         <div class="form-group">
                             <label class="col-form-label">Ціна (грн):</label>
-                            <input type="number" name="price" class="form-control" value="{{ book.price }}" required>
+                            <input type="number" name="price" class="form-control"
+                                   value="{{ book.price }}" required>
                         </div>
                         <div class="form-group">
                             <label class="col-form-label">Видавництво:</label>
-                            <input type="text" name="publisher" class="form-control" value="{{ book.publisher }}" required>
+                            <input type="text" name="publisher" class="form-control"
+                                   value="{{ book.publisher }}" required>
                         </div>
 
                         <div class="form-group">
                             <label class="col-form-label">Мова:</label>
                             <select name="language" class="form-control">
-                                <option>Українська</option>
-                                <option>Російська</option>
-                                <option>Англійська</option>
+                                {% if book.language == 'UA' %}
+                                    <option selected>Українська</option>
+                                    <option>Російська</option>
+                                    <option>Англійська</option>
+                                {% elif book.language == 'RU' %}
+                                    <option>Українська</option>
+                                    <option selected>Російська</option>
+                                    <option>Англійська</option>
+                                {% else %}
+                                    <option>Українська</option>
+                                    <option>Російська</option>
+                                    <option selected>Англійська</option>
+                                {% endif %}
                             </select>
                         </div>
                         <div class="form-group">
@@ -272,48 +287,85 @@
                             <select name="year_of_publishing" class="form-control"
                                     required>
                                 {% for i in year_range %}
-                                    <option>{{ i }}</option>
+                                    {% if book.year_of_publishing == i %}
+                                        <option selected>{{ i }}</option>
+                                    {% else %}
+                                        <option> {{ i }}</option>
+                                    {% endif %}
                                 {% endfor %}
                             </select>
                         </div>
                         <div class="form-group">
                             <label class="col-form-label">К-сть сторінок:</label>
-                            <input type="number" name="number_of_pages" class="form-control" value="{{ book.number_of_pages }}"
+                            <input type="number" name="number_of_pages" class="form-control"
+                                   value="{{ book.number_of_pages }}"
                                    required>
                         </div>
                         <div class="form-group">
                             <label class="col-form-label">Перекладач:</label>
-                            <input type="text" name="translator" class="form-control" value="{{ book.translator }}">
+                            <input type="text" name="translator" class="form-control"
+                                   value="{{ book.translator }}">
                         </div>
                         <div class="form-group">
                             <label class="col-form-label">Обкладинка:</label>
                             <select name="book_cover" class="form-control">
-                                <option>М'яка обкладинка</option>
-                                <option>Тверда обкладинка</option>
+                                {% if book.book_cover == "М'яка обкладинка" %}
+                                    <option selected>М'яка обкладинка</option>
+                                    <option>Тверда обкладинка</option>
+                                {% else %}
+                                    <option>М'яка обкладинка</option>
+                                    <option selected>Тверда обкладинка</option>
+                                {% endif %}
                             </select>
                         </div>
                         <div class="form-group">
                             <label class="col-form-label">Чи доступна для обміну:</label>
-                            <input type="checkbox" name="can_be_exchanged" value="{{ book.can_be_exchanged }}">
+                            {% if book.can_be_exchanged %}
+                                <input type="checkbox" name="can_be_exchanged" checked>
+                            {% else %}
+                                <input type="checkbox" name="can_be_exchanged">
+                            {% endif %}
                         </div>
                         <div class="form-group">
                             <label class="col-form-label">Стан:</label>
                             <select name="rate" class="form-control">
-                                <option>1</option>
-                                <option>2</option>
-                                <option>3</option>
-                                <option>4</option>
-                                <option>5</option>
+                                {% if book.rate == 1 %}
+                                    <option selected>1</option>
+                                {% else %}
+                                    <option>1</option>
+                                {% endif %}
+                                {% if book.rate == 2 %}
+                                    <option selected>2</option>
+                                {% else %}
+                                    <option>2</option>
+                                {% endif %}
+                                {% if book.rate == 3 %}
+                                    <option selected>3</option>
+                                {% else %}
+                                    <option>2</option>
+                                {% endif %}
+                                {% if book.rate == 4 %}
+                                    <option selected>4</option>
+                                {% else %}
+                                    <option>2</option>
+                                {% endif %}
+                                {% if book.rate == 5 %}
+                                    <option selected>2</option>
+                                {% else %}
+                                    <option>5</option>
+                                {% endif %}
                             </select>
                         </div>
                         <div class="form-group">
                             <label class="col-form-label">Опис:</label>
-                            <textarea name="description" class="form-control" required></textarea>
+                            <input type="text" name="description" class="form-control"
+                                   value="{{ book.description }}" required>
                         </div>
                         <div class="form-group">
-                            <input type="file" name="image_main" required>
+                            <input type="file" name="image_main">
                         </div>
                         <hr>
+                        <input hidden name="book_id" value="{{ book.id }}">
                         <input type="submit" value="Відправити" class="btn btn-block btn-secondary">
                     </form>
                     </form>

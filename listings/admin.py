@@ -10,7 +10,6 @@ class CategoryAdmin(admin.ModelAdmin):
 
 @admin.register(Book)
 class BookAdmin(admin.ModelAdmin):
-    exclude = ['rate']
     list_display = ['id', 'title', 'author', 'price', 'owner', 'rate']
     list_display_links = ['id', 'title', 'owner']
     list_filter = ['price']

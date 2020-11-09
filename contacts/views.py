@@ -43,5 +43,10 @@ def contact(request):
 def delete_contact(request):
     if request.method == 'POST':
         data = request.POST
-        Contact.objects.get(book_id=data['book_id'], user_id=request.user.id).delete()
+        book_id = data['book_id']
+        book = Book.objects.get(id=book_id)
+        if book.owner == request.user.owner:
+            Contact.objects.get(book_id=book_id, book__owner=request.user.owner).delete()
+        else:
+            Contact.objects.get(book_id=book_id, user_id=request.user.id).delete()
         return redirect('/accounts/dashboard/')

@@ -19,8 +19,5 @@ urlpatterns = [
          name='password_reset_complete'),
     path('register/', views.register, name='register'),
     path('dashboard/', views.dashboard, name='dashboard'),
-    path('add/', views.add_listing, name='add_book'),
-    path('edit/', views.edit_listing, name='edit_book'),
-    path('delete/', views.delete_listing, name='delete_book'),
     path('settings/', views.account_settings, name='settings'),
 ]

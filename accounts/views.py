@@ -2,9 +2,7 @@ from django.contrib import messages, auth
 from django.contrib.auth.models import User
 from django.shortcuts import render, redirect
 
-from accounts.forms import CategoryForm
 from contacts.models import Contact
-from listings.models import Book
 from owners.models import Owner
 
 
@@ -67,71 +65,6 @@ def dashboard(request):
     inquiries_from_other = Contact.objects.filter(book__owner=request.user.owner)
     return render(request, 'accounts/dashboard.html',
                   {'inquiries': inquiries, 'inquiries_from_other': inquiries_from_other})
-
-
-def add_listing(request):
-    if request.method == 'POST':
-        data = request.POST
-        form = CategoryForm(request.POST)
-        categories = None
-        if form.is_valid():
-            categories = form.cleaned_data.get('Categories')
-        image_main = request.FILES['image_main']
-        is_new = True if data.get('is_new') else False
-        can_be_exchanged = True if data.get('can_be_exchanged') else False
-        book = Book.objects.create(title=data['title'], is_new=is_new, author=data['author'],
-                                   price=data['price'], description=data.get('description'),
-                                   owner=request.user.owner,
-                                   publisher=data['publisher'], language=data['language'],
-                                   year_of_publishing=data['year_of_publishing'],
-                                   number_of_pages=data['number_of_pages'],
-                                   translator=data['translator'], book_cover=data['book_cover'],
-                                   can_be_exchanged=can_be_exchanged, rate=data['rate'],
-                                   image_main=image_main)
-        [book.category.add(category) for category in categories]
-    categories = CategoryForm
-    books = Book.objects.filter(owner=Owner.objects.get(user=request.user))
-    year_range = [i for i in range(2020, 1950, -1)]
-    return render(request, 'accounts/add_listing.html',
-                  {'books': books, 'form': categories, 'year_range': year_range})
-
-
-def edit_listing(request):
-    if request.method == 'POST':
-        book = Book.objects.get(id=request.POST.get('book_id'))
-        data = request.POST
-        form = CategoryForm(request.POST)
-        categories = None
-        if form.is_valid():
-            categories = form.cleaned_data.get('Categories')
-        image_main = request.FILES['image_main']
-        is_new = True if data.get('is_new') else False
-        can_be_exchanged = True if data.get('can_be_exchanged') else False
-        book.title = data['title']
-        book.is_new = is_new
-        book.author = data['author']
-        book.price = data['price']
-        book.description = data['description']
-        book.owner = request.user.owner
-        book.publisher = data['publisher']
-        book.language = data['language']
-        book.year_of_publishing = data['year_of_publishing']
-        book.number_of_pages = data['number_of_pages']
-        book.translator = data['translator']
-        book.book_cover = data['book_cover']
-        book.can_be_exchanged = can_be_exchanged
-        book.rate = data['rate']
-        book.image_main = image_main
-        [book.category.add(category) for category in categories]
-        books = Book.objects.filter(owner=Owner.objects.get(user=request.user))
-        return redirect('/accounts/add/', {'books': books})
-
-
-def delete_listing(request):
-    if request.method == 'POST':
-        Book.objects.get(id=request.POST.get('book_id')).delete()
-        books = Book.objects.filter(owner=Owner.objects.get(user=request.user))
-        return redirect('/accounts/add/', {'books': books})
 
 
 def account_settings(request):
