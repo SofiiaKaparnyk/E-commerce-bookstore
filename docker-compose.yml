@@ -1,0 +1,30 @@
+version: "3.1"
+
+services:
+  api:
+    build: ./
+    command: python manage.py runserver 0.0.0.0:8000
+    env_file:
+      - .env.dev
+    volumes:
+      - '.:/usr/src/app'
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+
+  db:
+    image: postgres:latest
+    ports:
+    - "5432:5432"
+    environment:
+      - POSTGRES_DB=bookstore
+      - POSTGRES_USER=bookstore
+      - POSTGRES_PASSWORD=bookstore
+      - POSTGRES_ROOT_PASSWORD=bookstore
+    volumes:
+    - database_data:/var/lib/postgresql
+
+
+volumes:
+  database_data:

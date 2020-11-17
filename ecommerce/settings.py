@@ -19,12 +19,12 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = '1ucb9y^7*(t(qmdrf@qnd5=w$#$ea8!-hfh02c(lgk0el=q%q)'
+SECRET_KEY = os.environ.get('SECRET_KEY', '1ucb9y^7*(t(qmdrf@qnd5=w$#$ea8!-hfh02c(lgk0el=q%q)')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['localhost', '0.0.0.0', '127.0.0.1']
 
 # Application definition
 
@@ -81,10 +81,10 @@ WSGI_APPLICATION = 'ecommerce.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'bookstore',
-        'USER': 'bookstore',
-        'PASSWORD': 'bookstore',
-        'HOST': 'localhost',
+        "NAME": os.environ.get("SQL_DATABASE", "bookstore"),
+        "USER": os.environ.get("SQL_USER", "bookstore"),
+        "PASSWORD": os.environ.get("SQL_PASSWORD", "bookstore"),
+        'HOST': os.environ.get("SQL_HOST", "localhost"),
         'PORT': 5432
     }
 }
