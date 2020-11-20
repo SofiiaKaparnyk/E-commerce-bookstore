@@ -6,7 +6,11 @@ The website allows you to add your books, make a request for existing books on t
 User can register, login and reset password. Also, user has the possibility to change his own info.
 
 Backend: Django
+
 Frontend: JavaScript, HTML, CSS
+
 Cache: Redis
+
 Environment: Docker
+
 Database: Postgres
