@@ -1,3 +1,5 @@
+import redis as redis
+from django.conf import settings
 from django.contrib.auth.decorators import login_required
 from django.core.paginator import Paginator
 from django.db.models import Q
@@ -6,6 +8,8 @@ from django.shortcuts import render, get_object_or_404, redirect
 from accounts.forms import CategoryForm
 from listings.models import Book, Category
 from owners.models import Owner
+
+r = redis.StrictRedis(host=settings.REDIS_HOST, port=settings.REDIS_PORT, db=settings.REDIS_DB)
 
 
 def index(request):
@@ -22,8 +26,9 @@ def listing(request, book_id):
     book = get_object_or_404(Book, id=book_id)
     categories = CategoryForm
     year_range = [i for i in range(2020, 1950, -1)]
+    total_views = r.incr('book:{}:views'.format(book.id))
     return render(request, 'listings/listing.html',
-                  {'book': book, 'form': categories, 'year_range': year_range})
+                  {'book': book, 'form': categories, 'year_range': year_range, 'total_views': total_views})
 
 
 def add_listing(request):

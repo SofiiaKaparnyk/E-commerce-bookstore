@@ -41,6 +41,12 @@
                     <!-- Home Main Image -->
                     <img src="{{ book.image_main.url }}" alt="Book image"
                          class="img-main img-fluid mb-3">
+                    <span class="count"> У книги {{ total_views }}
+                        {% if total_views == 1 %} перегляд
+                        {% elif total_views < 5 %} перегляди
+                        {% else %}переглядів
+                        {% endif %}
+                    </span>
                     <!-- Thumbnails -->
                     <div class="row mb-5 thumbs">
                         {% if book.image_1 %}

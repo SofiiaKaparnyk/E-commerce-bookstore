@@ -90,6 +90,15 @@ img {
     position: relative;
 }
 
+.count {
+    color:#aaa;
+    border:3px solid #bbb;
+    border-radius:26px;
+    padding:10px 20px;
+    margin:20px 10px 0;
+    background-color: #adb5bd;
+}
+
 @media (max-width: 991px) {
     #showcase {
         padding-top: 4rem;
